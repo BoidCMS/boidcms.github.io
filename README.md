@@ -11,4 +11,4 @@ BoidCMS - The free and open source simple, fast, and secured cms to build modern
 BoidCMS started as...
 
 
-** Built Using PHP And JSON, Ready To Power Your Website **
+**Built Using PHP And JSON, Ready To Power Your Website**
