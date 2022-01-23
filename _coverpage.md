@@ -4,9 +4,8 @@
 
 > Powered by PHP and JSON, Ready to power your site.
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- Simple, fast and secured
+- Super extendable
 
 [GitHub](https://github.com/BoidCMS/BoidCMS/)
 [Get Started](#app)
