@@ -45,6 +45,6 @@ And here is the list of all.
 |    `on_admin_func`   |      Core       |         `(string) $buffer`         |  1.0.0 |
 | `before_render_func` |      Core       |                                    |  1.0.0 |
 |     `before_home`    |      Core       |                                    |  1.0.0 |
-|    `before_{TYPE}`   |      Core       |                                    |  1.0.0 |
+| `before_{PAGE_TYPE}` |      Core       |                                    |  1.0.0 |
 |     `before_404`     |      Core       |                                    |  1.0.0 |
 |   `on_render_func`   |      Core       |         `(string) $buffer`         |  1.0.0 |
