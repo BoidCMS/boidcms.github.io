@@ -8,4 +8,4 @@
 - Super extendable
 
 [GitHub](https://github.com/BoidCMS/BoidCMS/)
-[Get Started](#app)
+[Get Started](#boidcms)
