@@ -1,4 +1,4 @@
-![logo](_media/icon.svg)
+![logo](_media/logo.svg)
 
 # BoidCMS <small>v1.0.0</small>
 
