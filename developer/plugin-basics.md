@@ -1,3 +1,4 @@
+# Plugin Basics
 Plugins in BoidCMS reside in the `plugins` folder, and they have a predefined structure.     
 Each plugin is an object in BoidCMS, with differents hooks/events (methods).
 
