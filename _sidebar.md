@@ -1,4 +1,3 @@
-- [Home](./)
-- [Getting Started](./)
-  - [Install](./install)
+- [Getting Started](/)
+  - [Install](install)
 - [Changelog](changelog.md)
