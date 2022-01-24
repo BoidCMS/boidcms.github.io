@@ -1,6 +1,51 @@
 ## Hooks / Events
+BoidCMS has a lot of hooks/events called in the core, Which makes it even more easier to be modified by [Plugins](plugins).     
+And here is the list of all.
 
-|       Hook/Event     |    Execute in   |    Params    |  Since |
-| -------------------- | --------------- | ------------ | ------ |
-| `before_render_func` |                 |              |  1.0.0 |
-|  `after_render_func` |                 |              |  1.0.0 |
+|       Hook/Event     |    Execute in   |     Parameters     |  Since |
+| :------------------- | :-------------: | :----------------: | -----: |
+|   `before_log_func`  |      Core       |`(string) $message, (string) $type` |        |
+| `before_require_func`|      Core       |                 |                    |        |
+|   `on_require_func`  |      Core       |                 |                    |        |
+|   `on_require_error` |      Core       |                    |  1.0.0 |
+|  `before_parse_func` |      Core       |                    |  1.0.0 |
+|    `on_parse_func`   |      Core       |                    |
+|     `on_page_func`   |      Core       |                    |  1.0.0 |
+|   `on_parse_nomatch` |      Core       |                    |  1.0.0 |
+|      `on_get_lang`   |      Core       |                    |  1.0.0 |
+|  `on_installed_func` |      Core       |                    |  1.0.0 |
+|   `on_slugify_func`  |      Core       |                    |  1.0.0 |
+|  `on_redirect_func`  |      Core       |                    |  1.0.0 |
+| `before_login_func`  |      Core       |                    |  1.0.0 |
+|`on_login_token_error`|      Core       |                    |  1.0.0 |
+|   `on_login_success` |      Core       |                    |  1.0.0 |
+|    `on_login_error`  |      Core       |                    |  1.0.0 |
+| `before_logout_func` |      Core       |                    |  1.0.0 |
+|  `on_logout_success` |      Core       |                    |  1.0.0 |
+|`on_login_token_error`|      Core       |                    |  1.0.0 |
+| `before_relogin_func`|      Core       |                    |  1.0.0 |
+|   `on_wysiwyg_func`  |      Core       |                    |  1.0.0 |
+|    `wysiwyg_top`     |      Core       |                    |  1.0.0 |
+|    `wysiwyg_end`     |      Core       |                    |  1.0.0 |
+| `before_plugin_func` |      Core       |                    |  1.0.0 |
+|  `before_theme_func` |      Core       |                    |  1.0.0 |
+|  `before_media_func` |      Core       |                    |  1.0.0 |
+|`before_settings_func`|      Core       |                    |  1.0.0 |
+|`before_dashboard_func`|    Core       |                    |  1.0.0 |
+| `before_create_func` |      Core       |                    |  1.0.0 |
+| `before_update_func` |      Core       |                    |  1.0.0 |
+| `before_delete_func` |      Core       |                    |  1.0.0 |
+|    `on_delete_page`  |      Core       |                    |  1.0.0 |
+|`on_page_delete_success`|  Core       |                    |  1.0.0 |
+|`on_page_delete_error`|      Core       |                    |  1.0.0 |
+|`on_page_delete_nomatch`|  Core       |                    |  1.0.0 |
+|`before_debugging_func`|    Core       |                    |  1.0.0 |
+|       `debug`        |   Admin theme   |                    |  1.0.0 |
+| `before_admin_func`  |      Core       |                    |  1.0.0 |
+|  `before_admin_404`  |      Core       |                    |  1.0.0 |
+|    `on_admin_func`   |      Core       |                    |  1.0.0 |
+| `before_render_func` |      Core       |                    |  1.0.0 |
+|     `before_home`    |      Core       |                    |  1.0.0 |
+|    `before_{TYPE}`   |      Core       |                    |  1.0.0 |
+|     `before_404`     |      Core       |                    |  1.0.0 |
+|  `on_render_func` |      Core       | `(string) $buffer` |  1.0.0 |
