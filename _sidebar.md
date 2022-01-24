@@ -1,8 +1,10 @@
 - [Getting Started]()
   - [Install](install)
 
-- [How To](#)
+- [Plugins](plugins/)
   - [Install plugin](plugins/install)
+
+- [Themes](themes/)
   - [Install theme](themes/install)
 
 - [Developer](developer)
