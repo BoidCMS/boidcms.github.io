@@ -1,17 +1,17 @@
 # Plugin Basics
-Plugins in BoidCMS reside in the `plugins` folder, and they have a predefined structure.     
-Each plugin is an object in BoidCMS, with differents hooks/events (methods).
+Plugins in BoidCMS reside in the `plugins` folder, and they have a predefined structure.
+
 
 ## Folder and Files Structure
 
-```txt
+```bash
 plugins/
-  {PLUGIN_NAME}/
-    lang/
-      en.json
-      es.json
-    data.json
-    {PLUGIN_NAME}.php
+└── {PLUGIN_NAME}/
+    ├── lang/
+    │   ├── en.json
+    │   └── es.json
+    ├── data.json
+    └── {PLUGIN_NAME}.php
 ```
 
 ## Information
@@ -36,7 +36,7 @@ The data and information of the plugin is located in the `data.json` JSON file.
 ```
 
 ### Languages
-Each plugin should have a folder `langs`, Inside this folder you can create many different language files for each language.
+Each plugin should have a folder `lang`, Inside this folder you can create many different language files for each language.
 
 #### English
 `en.json`
