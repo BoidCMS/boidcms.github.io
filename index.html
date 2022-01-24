@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
   <title>The free and open source simple, fast, and secured cms to build modern websites at ease - BoidCMS</title>
   <script>
-  if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('sw.js')
-  }
+    if(typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('/sw.js')
+    }
   </script>
 </head>
 <body>
@@ -23,11 +23,11 @@
       subMaxLevel: 2,
       loadSidebar: true,
       coverpage: true,
-      plugins: [
+     /*plugins: [
         EditOnGithubPlugin.create(
           'https://github.com/BoidCMS/boidcms.github.io/blob/master/'
         )
-      ]
+      ]*/
     };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
