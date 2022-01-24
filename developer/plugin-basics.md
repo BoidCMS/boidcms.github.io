@@ -8,7 +8,7 @@ plugins/
   {PLUGIN_NAME}/
     lang/
       en.json
-      ...
+      es.json
     data.json
     {PLUGIN_NAME}.php
 ```
@@ -34,12 +34,25 @@ The data and information of the plugin is located in the `data.json` JSON file.
 }
 ```
 
-### Langs
+### Languages
+Each plugin should have a folder `langs`, Inside this folder you can create many different language files for each language.
 
+#### English
+`en.json`
 ```json
 {
     "boilerplate": {
-        "debug": "Plugin <b>Boilerplate<\/b> is installed."
+        "debug": "The plugin <b>Boilerplate<\/b> is installed."
+    }
+}
+```
+
+#### Spanish
+`es.json`
+```json
+{
+    "boilerplate": {
+        "debug": "El complemento <b>Boilerplate<\/b> está instalado."
     }
 }
 ```
