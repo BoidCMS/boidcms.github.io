@@ -5,16 +5,16 @@ All themes reside in the `themes` folder, And they have a predefined structure.
 ## Folder and Files Structure
 This is the folder and the most required files structure for themes.
 
-```plain
+```bash
 themes/
-  {THEME_NAME}/
-    lang/
-      en.json
-    data.json
-    home.php
-    page.php
-    post.php
-    static.php
+└── {THEME_NAME}/
+    ├── lang/
+    │   └── en.json
+    ├── data.json
+    ├── home.php
+    ├── page.php
+    ├── post.php
+    └── static.php
 ```
 
 ## Name and Description
