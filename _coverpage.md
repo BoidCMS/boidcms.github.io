@@ -2,7 +2,7 @@
 
 # BoidCMS v<small>1.0.0</small>
 
-> Powered by PHP and JSON, Ready to power your site.
+> Built with PHP and JSON, Ready to power your site.
 
 - Simple, fast and secured
 - Super extendable
