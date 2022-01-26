@@ -1,6 +1,6 @@
 # Plugins
 SysaCMS supports plugins to extend its functionality.     
-You can download additional plugins on this website.
+You can download additional plugins on this [repo](https://github.com/BoidCMS/plugins).
 
 ## How to install a plugin
 
@@ -11,7 +11,7 @@ You can download additional plugins on this website.
 
 ### Admin Upload
 - Download the zip file of the plugin.
-- Visit Admin > Plugins, Upload the compressed zip file.
+- Visit `Admin > Plugins`, Upload the compressed zip file.
 
 ## How to activate and configure a plugin
 - Go to the Admin panel, visit Plugins.
