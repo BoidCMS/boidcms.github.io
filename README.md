@@ -11,7 +11,7 @@ BoidCMS - The free and open source simple, fast, and secured cms to build modern
 BoidCMS started as...
 
 ## Support
- - [Discussions](https://github.com/BoidCMS/discussions)
+ - [Discussions](https://github.com/BoidCMS/BoidCMS/discussions)
 
 
 ## License
