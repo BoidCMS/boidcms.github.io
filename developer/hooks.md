@@ -1,6 +1,8 @@
-## Hooks / Events
+# Hooks / Events
 BoidCMS has a lot of hooks/events called in the core, Which makes it even more easier to be modified by [Plugins](plugins).     
 And here is the list of all.
+
+## Core
 
 |       Hook/Event     |    Execute in   |               Parameters           |  Since |
 | :------------------: | :-------------: | :--------------------------------: | :----: |
@@ -38,8 +40,7 @@ And here is the list of all.
 |`on_page_delete_success`|    Core       |     `(string) $_GET['delete']`     |  1.0.0 |
 |`on_page_delete_error`|      Core       |     `(string) $_GET['delete']`     |  1.0.0 |
 |`on_page_delete_nomatch`|    Core       |     `(string) $_GET['delete']`     |  1.0.0 |
-|`before_debugging_func`|     Core       |                                    |  1.0.0 |
-|       `debug`        |   Admin theme   |                                    |  1.0.0 |
+|`before_debugging_func`|     Core       |                                    |  1.0.0 | 
 | `before_admin_func`  |      Core       |                                    |  1.0.0 |
 |  `before_admin_404`  |      Core       |                                    |  1.0.0 |
 |    `on_admin_func`   |      Core       |         `(string) $buffer`         |  1.0.0 |
@@ -48,3 +49,7 @@ And here is the list of all.
 | `before_{PAGE_TYPE}` |      Core       |                                    |  1.0.0 |
 |     `before_404`     |      Core       |                                    |  1.0.0 |
 |   `on_render_func`   |      Core       |         `(string) $buffer`         |  1.0.0 |
+
+
+## Admin theme
+
