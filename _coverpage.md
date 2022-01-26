@@ -1,4 +1,4 @@
-![logo](_media/logo.svg)
+<p align="center"><img alt="logo" width="60" height="60" src="/_media/logo.svg" /></p>
 
 # BoidCMS <small>v1.0.0</small>
 
