@@ -9,3 +9,4 @@
 
 [GitHub](https://github.com/BoidCMS/BoidCMS/)
 [Get Started](#boidcms)
+[Demo](https://boidcms.000webhostapp.com)
