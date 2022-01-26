@@ -1,8 +1,8 @@
-<p align="center"><img alt="logo" width="60" height="60" src="/_media/logo.svg" /></p>
+<p align="center"><img alt="logo" width="50" height="50" src="/_media/logo.svg" /></p>
 
 # BoidCMS <small>v1.0.0</small>
 
-> Developed using PHP and JSON, Ready to power your site.
+> Developed using PHP and JSON, Ready to power your websites.
 
 - Simple, fast and secured
 - Super extendable
