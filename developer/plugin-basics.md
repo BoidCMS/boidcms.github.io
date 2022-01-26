@@ -3,47 +3,49 @@ Plugins in BoidCMS reside in the `plugins` folder, and they have a predefined st
 
 
 ## Folder and Files Structure
+Let's pretend the plugin name is **Example**
 
 ```bash
 plugins/
-└── {PLUGIN_NAME}/
+└── example/
     ├── lang/
     │   ├── en.json
     │   └── es.json
     ├── data.json
-    └── {PLUGIN_NAME}.php
+    └── example.php
 ```
 
 ## Information
+We're still pretending the plugin name is **Example**
 
 ### Data
 The data and information of the plugin is located in the `data.json` JSON file.
 
 ```json
 {
-    "name": "Plugin Name",
+    "name": "Example",
     "email": "boidcms@gmail.com",
     "author": "Shoaiyb Sysa",
     "website": "https:\/\/boidcms.github.io",
     "compatible": "1.0.0",
     "license": "GPLV3",
     "version": "1.0.0",
-    "class": "PluginClass",
+    "class": "Example",
     "active": false,
     "notes": "Plugin notes <b>could be html<\/b> (To be displayed to the admin)",
-    "repo": "@shoaiyb/plugin-boilerplate"
+    "repo": "@shoaiyb/example"
 }
 ```
 
 ### Languages
-Each plugin should have a folder `lang`, Inside this folder you can create many different language files for each language.
+Each plugin is recommended to have a folder `lang`, Inside this folder you can create many different language files for each language.
 
 #### English
 `en.json`
 ```json
 {
-    "boilerplate": {
-        "debug": "The plugin <b>Boilerplate<\/b> is installed."
+    "example": {
+        "debug": "The plugin <b>Example<\/b> is installed."
     }
 }
 ```
@@ -52,34 +54,34 @@ Each plugin should have a folder `lang`, Inside this folder you can create many 
 `es.json`
 ```json
 {
-    "boilerplate": {
-        "debug": "El complemento <b>Boilerplate<\/b> está instalado."
+    "example": {
+        "debug": "El complemento <b>Example<\/b> está instalado."
     }
 }
 ```
 
 ## Plugin Class
-The Boilerplate plugin code below needs to be in the `boilerplate.php` file because `main` key isn't set at the data file.
+The Example plugin code below needs to be in the `example.php` file because `main` key isn't set at the data file.
 
 ```php
 <?php
 /**
  *
- * Plugin boilerplate
+ * Plugin example
  *
- * @package SysaCMS
- * @subpackage Plugin_Boilerplate
+ * @package BoidCMS
+ * @subpackage Plugin_Example
  * @author Shoaiyb Sysa
  * @license GPLV3
  * @version 1.0
 */
-class PluginClass extends App {
+class Example extends App {
   /**
    * Debugging
    * @return string
   */
   public function debug() {
-    return $this->get_lang('boilerplate->debug');
+    return $this->get_lang('example->debug');
   }
 }
 ?>
