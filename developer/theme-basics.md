@@ -3,11 +3,11 @@ All themes reside in the `themes` folder, And they have a predefined structure.
 
 
 ## Folder and Files Structure
-This is the folder and the most required files structure for themes.
-
+This is the folder and the most required files structure for themes.     
+Let's pretend the theme name is **Pure**
 ```bash
 themes/
-└── {THEME_NAME}/
+└── pure/
     ├── lang/
     │   └── en.json
     ├── data.json
@@ -22,9 +22,9 @@ The translated name, description, and data of the theme is stored in the `lang/e
 
 ```json
 {
-    "{THEME_NAME}": {
-        "name": "Theme name",
-        "description": "To change the appearance of your site."
+    "pure": {
+        "name": "Pure",
+        "description": "To change the appearance of your site using pure css."
     }
 }
 ```
@@ -34,8 +34,8 @@ The basic information about the theme is stored in the `data.json` JSON file.
 
 ```json
 {
-    "name": "Theme Name",
-    "email": "shoaiybsysa@gmail.com",
+    "name": "Pure",
+    "email": "boidcms@gmail.com",
     "author": "Shoaiyb Sysa",
     "website": "https:\/\/boidcms.github.io",
     "compatible": "1.0.0",
@@ -43,7 +43,7 @@ The basic information about the theme is stored in the `data.json` JSON file.
     "version": "1.0.0",
     "active": false,
     "notes": "Theme notes <b>could be html<\/b> (To be displayed to the admin)",
-    "repo": "@shoaiyb/theme-boilerplate"
+    "repo": "@shoaiyb/pure"
 }
 ```
 
