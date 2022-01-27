@@ -1,5 +1,5 @@
 # Plugins
-SysaCMS supports plugins to extend its functionality.     
+BoidCMS supports plugins to extend its functionality.     
 You can download additional plugins on this [repo](https://github.com/BoidCMS/plugins).
 
 ## How to install a plugin
@@ -14,6 +14,6 @@ You can download additional plugins on this [repo](https://github.com/BoidCMS/pl
 - Visit `Admin > Plugins`, Upload the compressed zip file.
 
 ## How to activate and configure a plugin
-- Go to the Admin panel, visit Plugins.
-- Look for the plugin in the list and click Activate.
-Most of the plugins allow some configurations when clicking Settings.
+- Visit `Admin > Plugins`.
+- Look for the plugin in the list and click `Install`.
+Most of the plugins allow some configurations when clicking `Settings`.
