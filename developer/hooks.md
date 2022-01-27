@@ -1,5 +1,5 @@
 # Hooks / Events
-BoidCMS has a lot of hooks/events called within the core, Which makes it even more easier to be modified by [Plugins](plugins).     
+BoidCMS has a lot of hooks/events called within the core, And that makes it even more easier to be extended by [Plugins](plugins).     
 And here is the list of all.
 
 ## Core
@@ -55,3 +55,5 @@ And here is the list of all.
 |     Hook/Event    |  Execute in   |  Parameters  |  Since  |
 | :---------------: | :-----------: | :----------: | :-----: |
 |  `dashboard_head` |  Admin theme  |              | `1.0.0` |
+|   `dashboard_top` |  Admin theme  |              | `1.0.0` |
+|   `dashboard_end` |  Admin theme  |              | `1.0.0` |
