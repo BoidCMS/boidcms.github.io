@@ -52,6 +52,6 @@ And here is the list of all.
 
 
 ## Admin theme
-|  Hook/Event  |  Execute in  |  Parameters  |  Since  |
-| :----------: | :----------: | :----------: | :-----: |
-
+|     Hook/Event    |  Execute in   |  Parameters  |  Since  |
+| :---------------: | :-----------: | :----------: | :-----: |
+|  `dashboard_head` |  Admin theme  |              | 1.0.0 |
