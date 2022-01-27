@@ -3,10 +3,10 @@
   - [Features](features)
 
 - [Plugins](plugins/)
-  - [Install plugin](plugins/install)
+  - [Users](plugins/users)
 
 - [Themes](themes/)
-  - [Install theme](themes/install)
+  - [Default](themes/default)
 
 - [Developer](developer/)
   - [Plugin Basics](developer/plugin-basics)
