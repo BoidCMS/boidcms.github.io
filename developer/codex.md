@@ -1,11 +1,7 @@
 # Codex
-
-## Class `App`
-
-```php
-<?php
-class App {
-
-}
-?>
-```
+# Codex
+# Codex
+# Codex
+# Codex
+# Codex
+# Codex
