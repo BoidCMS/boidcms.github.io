@@ -12,6 +12,15 @@ It's installed without any configuration, since no relational database (like MyS
 ## Why BoidCMS?
 Short history, Who?, Why? , You can find more [about](about) it...
 
+
+## Features
+- SEO Friendly
+- Powerful plugin system
+- Easy to customize using themes
+- GDPR Compliant...
+[All features](features)
+
+
 ## Support
  - [Community](https://github.com/BoidCMS/BoidCMS/discussions)
 
