@@ -3,7 +3,7 @@ Plugins in BoidCMS reside in the `plugins` folder, and they have a predefined st
 
 
 ## Folder and Files Structure
-Let's pretend the plugin name is **Example**
+Let's pretend the plugin name is `Example`.
 
 ```bash
 plugins/
@@ -16,7 +16,7 @@ plugins/
 ```
 
 ## Information
-We're still pretending the plugin name is **Example**
+
 
 ### Data
 The data and information of the plugin is located in the `data.json` JSON file.
