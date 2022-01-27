@@ -4,7 +4,7 @@ All themes reside in the `themes` folder, And they have a predefined structure.
 
 ## Folder and Files Structure
 This is the folder and the most required files structure for themes.     
-Let's pretend the theme name is **Pure**
+Let's pretend the theme name is `Pure`.
 ```bash
 themes/
 └── pure/
@@ -24,7 +24,7 @@ The translated name, description, and data of the theme is stored in the `lang/e
 {
     "pure": {
         "name": "Pure",
-        "description": "To change the appearance of your site using pure css."
+        "description": "To change the appearance of your site with pure style."
     }
 }
 ```
@@ -41,9 +41,8 @@ The basic information about the theme is stored in the `data.json` JSON file.
     "compatible": "1.0.0",
     "license": "GPLV3",
     "version": "1.0.0",
-    "active": false,
     "notes": "Theme notes <b>could be html<\/b> (To be displayed to the admin)",
-    "repo": "@shoaiyb/pure"
+    "repo": "@github/repo"
 }
 ```
 
