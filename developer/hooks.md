@@ -4,8 +4,8 @@ And here is the list of all.
 
 ## Core
 
-|       Hook/Event     |    Execute in   |               Parameters           |  Since |
-| :------------------: | :--------------: | :--------------------------------: | :----: |
+|       Hook/Event     |    Execute in    |               Parameters           |   Since  |
+| :------------------: | :--------------: | :--------------------------------: | :------: |
 |   `before_log_func`  |    `App::log`    |     `(string) $message, $type`     |  `1.0.0` |
 | `before_require_func`|  `App::require`  |       `(string) $filename`         |  `1.0.0` |
 |   `on_require_func`  |  `App::require`  |        `(string) $buffer`          |  `1.0.0` |
@@ -52,8 +52,22 @@ And here is the list of all.
 
 
 ## Admin theme
-|     Hook/Event    |  Execute in   |  Parameters  |  Since  |
-| :---------------: | :-----------: | :----------: | :-----: |
-|  `dashboard_head` |  Admin theme  |              | `1.0.0` |
-|   `dashboard_top` |  Admin theme  |              | `1.0.0` |
-|   `dashboard_end` |  Admin theme  |              | `1.0.0` |
+|     Hook/Event    |   Execute in   |  Parameters  |  Since  |
+| :---------------: | :------------: | :----------: | :-----: |
+|    `login_head`   |   `login.php`  |              | `1.0.0` |
+|     `login_top`   |   `login.php`  |              | `1.0.0` |
+|     `login_end`   |   `login.php`  |              | `1.0.0` |
+|    `logout_head`  |  `logout.php`  |              | `1.0.0` |
+|     `logout_top`  |  `logout.php`  |              | `1.0.0` |
+|     `logout_end`  |  `logout.php`  |              | `1.0.0` |
+|   `settings_head` | `settings.php` |              | `1.0.0` |
+|    `settings_top` | `settings.php` |              | `1.0.0` |
+|    `settings_end` | `settings.php` |              | `1.0.0` |
+|  `dashboard_head` | `dashboard.php`|              | `1.0.0` |
+|   `dashboard_top` | `dashboard.php`|              | `1.0.0` |
+|   `dashboard_end` | `dashboard.php`|              | `1.0.0` |
+
+
+
+
+
