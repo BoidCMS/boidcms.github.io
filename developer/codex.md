@@ -147,7 +147,7 @@ $content = $App->page('content', true, $page);
 ## Parse text    
 Regex: 
 ```regex
-/\{\%\s([a-zA-Z0-9_-]+)\:([a-zA-Z0-9_>-]+)\s\%\}/`
+/\{\%\s([a-zA-Z0-9_-]+)\:([a-zA-Z0-9_>-]+)\s\%\}/
 ```
 
 This: `{% this:info %}`     
