@@ -1,5 +1,17 @@
 # Codex
 
+## Page
+
+```php
+echo $App->page;
+```
+
+## IP Address
+
+```php
+echo $App->ip;
+```
+
 ## Debug logging
 
 ```php
