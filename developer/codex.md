@@ -144,10 +144,10 @@ $title = $App->page('title', false, $page);
 $content = $App->page('content', true, $page);
 ```
 
-## Parse text
-Scheme: `{% how:to %}`.     
+## Parse text    
 Regex: `/\{\%\s([a-zA-Z0-9_-]+)\:([a-zA-Z0-9_>-]+)\s\%\}/`.      
 
+This: `{% this:info %}`.     
 Site: `{% site:info %}`.     
 Page: `{% page:info %}`.     
 Lang: `{% lang:in->fo %}`.     
