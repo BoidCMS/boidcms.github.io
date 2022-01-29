@@ -106,6 +106,57 @@ $data = array(
 $App->post($data, $dir);
 ```
 
+## Posts list
+
+```php
+$posts = $App->posts();
+```
+
+## Pages list
+
+```php
+$pages = $App->pages();
+```
+
+## Static pages
+
+```php
+$statics = $App->statics();
+```
+
+## Plugins list
+
+```php
+$plugins = $App->plugins();
+```
+
+## Themes list
+
+```php
+$themes = $App->themes();
+```
+
+## Get page info
+
+```php
+$page = $App->page;
+$title = $App->page('title', false, $page);
+$content = $App->page('content', true, $page);
+```
+
+## Parse text
+Scheme: `{% how:to %}`.     
+Regex: `/\{\%\s([a-zA-Z0-9_-]+)\:([a-zA-Z0-9_>-]+)\s\%\}/`.      
+
+Site: `{% site:info %}`.     
+Page: `{% page:info %}`.     
+Lang: `{% lang:in->fo %}`.     
+
+```php
+$text = 'The website title is: {% site:title %}';
+$parsed = $App->parse($text);
+```
+
 
 
 
