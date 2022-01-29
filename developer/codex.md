@@ -1,6 +1,6 @@
 # Codex
 
-## Page
+## Current Page
 
 ```php
 echo $App->page;
@@ -45,6 +45,15 @@ $App->unset('codex');
 ```php
 
 echo $App->get('codex');
+
+```
+
+## Set a global alert
+
+```php
+$class = 'success';
+$message = 'Saved Successfully';
+$App->set_alert($message, $class)!
 
 ```
 
