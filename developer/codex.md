@@ -145,12 +145,15 @@ $content = $App->page('content', true, $page);
 ```
 
 ## Parse text    
-Regex: `/\{\%\s([a-zA-Z0-9_-]+)\:([a-zA-Z0-9_>-]+)\s\%\}/`.      
+Regex: 
+```regex
+/\{\%\s([a-zA-Z0-9_-]+)\:([a-zA-Z0-9_>-]+)\s\%\}/`
+```
 
-This: `{% this:info %}`.     
-Site: `{% site:info %}`.     
-Page: `{% page:info %}`.     
-Lang: `{% lang:in->fo %}`.     
+This: `{% this:info %}`     
+Site: `{% site:info %}`     
+Page: `{% page:info %}`     
+Lang: `{% lang:in->fo %}`     
 
 ```php
 $text = 'The website title is: {% site:title %}';
