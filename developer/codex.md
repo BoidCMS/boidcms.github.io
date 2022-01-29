@@ -57,6 +57,17 @@ $App->get_action('action');
 
 ```
 
+## Save data
 
+```php
+$dir = __DIR__;
+$title = 'codex';
+$value = 'Save data to the given dir data file';
+$App->save($value, $title, $dir);
+```
 
+## Get data
 
+```php
+$App->data('codex', __DIR__);
+```
