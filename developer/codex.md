@@ -71,3 +71,20 @@ $App->save($value, $title, $dir);
 ```php
 $App->data('codex', __DIR__);
 ```
+
+## Post data
+
+```php
+$dir = __DIR__;
+$data = array(
+  'string': 'Data',
+  'array': ['One', 'Two'],
+  'bool': false,
+  'int': 25
+);
+$App->post($data, $dir);
+```
+
+
+
+
