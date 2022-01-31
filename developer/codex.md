@@ -53,7 +53,7 @@ echo $App->get('codex');
 ```php
 $class = 'success';
 $message = 'Saved Successfully';
-$App->set_alert($message, $class)!
+$App->set_alert($message, $class);
 
 ```
 
