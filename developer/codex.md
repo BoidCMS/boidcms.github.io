@@ -1,5 +1,11 @@
 # Codex
 
+## Installation dir
+
+```php
+echo $App->root;
+```
+
 ## Current Page
 
 ```php
@@ -57,6 +63,19 @@ $App->set_alert($message, $class);
 
 ```
 
+## Get all global alert
+
+### With default template
+```php
+$App->get_alert();
+```
+
+### With custom template desing
+
+```php
+$App->get_alert('<p class="%s">%s</p>');
+```
+
 ## Set action (hook/event)
 
 ```php
@@ -68,6 +87,12 @@ $callback = function($name, $pass) {
 };
 $App->set_action($callback, $event);
 
+``` 
+
+## Unset action (hook/event)
+
+```php
+$App->unset_action('action');
 ```
 
 ## Get action (hook/event)
@@ -78,12 +103,13 @@ $App->get_action('action');
 
 ```
 
+
 ## Save data
 
 ```php
 $dir = __DIR__;
 $title = 'codex';
-$value = 'Save data to the given dir data file';
+$value = 'Save value to the given dir data file';
 $App->save($value, $title, $dir);
 ```
 
@@ -154,12 +180,17 @@ This: `{% this:info %}`
 Site: `{% site:info %}`     
 Page: `{% page:info %}`     
 Lang: `{% lang:in->fo %}`     
+Action: `{% action:info %}`     
 
 ```php
-$text = 'The website title is: {% site:title %}';
+$text = 'Site title: {% site:title %}';
 $parsed = $App->parse($text);
 ```
 
+## Check admin login status
 
+```php
+$status = $App->logged_in();
+```
 
 
