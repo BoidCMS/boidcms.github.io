@@ -168,6 +168,7 @@ $themes = $App->themes();
 $page = $App->page;
 $title = $App->page('title', false, $page);
 $content = $App->page('content', true, $page);
+$status = $App->page('published', false, $page);
 ```
 
 ## Parse text    
