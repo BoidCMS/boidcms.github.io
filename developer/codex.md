@@ -1,5 +1,12 @@
 # Codex
 
+## BoidCMS Info
+
+```php
+$name = $App->name;
+$version = $App->version;
+```
+
 ## Installation dir
 
 ```php
@@ -70,7 +77,7 @@ $App->set_alert($message, $class);
 $App->get_alert();
 ```
 
-### With custom template desing
+### With custom template
 
 ```php
 $App->get_alert('<p class="%s">%s</p>');
@@ -169,6 +176,7 @@ $page = $App->page;
 $title = $App->page('title', false, $page);
 $content = $App->page('content', true, $page);
 $status = $App->page('published', false, $page);
+$id = $App->page('id', false, $page);
 ```
 
 ## Parse text    
