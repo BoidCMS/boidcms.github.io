@@ -1,5 +1,5 @@
 # Users
-Give others the ability to contribute to your site.
+Give others a way to contribute to your site.
 
 ## Features
 
