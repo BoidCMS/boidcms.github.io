@@ -196,6 +196,19 @@ $text = 'Site title: {% site:title %}';
 $parsed = $App->parse($text);
 ```
 
+## Validate user input
+Validate user inputs and make text unparsable by `App::parse` method.
+```php
+$xss = $_GET['xss']; 
+echo $xss; // <script>alert(document.cookie)</script>
+echo $App->parse($xss); // 
+
+$parsable = $_GET['input']; // {% site:password %}
+echo $App->parse($parsable); // $2y$10$...
+echo $App->unparse($parsable); // site:password
+
+```
+
 ## Check admin login status
 
 ```php
