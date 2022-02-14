@@ -7,6 +7,7 @@ And here is the list of all.
 |       Hook/Event     |    Execute in    |               Parameters           |   Since  |
 | :------------------: | :--------------: | :--------------------------------: | :------: |
 |   `before_log_func`  |    `App::log`    |     `(string) $message, $type`     |  `1.0.0` |
+|     `on_set_error`   |    `App::set`    |  `(string) $title, (mixed) $value` | `1.0.0` |
 | `before_require_func`|  `App::require`  |       `(string) $filename`         |  `1.0.0` |
 |   `on_require_func`  |  `App::require`  |        `(string) $buffer`          |  `1.0.0` |
 |   `on_require_error` |  `App::require`  |       `(string) $filename`         |  `1.0.0` |
