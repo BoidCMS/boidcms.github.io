@@ -5,7 +5,7 @@ With this plugin, you can retrieve or update data from the database with a simpl
 
 ## Install
 Download the zip file of the plugin on this [repo](https://github.com/BoidCMS/Api).     
-
+Follow this [steps](plugins) to install.
 
 ## Developer
 
