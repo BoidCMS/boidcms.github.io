@@ -26,7 +26,7 @@ Eg, `http://example.com/api/settings`
 ### Response
 The response content format is `JSON`.
 
-Default return values.
+Default return values.     
 |    Key    |   Type  |
 | :-------: | :-----: |
 |   `code`  |  `int`  |
