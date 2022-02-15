@@ -4,13 +4,13 @@ With this plugin, you can retrieve or update data from the database with a simpl
 
 
 ## Install
-Download the plugin 
+Download the plugin on this [repo](https://github.com/BoidCMS/Api).     
 
 ## Developer
 
 ### Requests
 The api request uri is: `{protocol}://{domain}/api/{endpoint}`.    
-Eg, `https://example.com/api/settings`
+Eg, `http://example.com/api/settings`
 
 |     Endpoint    |  Method  |
 | :-------------: | :------: |
@@ -25,6 +25,14 @@ Eg, `https://example.com/api/settings`
 ### Response
 The response content format is `JSON`.
 
+Default return values.
+|    Key    |   Type  |
+| :-------: | :-----: |
+|   `code`  |  `int`  |
+|  `success`| `string`|
+|  `message`| `string`|
+|  `result` | `array` |
+|   `error` | `array` |
 
 
 ### Used hooks/events
