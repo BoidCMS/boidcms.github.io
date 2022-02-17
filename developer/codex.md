@@ -8,24 +8,41 @@ $version = $App->version;
 ```
 
 ## Installation dir
+The Current Working Directory of the site.
 
 ```php
 echo $App->root;
 ```
 
 ## Current Page
+The current page user is on.
 
 ```php
 echo $App->page;
 ```
 
 ## IP Address
+The server ip address, From `$_SERVER` super global.
 
 ```php
 echo $App->ip;
 ```
 
+## Make value modifiable
+Similar to WordPress `_()` function, `App::_()` method is used to make value modifiable.
+
+```php
+$value = $App->_('Default value', 'valid_callback');
+echo $value; // Default value
+
+$App->set_action(function($arg) {
+  return str_replace('Default', 'Modified', $arg);
+}, 'valid_callback');
+echo $value; // Modified value
+```
+
 ## Debug logging
+Log message 
 
 ```php
 
