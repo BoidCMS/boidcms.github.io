@@ -19,10 +19,12 @@ Eg, `http://example.com/api/settings`
 | `/api/settings` |   `PUT`  |
 |  `/api/medias`  |   `GET`  |
 |  `/api/medias`  |  `POST`  |
+|  `/api/medias`  | `DELETE` |
 |   `/api/langs`  |   `GET`  |
 |   `/api/pages`  |   `GET`  |
 |   `/api/pages`  |   `PUT`  |
 |   `/api/pages`  |  `POST`  |
+|   `/api/pages`  | `DELETE` |
 
 ### Response
 The response content format is `JSON`.
