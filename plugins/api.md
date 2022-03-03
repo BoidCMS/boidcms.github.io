@@ -34,7 +34,7 @@ Default return values.
 |    Key    |   Type  |
 | :-------: | :-----: |
 |   `code`  |  `int`  |
-|  `success`| `string`|
+|  `success`|  `bool` |
 |  `message`| `string`|
 |  `result` | `array` |
 |   `error` | `array` |
