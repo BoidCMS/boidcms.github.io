@@ -5,7 +5,7 @@ With this plugin, you can retrieve or update data from the database with a simpl
 
 ## Install
 Download the zip file of the plugin on this [repo](https://github.com/BoidCMS/Api).     
-Follow this [steps](plugins) to install.
+Follow this [steps](plugins/) to install.
 
 ## Developer
 
@@ -19,6 +19,7 @@ Eg, `http://example.com/api/settings`
 | `/api/settings` |   `PUT`  |
 |  `/api/medias`  |   `GET`  |
 |  `/api/medias`  |  `POST`  |
+|   `/api/langs`  |   `GET`  |
 |   `/api/pages`  |   `GET`  |
 |   `/api/pages`  |   `PUT`  |
 |   `/api/pages`  |  `POST`  |
