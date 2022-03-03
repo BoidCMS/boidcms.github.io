@@ -30,6 +30,7 @@ Eg, `http://example.com/api/settings`
 The response content format is `JSON`.
 
 Default return values.     
+
 |    Key    |   Type  |
 | :-------: | :-----: |
 |   `code`  |  `int`  |
