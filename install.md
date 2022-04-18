@@ -9,7 +9,6 @@ slug: install
 - Download the latest version from the official repo.
 - Extract the zip file.
 - Upload the extracted content to your server or hosting. You can upload the files in the root directory, or in a subdirectory such as `/site/`.
-- If you uploaded it in a subdirectory you have to edit `config.php` file and change url to something like `http://example.com/site/`.
 - To upload the files, use an FTP client, WebFTP, or some tool provided by your hosting company.
 - Visit your domain. If you uploaded the files in the root directory go to `http://example.com`, if you uploaded the files in a subdirectory `http://example.com/site/`.
 - Follow the admin page to configure your new website.
