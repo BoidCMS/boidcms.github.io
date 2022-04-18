@@ -4,15 +4,15 @@ You can find more themes in this [repo](https://github.com/BoidCMS/themes).
 
 ## How to install a theme
 
-### FTP
+<!--### FTP-->
 - Download the zip file of the theme.
 - Uncompress the zip file.
 - Copy the theme folder into the folder `/themes/` on the server.
 
-### Admin Upload
+<!--### Admin Upload
 - Download the zip file of the theme.
-- Visit `Admin > Themes`, Upload the compressed zip file.
+- Visit `Admin > Themes`, Upload the compressed zip file.-->
 
 ## How to activate a theme
 - Visit `Admin > Themes`.
-- Look for the theme in the list, and click on `Activate`.
+- Look for the theme in the list, and click on `Install`.
