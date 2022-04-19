@@ -9,7 +9,7 @@ This is the folder and the most required files structure for themes.
 themes/
 └── example/
     ├── home.php
-    └── page.php
+    └── theme.php
 ```
 <!--
 ```bash
