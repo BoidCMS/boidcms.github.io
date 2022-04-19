@@ -4,7 +4,14 @@ All themes reside in the `themes` folder, And they have a predefined structure.
 
 ## Folder and Files Structure
 This is the folder and the most required files structure for themes.     
-Let's pretend the theme name is `Pure`.
+
+```bash
+themes/
+└── example/
+    ├── home.php
+    └── page.php
+```
+<!--
 ```bash
 themes/
 └── pure/
@@ -16,6 +23,7 @@ themes/
     ├── post.php
     └── static.php
 ```
+
 
 ## Name and Description
 The translated name, description, and data of the theme is stored in the `lang/en.json` JSON file.
@@ -45,5 +53,5 @@ The basic information about the theme is stored in the `data.json` JSON file.
     "repo": "@github/repo"
 }
 ```
-
+-->
 
