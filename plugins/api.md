@@ -42,14 +42,11 @@ Default return values.
 
 ### Used hooks/events
 
-|       Hook/Event     |    Execute in   |   Parameters    |   Since   |
-| :------------------: | :-------------: | :-------------: | :-------: |
-|    `api_configure`   |`edit_plugin.php`|                 |  `1.0.0`  |
-| `before_render_func` |  `App::render`  |                 |  `1.0.0`  |
+|       Hook/Event     |     Execute in    |     Parameters     |   Since   |
+| :------------------: | :---------------: | :----------------: | :-------: |
+|        `delete`      |`App::delete_media`|  `(string) $file`  |  `1.0.0`  |
+|        `delete`      |`App::delete_page` |  `(string) $slug`  |  `1.0.0`  |
+|       `setting`      |   `App::admin`    |                    |  `1.0.0`  |
+|        `render`      |   `App::render`   |                    |  `1.0.0`  |
 
-### Created hooks/events
 
-|     Hook/Event      |    Execute in   |    Parameters  | Since |
-| :-----------------: | :-------------: | :------------: | :---: |
-| `on_api_page_delete`| `Api::api_pages`|`(string) $page`|`1.0.0`|
-|`on_api_media_delete`|`Api::api_medias`|`(string) $file`|`1.0.0`|
