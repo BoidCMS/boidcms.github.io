@@ -26,6 +26,7 @@
   - [**Shortcode**](plugins/shortcode)
   - [**Sitemap**](plugins/sitemap)
   - [**Static**](plugins/static)
+  - [**Summernote**](plugins/summernote)
   - [**Users**](plugins/users)
   - [**Visits**](plugins/visits)
 
