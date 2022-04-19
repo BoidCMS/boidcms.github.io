@@ -3,8 +3,14 @@ Plugins in BoidCMS reside in the `plugins` folder, and they have a predefined st
 
 
 ## Folder and Files Structure
-Let's pretend the plugin name is `Example`.
 
+```bash
+plugins/
+└── example/
+    └── example.php
+```
+
+<!--
 ```bash
 plugins/
 └── example/
@@ -14,6 +20,7 @@ plugins/
     ├── data.json
     └── example.php
 ```
+
 
 ## Information
 
@@ -86,3 +93,4 @@ class Example extends App {
 }
 ?>
 ```
+-->
