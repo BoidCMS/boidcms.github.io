@@ -1,7 +1,7 @@
 # Amp
 
-## Used hooks/events
+## Used hooks/actions
 
 |     Hook    |  Execute in  |  Parameters  |  Since  |
 | :---------: | :----------: | :----------: | :-----: |
-|`before_home`| `App::render`|              | `1.0.0` |
+|    `post`   | `App::render`|              | `1.0.0` |
