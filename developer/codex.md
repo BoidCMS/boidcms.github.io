@@ -1,9 +1,8 @@
 # Codex
 
-## BoidCMS Info
+## BoidCMS Version
 
 ```php
-$name = $App->name;
 $version = $App->version;
 ```
 
@@ -32,102 +31,98 @@ echo $App->ip;
 Similar to WordPress `_()` function, `App::_()` method is used to make value modifiable.
 
 ```php
-$value = $App->_('Default value', 'valid_callback');
+$value = $App->_( 'Default value', 'valid_callback' );
 echo $value; // Default value
 
-$App->set_action(function($arg) {
-  return str_replace('Default', 'Modified', $arg);
-}, 'valid_callback');
+// Modifying using actions
+$App->set_action( 'valid_callback', function( $arg ) {
+  return str_replace( 'Default', 'Modified', $arg );
+});
+
 echo $value; // Modified value
 ```
 
 ## Debug logging
-Log message 
+Log a debug message.     
 
 ```php
-
 $type = 'DEBUG';
 $message = 'Debug logging using App::log method.';
-$App->log($message, $type);
-
+$App->log( $message, $type );
 ```
 
 ## Set to database
+Set a single value to database.     
 
 ```php
-
-$key = 'codex';
+$index = 'codex';
 $value = 'Setting to database';
-$App->set($value, $key);
-
+$App->set( $value, $index );
 ```
 
 ## Unset from database
+Remove a value from database.     
 
 ```php
-
-$App->unset('codex');
-
+$App->unset( 'codex' );
 ```
 
 ## Get from database
+Get value from database.     
 
 ```php
-
-echo $App->get('codex');
-
+echo $App->get( 'codex' );
 ```
 
 ## Set a global alert
+Set an alert.     
 
 ```php
 $class = 'success';
 $message = 'Saved Successfully';
-$App->set_alert($message, $class);
+$App->set_alert( $message, $class );
 
 ```
 
 ## Get all global alert
+Get available alerts.    
 
-### With default template
 ```php
-$App->get_alert();
+$App->alerts();
 ```
-
+<!--
 ### With custom template
 
 ```php
 $App->get_alert('<p class="%s">%s</p>');
 ```
+-->
 
-## Set action (hook/event)
+## Set action (hook/action)
+Define a new callable function for modification.     
 
 ```php
-
-$event = 'on_login_error';
-$callback = function($name, $pass) {
-  global $App;
-  $App->log('Trying to login using incorrect details! Username: ' . $name . ', Password: ' . $pass, 'debug');
-};
-$App->set_action($callback, $event);
-
+// Debug a warning for every login failure
+$App->set_action( 'login_error', function( string $username, string $password ): void {
+  $this->log( sprintf( 'Suspicious login detected, Incorrect details: %s, %s', $username, $password ) );
+});
 ``` 
 
-## Unset action (hook/event)
+## Unset action (hook/action)
+Reset the action to empty.     
 
 ```php
 $App->unset_action('action');
 ```
 
-## Get action (hook/event)
+## Get action (hook/action)
+Get action if available.     
 
 ```php
-
 $App->get_action('action');
-
 ```
 
-
+<!--
 ## Save data
 
 ```php
@@ -173,29 +168,34 @@ $pages = $App->pages();
 ```php
 $statics = $App->statics();
 ```
+-->
 
 ## Plugins list
+All plugins.     
 
 ```php
-$plugins = $App->plugins();
+$plugins = $App->plugins;
 ```
 
 ## Themes list
+All themes.      
 
 ```php
-$themes = $App->themes();
+$themes = $App->themes;
 ```
 
 ## Get page info
+Get page values.      
 
 ```php
-$page = $App->page;
-$title = $App->page('title', false, $page);
-$content = $App->page('content', true, $page);
-$status = $App->page('published', false, $page);
-$id = $App->page('id', false, $page);
+$title = $App->page( 'title' );
+$keywords = $App->page( 'keywords' );
+$content = $App->page( 'content' );
+$thumb = $App->page( 'thumb' );
+$date = $App->page( 'date' );
+$pub = $App->page( 'pub' );
 ```
-
+<!--
 ## Parse text    
 Regex: 
 ```regex
@@ -225,11 +225,12 @@ echo $App->parse($parsable); // $2y$10$...
 echo $App->unparse($parsable); // site:password
 
 ```
+-->
 
 ## Check admin login status
 
 ```php
-$status = $App->logged_in();
+$logged_in = $App->logged_in;
 ```
 
 
