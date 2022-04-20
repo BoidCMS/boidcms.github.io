@@ -20,10 +20,10 @@ Short history, Who?, Why? , You can find more [about](about) it...
 - GDPR Compliant...
 [All features](features)
 
-
+<!--
 ## Support
  - [Community](https://github.com/BoidCMS/BoidCMS/discussions)
-
+-->
 
 ## License
 BoidCMS is an open source software [licensed](license) under the GNU General Public License v3.
