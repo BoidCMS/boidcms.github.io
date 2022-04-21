@@ -10,21 +10,21 @@ $version = $App->version;
 The Current Working Directory of the site.
 
 ```php
-echo $App->root;
+$root = $App->root;
 ```
 
 ## Current Page
 The current page user is on.
 
 ```php
-echo $App->page;
+$page = $App->page;
 ```
 
 ## IP Address
 The server ip address, From `$_SERVER` super global.
 
 ```php
-echo $App->ip;
+$ip = $App->ip;
 ```
 
 ## Make value modifiable
@@ -71,7 +71,7 @@ $App->unset( 'codex' );
 Get value from database.     
 
 ```php
-echo $App->get( 'codex' );
+$codex = $App->get( 'codex' );
 ```
 
 ## Set a global alert
@@ -120,6 +120,15 @@ Get action if available.
 
 ```php
 $App->get_action('action');
+```
+
+## Validate token
+Validate token and redirect if not matched.      
+
+```php
+$token = '^hashed&Token$'; // User submitted token
+$location = $this->get( 'admin' ); // Location to redirect when token is invalid
+$App->validate( $token, $location );
 ```
 
 <!--
@@ -193,6 +202,7 @@ $keywords = $App->page( 'keywords' );
 $content = $App->page( 'content' );
 $thumb = $App->page( 'thumb' );
 $date = $App->page( 'date' );
+$nav = $this->page( 'nav' );
 $pub = $App->page( 'pub' );
 ```
 <!--
