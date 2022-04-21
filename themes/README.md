@@ -14,5 +14,7 @@ You can find more themes in this [repo](https://github.com/BoidCMS/themes).
 - Visit `Admin > Themes`, Upload the compressed zip file.-->
 
 ## How to activate a theme
-- Visit `Admin > Themes`.
-- Look for the theme in the list, and click on `Install`.
+- Visit `Admin panel`.
+- Navigate to `Settings`.
+- Look for the theme in the list and select.
+- Click on `Save changes`.
