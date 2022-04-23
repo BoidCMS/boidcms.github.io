@@ -30,5 +30,11 @@ And here is the list of all.
 |    Hook/Action    |      Execute in     |  Parameters  |  Since  |
 | :---------------: | :-----------------: | :----------: | :-----: |
 |    `admin_head`   |   `app/layout.php`  |              | `1.0.0` |
+|     `admin_nav`   |   `app/layout.php`  |              | `1.0.0` |
+|   `admin_middle`  |   `app/layout.php`  |              | `1.0.0` |
 |     `admin_top`   |   `app/layout.php`  |              | `1.0.0` |
 |     `admin_end`   |   `app/layout.php`  |              | `1.0.0` |
+
+
+
+
