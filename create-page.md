@@ -1,5 +1,5 @@
 # Create new post or page
-Log in into the `Admin panel`, And click on `Create`.
+Log in into the `Admin panel`, navigate to `Create`.
 
 <!-- Upload image -->
 - Select type `required`
