@@ -2,6 +2,11 @@
   - [**Install**](install)
   - [**Features**](features)
 
+- [**Posts and Pages**](pages/)
+  - [**Create**](pages/create)
+  - [**Update**](pages/update)
+  - [**Delete**](pages/delete)
+
 - [**Plugins**](plugins/)
   - [**Amp**](plugins/amp)
   - [**Api**](plugins/api)
