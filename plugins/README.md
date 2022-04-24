@@ -17,6 +17,7 @@ You can download additional plugins on this [repo](https://github.com/BoidCMS/pl
 
 ## How to activate and configure a plugin
 - Visit `Admin panel`.
+- Navigate to `Plugins`.
 - Look for the plugin in the list and click `Install`.
 
 Most of the plugins allow some configurations when clicking `Settings`.
