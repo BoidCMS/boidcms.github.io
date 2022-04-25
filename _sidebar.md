@@ -20,6 +20,7 @@
   - [**Goto**](plugins/goto)
   - [**Maintenance**](plugins/maintenance)
   - [**Markdown**](plugins/markdown)
+  - [**Media**](plugins/media)
   - [**PWA**](plugins/pwa)
   - [**Quilljs**](plugins/quilljs)
   - [**Recycle**](plugins/recycle)
