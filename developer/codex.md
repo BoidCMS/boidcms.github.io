@@ -193,6 +193,13 @@ All themes.
 $themes = $App->themes;
 ```
 
+## Medias list
+All uploaded files.     
+
+```php
+$medias = $App->medias;
+```
+
 ## Get page info
 Get page values.      
 
