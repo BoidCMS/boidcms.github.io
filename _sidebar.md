@@ -1,4 +1,4 @@
-- [**Getting Started**]()
+- # Getting Started
   - [**Install**](install)
   - [**Features**](features)
 
@@ -26,6 +26,7 @@
   - [**Recycle**](plugins/recycle)
   - [**Remember**](plugins/remember)
   - [**Robots**](plugins/robots)
+  - [**RSS**](plugins/rss)
   - [**Schedule**](plugins/schedule)
   - [**Search**](plugins/search)
   - [**Security**](plugins/security)
@@ -33,6 +34,7 @@
   - [**Sitemap**](plugins/sitemap)
   - [**Static**](plugins/static)
   - [**Summernote**](plugins/summernote)
+  - [**Tags**](plugins/tags)
   - [**Users**](plugins/users)
   - [**Visits**](plugins/visits)
 
