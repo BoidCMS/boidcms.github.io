@@ -10,7 +10,7 @@ Log in into the `Admin panel`, navigate to `Create`.
 - Write description 
 <!-- Write categories -->
 - Write the content `required`
-- Write thumbnail
+- Choose thumbnail
 - Choose date `required`
 - Choose navigation bar 
 - Select publish 
