@@ -9,6 +9,7 @@
 
 - [**Plugins**](plugins/)
   - [**Amp**](plugins/amp)
+  - [**Analytics**](plugins/analytics)
   - [**Api**](plugins/api)
   - [**Backup**](plugins/backup)
   - [**Category**](plugins/category)
