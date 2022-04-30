@@ -5,7 +5,7 @@
 > Developed using PHP and JSON, Ready to power your websites.
 
 - Simple, fast and secured
-- Super extendable
+- Super extensible
 
 [GitHub](https://github.com/BoidCMS/BoidCMS/)
 [Get Started](#boidcms)
