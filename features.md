@@ -3,8 +3,9 @@
 - Free and open source
 - Simple and easy to navigate Admin dashboard
 - Themes and Plugins support
+- Super extensible
+- CSRF Authentication
 - Custom admin URI
 - File Manager
 - SEO Friendly
 - GDPR Compliant
-- CSRF Token
