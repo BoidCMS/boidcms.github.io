@@ -28,7 +28,7 @@ $ip = $App->ip;
 ```
 
 ## Make value modifiable
-Similar to WordPress `_()` function, `App::_()` method is used to make value modifiable.
+Similar to WordPress `__()` function, `App::_()` method is used to translate and/or modify value.
 
 ```php
 $value = $App->_( 'Default value', 'valid_callback' );
