@@ -1,5 +1,5 @@
 # `App::log()` Method
-
+Message debugging.     
 
 ```php
 /**
@@ -19,4 +19,8 @@ public function log( string $message, string $type = 'debug' ): bool {
 ## Parameters
 
 ### `$message`
+Text message to debug.       
+**Type**: `string ( required )`
 ### `$type`
+The type of debugging, eg `warning`, `fatal`.      
+**Type**: `string ( optional )`
