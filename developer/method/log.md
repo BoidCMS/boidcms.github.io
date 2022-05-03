@@ -24,3 +24,8 @@ Text message to debug.
 ### `$type`
 The type of debugging, eg `warning`, `fatal`.      
 **Type**: `string ( optional )`
+
+
+## Related
+
+### [`App::get_action()`](/method/get_action)
