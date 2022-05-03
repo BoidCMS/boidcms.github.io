@@ -28,4 +28,4 @@ The type of debugging, eg `warning`, `fatal`.
 
 ## Related
 
-### [`App::get_action()`](/method/get_action)
+### [`App::get_action()`](/developer/method/get_action)
