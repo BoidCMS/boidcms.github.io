@@ -9,11 +9,11 @@ Log in into the `Admin panel`, navigate to `Create`.
 - Write keywords 
 - Write description 
 <!-- Write categories -->
-- Write the content `required`
+- Write the content
 - Choose thumbnail
 - Choose date `required`
-- Choose navigation bar 
-- Select publish 
+- Choose navigation bar `required`
+- Select publish `required`
 - Click on Create 
 - Done!
 
