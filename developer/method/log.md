@@ -8,12 +8,7 @@ Message debugging.
  * @param string $type
  * @return bool
  */
-public function log( string $message, string $type = 'debug' ): bool {
-  $this->get_action( 'log', $message, $type );
-  if ( ! $this->get( 'log' ) ) {
-    return false;
-  }
-}
+public function log( string $message, string $type = 'debug' ): bool
 ```
 
 ## Parameters
@@ -21,6 +16,7 @@ public function log( string $message, string $type = 'debug' ): bool {
 ### `$message`
 Text message to debug.       
 **Type**: `string ( required )`
+
 ### `$type`
 The type of debugging, eg `warning`, `fatal`.      
 **Type**: `string ( optional )`
