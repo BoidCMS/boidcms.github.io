@@ -1,4 +1,4 @@
-# BoidCMS
+# What is it
 BoidCMS - The free and open source simple, fast, and secured cms to build modern websites at ease.
 
 BoidCMS is a flat file CMS, meaning it uses a JSON file as a database.     
