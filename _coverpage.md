@@ -8,4 +8,4 @@
 
 [Demo](demo)     
 [GitHub](https://github.com/BoidCMS/BoidCMS/)     
-[Download v1.0 <sup>15KB</sup>](#boidcms)
+[Download <small>v1.0 <sup>15KB</sup></small>](#download)
