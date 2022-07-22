@@ -35,7 +35,19 @@
       coverpage: true,
       auto2top: true,
       themeColor: '#00bcd4',
-      plugins: [EditOnGithubPlugin.create('https://github.com/BoidCMS/boidcms.github.io/blob/master/', null, 'Edit on github')]
+      plugins: [
+        //EditOnGithubPlugin.create('https://github.com/BoidCMS/boidcms.github.io/blob/master/', null, 'Edit on github'),
+        function(hook, vm) {
+            hook.beforeEach(function(html) {
+              var editHtml = '[:memo: Edit Document](' + url + ')\n';
+              return (
+                editHtml +
+                html //+
+                //'\n\n----\n\n' +
+                //'<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
+              );
+            })
+      ],
     };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
