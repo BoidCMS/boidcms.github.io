@@ -6,6 +6,6 @@
 
 - Simple, fast, super extensible
 
-[GitHub](https://github.com/BoidCMS/BoidCMS/)
-[Get Started](#boidcms)
 [Demo](demo)
+[GitHub](https://github.com/BoidCMS/BoidCMS/)
+[Download v1.0<small>15KB</small>](#boidcms)
