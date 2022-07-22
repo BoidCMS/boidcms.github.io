@@ -7,4 +7,5 @@
 - Simple, fast, super extensible
 
 [Demo](demo)
+[Get Started](#boidcms)
 [GitHub](https://github.com/BoidCMS/BoidCMS/)
