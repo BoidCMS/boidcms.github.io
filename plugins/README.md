@@ -4,16 +4,9 @@ You can download additional plugins [here](https://github.com/BoidCMS).
 
 ## How to install a plugin
 
-<!-- ### FTP -->
 - Download the zip file of the plugin.
 - Uncompress the zip file.
 - Copy the plugin folder into the folder `/plugins/` on the server.
-
-<!--
-### Admin Upload
-- Download the zip file of the plugin.
-- Visit `Admin > Plugins`, Upload the compressed zip file.
--->
 
 ## How to activate and configure a plugin
 - Visit `Admin panel`.
