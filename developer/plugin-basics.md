@@ -58,4 +58,3 @@ function example_shut( string $plugin ): void {
 }
 ?>
 ```
--->
