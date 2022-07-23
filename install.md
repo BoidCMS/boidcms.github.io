@@ -1,12 +1,5 @@
-<!--
----
-title: Getting Started
-date: 2021-09-15 00:42:34 -0700
-slug: install
----
--->
 ## Installation from zip file
-- Download the latest version from the official repo.
+- Download the latest version from the [official repo](https://github.com/BoidCMS/BoidCMS).
 - Extract the zip file.
 - Upload the extracted content to your server or hosting. You can upload the files in the root directory, or in a subdirectory such as `/site/`.
 - To upload the files, use an FTP client, WebFTP, or some tool provided by your hosting company.
@@ -15,7 +8,7 @@ slug: install
 
 
 ## PHP Built-In web server
-You can run BoidCMS quickly via the command line with the PHP Built-in web server.
+You can run BoidCMS quickly via the command line with the PHP Built-in web server and the plugin [Localhost](https://github.com/BoidCMS/localhost).
 
 ```bash
 git clone https://github.com/BoidCMS/BoidCMS boidcms
