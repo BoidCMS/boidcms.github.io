@@ -1,6 +1,6 @@
 # Plugins
 BoidCMS supports plugins to extend its functionality.     
-You can download additional plugins on this [repo](https://github.com/BoidCMS/plugins).
+You can download additional plugins [here](https://github.com/BoidCMS).
 
 ## How to install a plugin
 
