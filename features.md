@@ -8,4 +8,5 @@
 - Custom admin URI
 - File Manager
 - SEO Friendly
+- Content type
 - GDPR Compliant
