@@ -5,53 +5,58 @@ All themes reside in the `themes` folder, And they have a predefined structure.
 ## Folder and Files Structure
 This is the folder and the most required files structure for themes.     
 
-```bash
+```plain
 themes/
 └── example/
     ├── home.php
     └── theme.php
 ```
-<!--
-```bash
-themes/
-└── pure/
-    ├── lang/
-    │   └── en.json
-    ├── data.json
-    ├── home.php
-    ├── page.php
-    ├── post.php
-    └── static.php
+
+
+## Theme code example
+
+### home.php
+
+```
+<?php global $App ?>
+<!DOCTYPE html>
+<html lang="<?= $App->get( 'lang' ) ?>">
+  <head>
+    <title><?= $App->get( 'title' ) ?></title>
+  </head>
+  <body>
+    <h1>Posts</h1>
+    <?php foreach ( $App->data()[ 'pages' ] as $page ): ?>
+      <?php if ( 'post' === $page[ 'type' ] ): ?>
+        <section>
+          <h2><?= $page[ 'title' ] ?></h2>
+          <p><?= $page[ 'descr' ] ?></p>
+        </section>
+      <?php endif ?>
+    <?php endforeach ?>
+  </body>
+</html>
+```
+
+### theme.php
+
+```
+<?php global $App ?>
+<!DOCTYPE html>
+<html lang="<?= $App->get( 'lang' ) ?>">
+  <head>
+    <title><?= $App->page( 'title' ) ?></title>
+  </head>
+  <body>
+    <h1><?= $App->page( 'title' ) ?></h1>
+    <div><?= $App->page( 'content' ) ?></div>
+  </body>
+</html>
 ```
 
 
-## Name and Description
-The translated name, description, and data of the theme is stored in the `lang/en.json` JSON file.
 
-```json
-{
-    "pure": {
-        "name": "Pure",
-        "description": "To change the appearance of your site with pure style."
-    }
-}
-```
 
-## Information
-The basic information about the theme is stored in the `data.json` JSON file.
 
-```json
-{
-    "name": "Pure",
-    "email": "boidcms@gmail.com",
-    "author": "Shoaiyb Sysa",
-    "website": "https:\/\/boidcms.github.io",
-    "compatible": "1.0.0",
-    "license": "GPLV3",
-    "version": "1.0.0",
-    "notes": "Theme notes <b>could be html<\/b> (To be displayed to the admin)",
-    "repo": "@github/repo"
-}
-```
--->
+
 
