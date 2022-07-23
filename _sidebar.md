@@ -7,6 +7,10 @@
   - [Update](pages/update)
   - [Delete](pages/delete)
 
+- Media
+  - [Upload](media/upload)
+  - [Delete](media/delete)
+
 - Plugins
   - [Install](plugins/)
 
