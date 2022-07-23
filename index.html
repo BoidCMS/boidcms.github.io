@@ -21,7 +21,7 @@
   </script>
 </head>
 <body>
-  <div id="app" onload="editInit();">Loading...</div>
+  <div id="app">Loading...</div>
   <script type="text/javascript">
     window.$docsify = {
       el: "#app",
@@ -43,13 +43,14 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script type="text/javascript">
-    function editInit() {
+    (function editInit() {
       var el, url, text;
       el = document.getElementById( 'app' );
-      url = window.location.hash.substring(1);
+      url = 'https://github.com/BoidCMS/boidcms.github.io/blob/master/';
+      url += window.location.hash.substring(1) + '.md';
       text = '[:memo: Edit Document](' + url + ')\n';
       el.innerHTML += text;
-    }
+    })();
   </script>
 </body>
 </html>
