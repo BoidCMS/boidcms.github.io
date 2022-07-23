@@ -21,7 +21,7 @@
 - Developers
   - [Plugin Basics](developer/plugin-basics)
   - [Theme Basics](developer/theme-basics)
-  - [Code Example](developer/codex)
+  - [Code Reference](developer/reference)
   - [Actions List](developer/actions)
 
 - [Changelog](changelog.md)
