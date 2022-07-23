@@ -17,7 +17,7 @@ themes/
 
 ### home.php
 
-```
+```php
 <?php global $App ?>
 <!DOCTYPE html>
 <html lang="<?= $App->get( 'lang' ) ?>">
@@ -40,7 +40,7 @@ themes/
 
 ### theme.php
 
-```
+```php
 <?php global $App ?>
 <!DOCTYPE html>
 <html lang="<?= $App->get( 'lang' ) ?>">
