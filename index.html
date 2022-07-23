@@ -21,7 +21,7 @@
   </script>
 </head>
 <body>
-  <div id="app">Loading...</div>
+  <div id="app">Loading...<br id="edit"></div>
   <script type="text/javascript">
     window.$docsify = {
       el: "#app",
@@ -45,7 +45,7 @@
   <script type="text/javascript">
     (function editInit() {
       var el, url, text;
-      el = document.getElementById( 'app' );
+      el = document.getElementById( 'edit' );
       url = 'https://github.com/BoidCMS/boidcms.github.io/blob/master/';
       url += window.location.hash.substring(1) + '.md';
       text = '[:memo: Edit Document](' + url + ')\n';
