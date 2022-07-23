@@ -1,6 +1,6 @@
 # Themes
 BoidCMS supports themes to change the appearance of your site.     
-You can find more themes in this [repo](https://github.com/BoidCMS/themes).
+You can find more themes in [here](https://github.com/BoidCMS).
 
 ## How to install a theme
 
