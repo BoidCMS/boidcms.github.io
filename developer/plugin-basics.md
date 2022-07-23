@@ -39,7 +39,7 @@ $App->set_action( 'uninstall', 'example_shut' );
 function example_init( string $plugin ): void {
   global $App;
   if ( 'example' === $plugin ) {
-    $msg = 'Example plugin installed.;
+    $msg = 'Example plugin installed.';
     $App->log( $msg );
   }
 }
@@ -52,7 +52,7 @@ function example_init( string $plugin ): void {
 function example_shut( string $plugin ): void {
   global $App;
   if ( 'example' === $plugin ) {
-    $msg = 'Example plugin uninstalled.;
+    $msg = 'Example plugin uninstalled.';
     $App->log( $msg );
   }
 }
