@@ -2,7 +2,7 @@
 
 # BoidCMS <small>v1.0.0 <sup>20KB</sup></small>
 
-> Developed using PHP and JSON, Ready to power your websites.
+> Developed using PHP and JSON, Ready to power your simple websites.
 
 - Simple, fast, super extensible
 
