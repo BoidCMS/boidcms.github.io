@@ -4,6 +4,7 @@
   - [Database Structure](database)
 
 - Posts and Pages
+  - [Types](pages/types)
   - [Create](pages/create)
   - [Update](pages/update)
   - [Delete](pages/delete)
