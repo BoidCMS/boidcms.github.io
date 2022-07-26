@@ -1,6 +1,7 @@
 - Getting Started
   - [Install](install)
   - [Features](features)
+  - [Database Structure](database)
 
 - Posts and Pages
   - [Create](pages/create)
