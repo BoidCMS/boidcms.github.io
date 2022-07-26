@@ -1,7 +1,6 @@
 - Getting Started
   - [Install](install)
   - [Features](features)
-  - [Database Structure](database)
 
 - Posts and Pages
   - [Types](pages/types)
@@ -21,6 +20,7 @@
 
 
 - Developers
+  - [Database Structure](database)
   - [Plugin Basics](developer/plugin-basics)
   - [Theme Basics](developer/theme-basics)
   - [Code Reference](developer/reference)
