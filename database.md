@@ -8,10 +8,10 @@
         "keywords": "BoidCMS, Keywords, for, seo",
         "subtitle": "Simple, fast, super extensible.",
         "descr": "Simple, fast, super extensible CMS to build simple websites at ease.",
-        "url": "http:\/\/localhost:8080\/BoidCMS\/",
+        "url": "http:\/\/example.com\/",
         "email": "mail@example.com",
         "username": "admin",
-        "password": "$2y$10$sfEYRkhjKkvQaL1N4VhaaOCM5Fp9eBDoZwsMHrK698KyJh\/x4AkCu",
+        "password": "$2y$10$...",
         "footer": "Copyright &copy; 2022",
         "theme": "visual",
         "admin": "admin"
