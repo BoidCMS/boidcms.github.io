@@ -26,4 +26,5 @@
   - [Code Reference](developer/reference)
   - [Actions List](developer/actions)
 
-- [Changelog](changelog.md)
+- [Changelog](changelog)
+- [Showcase](showcase)
