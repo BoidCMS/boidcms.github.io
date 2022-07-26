@@ -1,4 +1,7 @@
 # Create new post or page
+
+![Create page](https://boidcms.github.io/_media/create.png)
+
 Log in into the `Admin panel`, navigate to `Create`.
 
 - Select type
@@ -9,8 +12,8 @@ Log in into the `Admin panel`, navigate to `Create`.
 - Choose thumbnail
 - Choose date `required`
 - Select publish
-- Click on Create 
+- Click on `Create`
 - Done!
 
 
-By default, BoidCMS doesn't include any content editor, but you can use [plugins](plugins/) such as [Summernote](plugins/summernote).
+By default, BoidCMS doesn't include any content editor, but you can use [plugins](plugins/) such as [Summernote](https://github.com/BoidCMS/summernote).
