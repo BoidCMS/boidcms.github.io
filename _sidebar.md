@@ -20,6 +20,7 @@
 
 
 - Developers
+  - [Folder Structure](folder)
   - [Database Structure](database)
   - [Plugin Basics](developer/plugin-basics)
   - [Theme Basics](developer/theme-basics)
