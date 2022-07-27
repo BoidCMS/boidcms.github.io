@@ -21,7 +21,11 @@
             "type": "page",
             "title": "Not Found",
             "descr": "404 Page Not Found",
-            "content": "<p>It looks like nothing was found at this location.<\/p>"
+            "keywords": "404",
+            "content": "<p>It looks like nothing was found at this location.<\/p>",
+            "thumb": "",
+            "date": "",
+            "pub": true
         },
         "hello-world": {
             "type": "post",
