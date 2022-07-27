@@ -11,7 +11,7 @@ The default admin login page is `admin`, append `admin` at the end of your site'
 While the default username and password are `admin` and `password` respectively, **Changing the login details is highly encouraged** for additional security.
 
 ## PHP Built-In web server
-You can run BoidCMS quickly via the command line with the PHP Built-in web server and the plugin [Localhost](https://github.com/BoidCMS/localhost).
+You can run BoidCMS quickly via the command line with the PHP Built-in web server. <!--and the plugin [Localhost](https://github.com/BoidCMS/localhost).-->
 
 ```bash
 git clone https://github.com/BoidCMS/BoidCMS boidcms
