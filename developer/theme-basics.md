@@ -25,13 +25,15 @@ themes/
     <title><?= $App->get( 'title' ) ?></title>
   </head>
   <body>
-    <h1>Posts</h1>
+    <h1>Published Posts</h1>
     <?php foreach ( $App->data()[ 'pages' ] as $page ): ?>
       <?php if ( 'post' === $page[ 'type' ] ): ?>
+        <?php if ( $page[ 'pub' ] ): ?>
         <section>
           <h2><?= $page[ 'title' ] ?></h2>
           <p><?= $page[ 'descr' ] ?></p>
         </section>
+        <?php endif ?>
       <?php endif ?>
     <?php endforeach ?>
   </body>
