@@ -9,6 +9,7 @@
   - [Delete](pages/delete)
 
 - Media
+  - [Allowed MIME](media/allowed)
   - [Upload](media/upload)
   - [Delete](media/delete)
 
