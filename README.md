@@ -1,5 +1,6 @@
 # What is it
-BoidCMS is a flat file CMS, which means it uses a JSON file as a database.     
+BoidCMS is a free and open-source flat file CMS for building simple websites and blogs in seconds, developed using PHP and uses JSON as a database.
+
 It's installed without configuring or installing any relational database like MySQL.
 You only need a web server with PHP support and voilà.
 
