@@ -37,13 +37,13 @@
       auto2top: true,
       themeColor: '#00bcd4',
       notFoundPage: true,
-      formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
+      formatUpdated: '{YYYY}/{MM}/{DD}',
       plugins: [
         function(hook, vm) {
           hook.beforeEach(function(html) {
             var url = 'https://github.com/BoidCMS/boidcms.github.io/blob/master/' + vm.route.file;
-            var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n';
-            return ( editHtml + html + '\n----\n' + 'Last modified {docsify-updated}' + editHtml );
+            var editHtml = '[📝 Edit Document](' + url + ')\n';
+            return ( editHtml + html + '\n----\n' + 'Last modified {docsify-updated}' );
           });
         }
       ]
