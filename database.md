@@ -12,7 +12,7 @@
         "email": "mail@example.com",
         "username": "admin",
         "password": "$2y$10$...",
-        "footer": "Copyright &copy; 2022",
+        "footer": "Copyright &copy; 1970",
         "theme": "visual",
         "admin": "admin"
     },
@@ -34,7 +34,7 @@
             "keywords": "BoidCMS, Keywords, for, seo",
             "content": "<h1>Welcome to BoidCMS!<\/h1><p>This is a sample post, login now to edit or delete it.<\/p><p>Have fun! :)<\/p>",
             "thumb": "",
-            "date": "2022-07-26T07:58:28",
+            "date": "1970-01-01T00:00:00",
             "pub": true
         }
     },
