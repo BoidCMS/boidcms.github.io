@@ -1,0 +1,22 @@
+{
+  "background_color": "#ffffff",
+  "description": "BoidCMS is a free and open-source flat file CMS for building simple websites and blogs in seconds, developed using PHP and uses JSON as a database.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "BoidCMS",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "BoidCMS",
+  "start_url": "/",
+  "theme_color": "#00bcd4",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "/_media/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "shortcuts": []
+}
