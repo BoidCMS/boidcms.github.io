@@ -15,7 +15,7 @@ You should not edit any file in this folder, write custom plugin or add `functio
 
 ## `data/`
 This folder is created during the first time visit to the website, it is used to store the database file `database.json` and `debug.log` file.      
-This folder is protected by default, plugins can use this folder to store sensitive data.     
+**This folder is protected** by default, developers should use this folder to store data.     
 
 
 ## `media/`
