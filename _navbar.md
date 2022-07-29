@@ -1,4 +1,0 @@
-- Translations
-  - [:uk: English](/)
-  - [:es: Español](/es/)
-  - [:ar: عربى](/ar/)
