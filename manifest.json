@@ -16,6 +16,11 @@
       "src": "/_media/logo.svg",
       "type": "image/svg+xml",
       "sizes": "any"
+    },
+    {
+      "src": "/_media/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "shortcuts": []
