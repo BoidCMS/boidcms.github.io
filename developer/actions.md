@@ -12,10 +12,12 @@ Here is the list of all actions.
 |      `create_page`   |`App::create_page`|  `(string) $slug, (array) $details`|  `1.0.0` |
 |      `update_page`   |`App::update_page`| `(string) $slug, (string) $permalink, (array) $updates`|  `1.0.0` |
 |      `delete_page`   |`App::delete_page`|           `(string) $slug`         |  `1.0.0` |
+|      `media_mime`    |`App::upload_media`|                                   |  `1.0.0` |
 |     `upload_media`   |`App::upload_media`|   `(?string) &$basename, &$msg`   |  `1.0.0` |
 |     `delete_media`   |`App::delete_media`|         `(string) $media`         |  `1.0.0` |
 |       `install`      |  `App::install`  |        `(string) $plugin`          |  `1.0.0` |
 |      `uninstall`     | `App::uninstall` |        `(string) $plugin`          |  `1.0.0` |
+|      `slug_taken`    |  `App::slugify`  |                                    |  `1.0.0` |
 |          `go`        |     `App::go`    |       `(string) $location`         |  `1.0.0` |
 |     `token_error`    |    `App::auth`   |         `(string) $token`          |  `1.0.0` |
 |         `login`      |   `App::admin`   |                                    |  `1.0.0` |
@@ -25,6 +27,7 @@ Here is the list of all actions.
 |     `login_error`    |   `App::admin`   |  `(string) $username, $password`   |  `1.0.0` |
 |        `admin`       |   `App::admin`   |                                    |  `1.0.0` |
 |         `type`       |   `App::admin`   |                                    |  `1.0.0` |
+|      `thumb_ext`     |   `App::admin`   |                                    |  `1.0.0` |
 |      `on_create`     |   `App::admin`   |                                    |  `1.0.0` |
 |    `create_success`  |   `App::admin`   |       `(string) $permalink`        |  `1.0.0` |
 |     `create_error`   |   `App::admin`   |`(string) $permalink, (array) $_POST`|  `1.0.0` |
