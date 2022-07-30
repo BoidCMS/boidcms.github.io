@@ -13,4 +13,4 @@ You can download additional plugins [here](https://github.com/BoidCMS).
 - Navigate to `Plugins`.
 - Look for the plugin in the list and click `Install`.
 
-Most of the plugins allow some configurations when clicking `Configure`.
+Some of the plugins allow some configurations when clicking `Configure`.
