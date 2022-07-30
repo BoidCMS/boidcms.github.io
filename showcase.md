@@ -5,7 +5,9 @@
 
 ## Submit
 
-<form action="https://formspree.io/f/xqknrogy" method="POST">
+https://github.com/BoidCMS/BoidCMS/discussions/categories/showcase
+
+<!--form action="https://formspree.io/f/xqknrogy" method="POST">
   <label>
     Site Title:
     <input type="text" name="title" required>
@@ -16,4 +18,4 @@
   </label>
   <!-- your other form fields go here -->
   <button type="submit">Submit</button>
-</form>
+</form-->
