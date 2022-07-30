@@ -16,6 +16,5 @@ https://github.com/BoidCMS/BoidCMS/discussions/categories/showcase
     Site URL:
     <input type="url" name="url" required>
   </label>
-  <!-- your other form fields go here -->
   <button type="submit">Submit</button>
 </form-->
