@@ -59,7 +59,7 @@ Here is the list of all actions.
 |      `rendered`      |   `App::render`  |                                    |  `1.0.0` |
 
 
-## Admin theme
+## Admin view
 
 |       Action      |      Execute in     |  Parameters  |  Since  |
 | :---------------: | :-----------------: | :----------: | :-----: |
