@@ -9,7 +9,7 @@ Log in into the `Admin panel`, navigate to `Create`.
 - Write keywords 
 - Write description 
 - Write the content
-- Choose thumbnail
+- Choose [thumbnail](media/upload)
 - Choose date `required`
 - Select publish
 - Click on `Create`
