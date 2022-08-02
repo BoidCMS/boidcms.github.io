@@ -23,9 +23,8 @@ The Example plugin code below must be in the `plugin.php` file.
  * @package BoidCMS
  * @subpackage Plugin_Example
  * @author Author Name
- * @license GPLV3
- * @version 1.0
-*/
+ * @version 1.0.0
+ */
 
 global $App;
 $App->set_action( 'install', 'example_init' );
