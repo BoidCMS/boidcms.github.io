@@ -1,5 +1,6 @@
 - Getting Started
   - [Install](install)
+  - [Upgrade](upgrade)
   - [Features](features)
 
 - Posts and Pages
