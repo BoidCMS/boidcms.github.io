@@ -19,13 +19,13 @@
 
 - Themes
   - [Install](themes/)
-  - [Theme Tags](themes/tags)
 
 - Developers
   - [Folder Structure](folder)
   - [Database Structure](database)
   - [Plugin Basics](developer/plugin-basics)
-  - [Theme Basics](developer/theme-basics) <!--  - [Code Reference](developer/reference)-->
+  - [Theme Basics](developer/theme-basics) 
+  - [Theme Tags](themes/tags) <!--  - [Code Reference](developer/reference)-->
   - [Actions List](developer/actions)
 
 - [Changelog](changelog)
