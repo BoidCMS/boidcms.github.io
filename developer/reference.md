@@ -1,5 +1,14 @@
 # Code Reference
 
+
+## Constants
+
+#### [App](developer/constant/app)
+
+## Variables
+
+#### [$App](developer/variable/app)
+
 ## Properties
 
 #### [`App::root`](developer/property/root)
