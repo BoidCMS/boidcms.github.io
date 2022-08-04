@@ -19,7 +19,7 @@
 
 - Themes
   - [Install](themes/)
-
+  - [Theme Tags](themes/tags)
 
 - Developers
   - [Folder Structure](folder)
