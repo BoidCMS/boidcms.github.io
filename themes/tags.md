@@ -116,7 +116,7 @@
 ### Publish
 
 ```php
-<?php echo $App->page( 'pub' ) ?>
+<?php $App->page( 'pub' ) ?>
 ```
 
 
