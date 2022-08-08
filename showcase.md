@@ -1,9 +1,10 @@
-# BoidCMS Website Showcase
+# BoidCMS Websites Showcase
 
 - [BoidCMS Demo](https://boidcms.alwaysdata.net)
 - [Another Demo](https://shoaiyb.alwaysdata.net)
+- [CMSLab](https://cmslab.se/)
 
-## Submit
+## Share
 
 https://github.com/BoidCMS/BoidCMS/discussions/categories/showcase
 
