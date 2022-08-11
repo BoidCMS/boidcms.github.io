@@ -45,6 +45,7 @@
           hook.beforeEach(function(html) {
             var url = 'https://github.com/BoidCMS/boidcms.github.io/blob/master/' + vm.route.file;
             var editHtml = '[📝 Edit Document](' + url + ')\n';
+            editHtml += '\n<div id="google_translate_element"></div>\n';
             return ( editHtml + '\n' + html + '\n----\n' + 'Last modified {docsify-updated}' );
           });
         }
@@ -54,5 +55,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}</script>
 </body>
 </html>
