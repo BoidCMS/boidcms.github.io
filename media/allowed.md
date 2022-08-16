@@ -1,5 +1,5 @@
 # Allowed mime types
-Here is a list of allowed mime types by default for files upload, custom mime types can always be added using `media_mime` action.      
+Here is a list of allowed mime types by default for files upload, custom mime types can always be added using `media_mime` [action](https://boidcms.github.io/#/developer/actions?id=core).      
 
 ```plain
 application/json
