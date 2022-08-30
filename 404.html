@@ -1,3 +1,58 @@
-# 404 - Not Found
-
-This page does not exist yet, help <a href="https://github.com/BoidCMS/boidcms.github.io">create it</a>.       
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="google-site-verification" content="pyiboKa0F2bKVJjc1W7mgi7ux-Z3_75ExVAvjQegqHc">
+  <meta name="keywords" content="BoidCMS, CMS, Flat-file database, Lite CMS, Simple, Fast, Super, Extensible, Site builder, Blog builder">
+  <meta name="theme-color" content="#00bcd4">
+  <link rel="icon" sizes="any" type="image/svg+xml" href="/_media/logo.svg">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <link rel="manifest" href="/manifest.json">
+  <title>Simple, fast, super extensible - BoidCMS</title>
+  <style type="text/css">
+    nav.app-nav li ul {
+      min-width: 100px;
+    }
+  </style>
+  <script type="text/javascript">
+    if(typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('/sw.js')
+    }
+  </script>
+</head>
+<body>
+  <div id="404">This page does not exist.</div>
+  <script type="text/javascript">
+    window.$docsify = {
+      el: "#app",
+      name: 'BoidCMS',
+      logo: '_media/logo.svg',
+      repo: 'BoidCMS/BoidCMS',
+      maxLevel: 4,
+      subMaxLevel: 2,
+      loadNavBar: true,
+      loadSidebar: true,
+      mergeNavbar: true,
+      coverpage: true,
+      auto2top: true,
+      themeColor: '#00bcd4',
+      notFoundPage: true,
+      formatUpdated: '{YYYY}/{MM}/{DD}',
+      plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function(html) {
+            var url = 'https://github.com/BoidCMS/boidcms.github.io/blob/master/' + vm.route.file;
+            var editHtml = '[📝 Edit This Page](' + url + ')\n';
+            return ( editHtml + '\n' + html + '\n----\n' + 'Last modified {docsify-updated}' );
+          });
+        }
+      ]
+    };
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+</body>
+</html>
