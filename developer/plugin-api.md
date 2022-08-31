@@ -1,15 +1,17 @@
 # Plugins API
+See [what actions are](/#/developer/actions).
 
-
-## Action
+## Events
 
 ### Set
 ```php
 <?php
 
-$App->set_action( 'action', 'my_event_callback_function' );
+$App->set_action( 'event_unique_id', 'my_event_callback_function' );
 
 function my_event_callback_function() {
+  // Do stuff...
+  // Not necessary to return value
   echo 'My text.';
 }
 
@@ -50,8 +52,11 @@ $filtered = $App->_( 'Value' ); // Default unique id: default
 $App->set_action( 'filter_unique_id', 'my_filter_callback_function' );
 
 function my_filter_callback_function( $value ) {
+  // Do stuff, like
+  $modified = str_replace( 'Default', 'Filtered', $value );
+
   // Must always return value
-  return str_replace( 'Default', 'Filtered', $value );
+  return $modified;
 }
 ?>
 ```
