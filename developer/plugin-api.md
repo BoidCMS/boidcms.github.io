@@ -7,9 +7,9 @@
 ```php
 <?php
 
-$App->set_action( 'action', 'my_callback_action' );
+$App->set_action( 'action', 'my_event_callback_function' );
 
-function my_callback_action() {
+function my_event_callback_function() {
   echo 'My text.';
 }
 
@@ -35,7 +35,9 @@ $App->get_action( 'action' );
 ```php
 <?php
 
-$filtered = $App->_( 'Value' );
+$filtered = $App->filter( 'Value', 'filter_unique_id' );
+// Or just
+$filtered = $App->_( 'Value' ); // Default unique id: default
 
 ?>
 ```
@@ -45,9 +47,10 @@ $filtered = $App->_( 'Value' );
 ```php
 <?php
 
-$App->set_action( 'action', 'my_filter_action' );
+$App->set_action( 'filter_unique_id', 'my_filter_callback_function' );
 
-function my_filter_action( $value ) {
+function my_filter_callback_function( $value ) {
+  // Must always return value
   return str_replace( 'Default', 'Filtered', $value );
 }
 ?>
