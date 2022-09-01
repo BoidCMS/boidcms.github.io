@@ -100,8 +100,8 @@ Here is the list of all actions.
 | `site_under_title`  |                     |                | `1.0.0` |
 |      `page_end`     |                     |                | `1.0.0` |
 
+?> Not all themes might support the actions listed above.
 
-<!--
-?> Not all themes support the actions listed above.
--->
+
+
 
