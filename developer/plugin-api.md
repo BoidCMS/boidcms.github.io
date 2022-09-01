@@ -1,5 +1,5 @@
 # Plugins API
-See [what actions are](/#/developer/actions).
+See [what actions are](#/developer/actions).
 
 ## Events
 
