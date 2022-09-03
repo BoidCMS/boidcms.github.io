@@ -26,11 +26,11 @@ themes/
   </head>
   <body>
     <h1>Published Posts</h1>
-    <?php foreach ( $App->data()[ 'pages' ] as $page ): ?>
+    <?php foreach ( $App->data()[ 'pages' ] as $slug => $page ): ?>
       <?php if ( 'post' === $page[ 'type' ] ): ?>
         <?php if ( $page[ 'pub' ] ): ?>
         <section>
-          <h2><?= $page[ 'title' ] ?></h2>
+          <h2><a href="<?= $slug ?>"><?= $page[ 'title' ] ?></a></h2>
           <p><?= $page[ 'descr' ] ?></p>
         </section>
         <?php endif ?>
