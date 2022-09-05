@@ -58,7 +58,7 @@ themes/
 </html>
 ```
 
-
+?> You can add more features to it, [Actions](https://boidcms.github.io/#/developer/actions?id=themes) are most needed.
 
 
 
