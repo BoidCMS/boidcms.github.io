@@ -36,6 +36,7 @@ themes/
         <?php endif ?>
       <?php endif ?>
     <?php endforeach ?>
+    <footer><?= $App->get( 'footer' ) ?></footer>
   </body>
 </html>
 ```
@@ -52,6 +53,7 @@ themes/
   <body>
     <h1><?= $App->page( 'title' ) ?></h1>
     <div><?= $App->page( 'content' ) ?></div>
+    <footer><?= $App->get( 'footer' ) ?></footer>
   </body>
 </html>
 ```
