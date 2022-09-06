@@ -1,12 +1,12 @@
 # Features 
-- One step [install](install)
-- Free and open source
-- Simple and easy to navigate Admin dashboard
-- Themes and Plugins support
-- Super extensible
+- One Step [Install](install)
+- Free and Open Source
+- Simple and Easy to Navigate Admin Panel
+- Themes and Plugins Support
+- Super Extensible
 - CSRF Authentication
-- Custom admin URI
+- Custom Admin URL
 - File Manager
 - SEO Friendly
-- Content type
+- Content Type
 - GDPR Compliant
