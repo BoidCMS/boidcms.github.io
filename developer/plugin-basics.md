@@ -31,7 +31,7 @@ $App->set_action( 'install', 'example_init' );
 $App->set_action( 'uninstall', 'example_shut' );
 
 /**
- * Log a debug message after installing
+ * Log a debug message while installing
  * @param string $plugin
  * @return string
  */
