@@ -3,11 +3,14 @@
 
 ## Constants
 
-#### [App](developer/constant/app)
+#### [`App`](developer/constant/app)
 
 ## Variables
 
-#### [$App](developer/variable/app)
+#### [`$App`](developer/variable/app)
+#### [`$page`](developer/variable/page)
+#### [`$action`](developer/variable/action)
+#### [`$layout`](developer/variable/layout)
 
 ## Properties
 
@@ -15,7 +18,7 @@
 #### [`App::page`](developer/property/page)
 #### [`App::medias`](developer/property/medias)
 #### [`App::themes`](developer/property/themes)
-#### [`App:plugins`](developer/property/plugins)
+#### [`App::plugins`](developer/property/plugins)
 #### [`App::version`](developer/property/version)
 #### [`App::logged_in`](developer/property/logged_in)
 #### [`App::actions`](developer/property/actions)
