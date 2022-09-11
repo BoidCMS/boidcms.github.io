@@ -40,7 +40,7 @@ $App->set_action( 'filter_unique_id', 'my_filter_callback_function' );
 
 function my_filter_callback_function( $value ) {
   // Do stuff, like
-  $modified = str_replace( 'Default', 'Filtered', $value );
+  $modified = str_replace( 'default', 'filtered', $value );
 
   // Must always return value
   return $modified;
