@@ -53,9 +53,9 @@ function my_filter_callback_function( $value ) {
 ```php
 <?php
 
-$filtered = $App->filter( 'Value', 'filter_unique_id' );
+$filtered = $App->filter( 'My default value', 'filter_unique_id' );
 // Or just
-$filtered = $App->_( 'Value' ); // Default unique id is "default"
+$filtered = $App->_( 'My default value' ); // Default unique id is "default"
 
 ?>
 ```
