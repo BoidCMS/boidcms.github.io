@@ -23,26 +23,13 @@ function my_event_callback_function() {
 ```php
 <?php
 
-$App->get_action( 'action' );
+$App->get_action( 'event_unique_id' );
 
 ?>
 ```
 
 
 ## Filter
-
-
-### Apply
-
-```php
-<?php
-
-$filtered = $App->filter( 'Value', 'filter_unique_id' );
-// Or just
-$filtered = $App->_( 'Value' ); // Default unique id: default
-
-?>
-```
 
 ### Set
 
@@ -61,7 +48,17 @@ function my_filter_callback_function( $value ) {
 ?>
 ```
 
+### Apply
 
+```php
+<?php
+
+$filtered = $App->filter( 'Value', 'filter_unique_id' );
+// Or just
+$filtered = $App->_( 'Value' ); // Default unique id is "default"
+
+?>
+```
 
 
 
