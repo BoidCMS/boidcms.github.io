@@ -15,7 +15,7 @@ themes/
 
 ## Theme code example
 
-### home.php
+### blog.php
 
 ```php
 <?php global $App ?>
