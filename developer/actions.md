@@ -31,6 +31,7 @@ Here is the list of all actions.
 |     `login_error`    |   `App::admin`   |  `(string) $username, $password`   |  `1.0.0` |
 |        `admin`       |   `App::admin`   |                                    |  `1.0.0` |
 |         `type`       |   `App::admin`   |                                    |  `1.0.0` |
+|          `tpl`       |   `App::admin`   |                                    |  `2.0.0` |
 |      `thumb_ext`     |   `App::admin`   |                                    |  `1.0.0` |
 |      `on_create`     |   `App::admin`   |                                    |  `1.0.0` |
 |    `create_success`  |   `App::admin`   |       `(string) $permalink`        |  `1.0.0` |
