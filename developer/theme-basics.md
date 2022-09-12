@@ -8,7 +8,7 @@ This is the folder and the most required files structure for themes.
 ```plain
 themes/
 └── example/
-    ├── home.php
+    ├── blog.php
     └── theme.php
 ```
 
