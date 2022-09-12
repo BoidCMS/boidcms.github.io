@@ -1,12 +1,15 @@
 # Features 
-- One Step [Install](install)
-- Free and Open Source
-- Simple and Easy to Navigate Admin Panel
-- Themes and Plugins Support
-- Super Extensible
-- CSRF Authentication
-- Custom Admin URL
-- File Manager
-- SEO Friendly
-- Content Type
-- GDPR Compliant
+  - One Step [Install](https://boidcms.github.io/#/install)
+  - Free and Open Source
+  - Simple and Easy to Navigate Admin Panel
+  - Themes and Plugins Support
+  - Super Extensible
+  - CSRF Authentication
+  - Custom Admin URL
+  - Custom Page Permalink
+  - Custom Page Template
+  - Blog Option
+  - File Manager
+  - SEO Friendly
+  - Content Type
+  - GDPR Compliant
