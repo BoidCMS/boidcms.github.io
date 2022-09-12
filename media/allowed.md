@@ -23,9 +23,9 @@ audio/mpeg
 image/gif
 image/jpeg
 image/png
-image/svg
 image/svg+xml
 image/vnd.microsoft.icon
+image/webp
 image/x-icon
 text/css
 text/html
