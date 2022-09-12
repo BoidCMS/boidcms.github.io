@@ -14,7 +14,8 @@
         "password": "$2y$10$...",
         "footer": "Copyright &copy; 1970",
         "theme": "visual",
-        "admin": "admin"
+        "admin": "admin",
+        "blog": false
     },
     "pages": {
         "404": {
@@ -25,6 +26,18 @@
             "content": "<p>It looks like nothing was found at this location.<\/p>",
             "thumb": "",
             "date": "",
+            "tpl": "",
+            "pub": true
+        },
+        "home": {
+            "type": "page",
+            "title": "Home",
+            "descr": "Setup your new site",
+            "keywords": "BoidCMS, keywords, for, seo",
+            "content": "<h2>Edit This Page<\/h2><p>Visit the <a href=\".\/admin\">admin panel<\/a> and login if not already, then Navigate to <b>Update<\/b> select <b>Home (home)<\/b> and click <b>Select<\/b>, Update the fields you want to change and click <b>Update<\/b> to save the changes.<\/p><h2>Enable Blog<\/h2><p>Navigate to <b>Settings<\/b> scroll to <b>Enable Blog<\/b> and select <b>Yes<\/b> then click <b>Save changes<\/b>.<\/p><h2>More Info<\/h2><p>You can find more information on how to setup your site in the <a href=\"https:\/\/boidcms.github.io\" target=\"_blank\" rel=\"nofollow\">documentation<\/a>.<\/p>",
+            "thumb": "",
+            "date": "",
+            "tpl": "",
             "pub": true
         },
         "hello-world": {
@@ -35,6 +48,7 @@
             "content": "<h1>Welcome to BoidCMS!<\/h1><p>This is a sample post, login now to edit or delete it.<\/p><p>Have fun! :)<\/p>",
             "thumb": "",
             "date": "1970-01-01T00:00:00",
+            "tpl": "",
             "pub": true
         }
     },
