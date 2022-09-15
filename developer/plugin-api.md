@@ -66,6 +66,7 @@ function my_filter_callback_function( $value ) {
  * public function get_filter( mixed $value, string $action, mixed ... $args ): void;
  */
 $filtered = $App->get_filter( 'My default value', 'filter_unique_id' );
+
 // Or just
 
 /**
