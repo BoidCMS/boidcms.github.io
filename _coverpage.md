@@ -9,5 +9,5 @@
 - Simple, fast, super extensible
 
 [GitHub](https://github.com/BoidCMS/BoidCMS/)
-[Download](https://github.com/BoidCMS/BoidCMS/archive/refs/tags/v2.0.0.zip)
+[Download](https://boidcms.github.io/BoidCMS.zip)
 [Demo](demo)
