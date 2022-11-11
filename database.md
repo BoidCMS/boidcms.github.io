@@ -1,4 +1,5 @@
 # Default database structure
+This is an example of beautified JSON of newly created database.
 
 ```json
 {
