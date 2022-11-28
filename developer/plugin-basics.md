@@ -57,3 +57,5 @@ function example_shut( string $plugin ): void {
 }
 ?>
 ```
+
+Beside `install` and `uninstall`, there are many events (actions) to listen to. They can be found [here](/#/actions).
