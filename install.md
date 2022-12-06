@@ -16,5 +16,15 @@ You can run BoidCMS quickly via the command line with the PHP Built-in web serve
 ```bash
 git clone https://github.com/BoidCMS/BoidCMS boidcms
 cd boidcms
+```
+
+Modify `index.php` and add the following one-line php code right before `$App->render();`
+
+```php
+$App->page = ltrim( $_SERVER[ 'PATH_INFO' ] ?? '', '/' );
+```
+
+Then start the server.
+```bash
 php -S localhost:8080
 ```
