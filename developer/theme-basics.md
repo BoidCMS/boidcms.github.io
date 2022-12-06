@@ -58,7 +58,7 @@ themes/
 </html>
 ```
 
-?> You can add more features to it, [Actions](https://boidcms.github.io/#/developer/actions?id=themes) are most needed.
+?> You can add more features to it, [Theme Tags](/themes/tags) and [Actions](/developer/actions?id=themes) are most needed.
 
 
 
