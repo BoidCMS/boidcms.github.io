@@ -1,5 +1,5 @@
 # Features 
-  - One Step [Install](https://boidcms.github.io/#/install)
+  - One Step [Install](/install)
   - Free and Open Source
   - Simple and Easy to Navigate Admin Panel
   - Themes and Plugins Support
