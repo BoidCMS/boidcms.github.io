@@ -1,8 +1,8 @@
 # Content types
-BoidCMS has two content types by default.    
+BoidCMS comes with two content types by default.
 
 ## Post
-This could be an article/blog post or whatever, it is listed in the homepage as post.
+This could be an article/blog post, or whatever the case may be. It's listed in the homepage as a post.
 
 ## Page
-This is a static page that is accessible through link but hidden inside the website, could be added inside article content or in a block such as navigation bar or footer to make it visible.
+This is a static page that can be accessed via link, but which is hidden inside the website. It could be added anywhere in the content or placed in a block such as the navigation bar or footer to make it visible.
