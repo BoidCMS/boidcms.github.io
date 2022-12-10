@@ -1,6 +1,5 @@
 # Plugin Basics
-Plugins in BoidCMS reside in the `plugins` folder, and they have a predefined structure.
-
+Plugins in BoidCMS are organized in the [`plugins`](/folders?id=plugins) folder and have a predefined structure.
 
 ## Folder and Files Structure
 
@@ -58,4 +57,4 @@ function example_shut( string $plugin ): void {
 ?>
 ```
 
-Beside `install` and `uninstall`, there are many events (actions) to listen to. They can be found [here](/developer/actions).
+Besides `install` and `uninstall`, there are many events (actions) to listen to. They can be found [here](/developer/actions).
