@@ -1,7 +1,8 @@
 # Plugins API
-See [what actions are](developer/actions).
+See [what actions are](developer/actions) in BoidCMS.
 
-## Events
+## Event
+Events are actions that are executed when a specified event occurs.
 
 ### Set
 ```php
@@ -36,6 +37,7 @@ $App->get_action( 'event_unique_id' );
 
 
 ## Filter
+Filters are actions that can be used to modify the value of a variable dynamically.
 
 ### Set
 
