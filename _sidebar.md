@@ -24,7 +24,7 @@
   - [Folder Structure](folder)
   - [Database Structure](database)
   - [Plugin Basics](developer/plugin-basics)
-  - [Plugin API](developer/plugin-api)
+  - [Plugins API](developer/plugin-api)
   - [Theme Basics](developer/theme-basics) 
   - [Theme Tags](themes/tags) <!--  - [Code Reference](developer/reference)-->
   - [Actions List](developer/actions)
