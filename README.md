@@ -21,7 +21,7 @@
 </p>
 
 # BoidCMS
-[BoidCMS](https://boidcms.github.io) is a free and open-source flat file CMS for building simple websites and blogs, developed using PHP and uses JSON as a database.
+[BoidCMS](/) is a free and open-source flat file CMS for building simple websites and blogs, developed using PHP and uses JSON as a database.
 
 It's installed without configuring or installing any relational database like MySQL.
 You only need a web server with PHP support.
@@ -39,11 +39,11 @@ This project is a fork of [WonderCMS](https://www.wondercms.com).
 - Download the latest version on [this repo](https://github.com/BoidCMS/BoidCMS).
 - Extract the zip file.
 - Upload the extracted content to your server or hosting.
-- Follow the [admin page](https://boidcms.github.io/#/install?id=default-credentials) to configure your new website.
+- Follow the [admin page](/install?id=default-credentials) to configure your new website.
 
 
 ## Features
-  - One Step [Install](https://boidcms.github.io/#/install)
+  - One Step [Install](/install)
   - Free and Open Source
   - Simple and Easy to Navigate Admin Panel
   - Themes and Plugins Support
@@ -65,4 +65,4 @@ Ask questions, get support, and discuss BoidCMS.
 
 
 ## License
-BoidCMS is an open source software [licensed](https://boidcms.github.io/#/license) under the MIT License.
+BoidCMS is an open source software [licensed](/license) under the MIT License.
