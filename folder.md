@@ -9,25 +9,17 @@ themes/
 ```
 
 ## `app/`
-This is the main folder of the BoidCMS, it stores the core file of the system and admin view.      
-You should not edit any file in this folder, write custom plugin or add `functions.php` to the current theme instead.     
-
+This is the BoidCMS's main folder, which stores core file and admin view. You should not edit any files in this folder; instead, write [custom plugins](/plugins/) or add to the current theme a `functions.php` file.
 
 ## `data/`
-This folder is created during the first time visit to the website, it is used to store the database file `database.json` and `debug.log` file.      
-**This folder is protected** by default, developers should use this folder to store data.     
-
+This folder is created during the first time visit to the website, used to store the database file and debug log file. **The folder is protected** by default; developers should use this folder for storing data.
 
 ## `media/`
-This folder is created during the first time visit to the website, it is used to store uploaded media files.        
-
+This folder is created during the first time visit to the website, and it's used to store uploaded media files.        
 
 ## `plugins/`
-All the plugins reside inside this folder.     
-
+All the plugins are stored inside this folder.
 
 ## `themes/`
-All the themes should be uploaded inside this folder.
-
-
+All the themes are stored inside this folder.
 
