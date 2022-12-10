@@ -1,9 +1,9 @@
 # Actions
-The word `Actions` in BoidCMS represents both `Events` and `Filters`. 
+The word `Actions` in BoidCMS represents both the `Events` and the `Filters`. 
 
-BoidCMS has a lot of actions called within the core and the templates, And that makes it **super extensible**.     
-Actions are used to extend and/or to implement something to the site, actions can be used in and by [Plugins](plugins/) or [Themes](themes/).       
-
+<!--BoidCMS has a lot of actions called within the core and the templates, And that makes it **super extensible**.     
+Actions are used to extend and/or to implement something to the site, actions can be used in and by [Plugins](plugins/) or [Themes](themes/).    -->
+BoidCMS offers a wide range of actions for developers to extend the functionality of their site. These include actions that are used in plugins and themes, as well as those that are implemented within the core itself.
 
 Here is the list of all actions.
 
