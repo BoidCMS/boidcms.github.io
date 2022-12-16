@@ -26,15 +26,15 @@ The Example plugin code below must be in the `plugin.php` file.
  */
 
 global $App;
-$App->set_action( 'install', 'example_init' );
-$App->set_action( 'uninstall', 'example_shut' );
+$App->set_action( 'install', 'example_install' );
+$App->set_action( 'uninstall', 'example_uninstall' );
 
 /**
  * Log a debug message while installing
  * @param string $plugin
  * @return string
  */
-function example_init( string $plugin ): void {
+function example_install( string $plugin ): void {
   global $App;
   if ( 'example' === $plugin ) {
     $msg = 'Example plugin installed.';
@@ -47,7 +47,7 @@ function example_init( string $plugin ): void {
  * @param string $plugin
  * @return string
  */
-function example_shut( string $plugin ): void {
+function example_uninstall( string $plugin ): void {
   global $App;
   if ( 'example' === $plugin ) {
     $msg = 'Example plugin uninstalled.';
