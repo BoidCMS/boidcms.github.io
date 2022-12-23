@@ -66,39 +66,39 @@ Here are the list of all preserved actions.
 
 ## Admin view
 
-|       Action      |      Execute in     |  Parameters  |  Since  |
-| :---------------: | :-----------------: | :----------: | :-----: |
-|    `admin_head`   |   `app/layout.php`  |              | `1.0.0` |
-|     `admin_top`   |   `app/layout.php`  |              | `1.0.0` |
-|     `admin_nav`   |   `app/layout.php`  |              | `1.0.0` |
-|   `admin_middle`  |   `app/layout.php`  |              | `1.0.0` |
-|    `{PAGE}_top`   |   `app/layout.php`  |              | `1.0.0` |
-|    `{PAGE}_end`   |   `app/layout.php`  |              | `1.0.0` |
-|   `admin_footer`  |   `app/layout.php`  |              | `1.0.0` |
-|     `admin_end`   |   `app/layout.php`  |              | `1.0.0` |
+|       Action      |      Execute in     |  Parameters  |   Info  |  Since  |
+| :---------------: | :-----------------: | :----------: | :-----: | :-----: |
+|    `admin_head`   |   `app/layout.php`  |              |         | `1.0.0` |
+|     `admin_top`   |   `app/layout.php`  |              |         | `1.0.0` |
+|     `admin_nav`   |   `app/layout.php`  |              |         | `1.0.0` |
+|   `admin_middle`  |   `app/layout.php`  |              |         | `1.0.0` |
+|    `{PAGE}_top`   |   `app/layout.php`  |              |         | `1.0.0` |
+|    `{PAGE}_end`   |   `app/layout.php`  |              |         | `1.0.0` |
+|   `admin_footer`  |   `app/layout.php`  |              |         | `1.0.0` |
+|     `admin_end`   |   `app/layout.php`  |              |         | `1.0.0` |
 
 
 ## Themes
 
-|        Action       |      Execute in     |   Parameters   |  Since  |
-| :-----------------: | :-----------------: | :------------: | :-----: |
-|     `site_head`     |                     |                | `1.0.0` |
-|      `site_top`     |                     |                | `1.0.0` |
-|    `site_footer`    |                     |                | `1.0.0` |
-|      `site_end`     |                     |                | `1.0.0` |
-|`site_under_subtitle`|                     |                | `1.0.0` |
-|      `home_top`     |                     |                | `1.0.0` |
-|   `post_list_top`   |                     |`(string) $slug`| `1.0.0` |
-|   `post_list_end`   |                     |`(string) $slug`| `1.0.0` |
-|      `home_end`     |                     |                | `1.0.0` |
-|      `post_top`     |                     |                | `1.0.0` |
-| `site_under_title`  |                     |                | `1.0.0` |
-| `post_content_top`  |                     |                | `1.0.0` |
-| `post_content_end`  |                     |                | `1.0.0` |
-|      `post_end`     |                     |                | `1.0.0` |
-|      `home_end`     |                     |                | `1.0.0` |
-|      `page_top`     |                     |                | `1.0.0` |
-|      `page_end`     |                     |                | `1.0.0` |
+|        Action       |      Execute in     |   Parameters   |   Info  |  Since  |
+| :-----------------: | :-----------------: | :------------: | :-----: | :-----: |
+|     `site_head`     |                     |                |         | `1.0.0` |
+|      `site_top`     |                     |                |         | `1.0.0` |
+|    `site_footer`    |                     |                |         | `1.0.0` |
+|      `site_end`     |                     |                |         | `1.0.0` |
+|`site_under_subtitle`|                     |                |         | `1.0.0` |
+|      `home_top`     |                     |                |         | `1.0.0` |
+|   `post_list_top`   |                     |`(string) $slug`|         | `1.0.0` |
+|   `post_list_end`   |                     |`(string) $slug`|         | `1.0.0` |
+|      `home_end`     |                     |                |         | `1.0.0` |
+|      `post_top`     |                     |                |         | `1.0.0` |
+| `site_under_title`  |                     |                |         | `1.0.0` |
+| `post_content_top`  |                     |                |         | `1.0.0` |
+| `post_content_end`  |                     |                |         | `1.0.0` |
+|      `post_end`     |                     |                |         | `1.0.0` |
+|      `home_end`     |                     |                |         | `1.0.0` |
+|      `page_top`     |                     |                |         | `1.0.0` |
+|      `page_end`     |                     |                |         | `1.0.0` |
 
 ?> Not all themes might support the actions listed above.
 
