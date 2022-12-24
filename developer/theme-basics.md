@@ -12,6 +12,7 @@ themes/
     └── theme.php
 ```
 
+Some files which aren't necessarily required includes `post.php` (Custom template for page with `post` type) and `blank.php` (Blank template).
 
 ## Theme code example
 
