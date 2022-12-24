@@ -21,18 +21,18 @@ Here are the list of all preserved actions.
 |     `delete_media`   |`App::delete_media`|         `(string) $media`         |  `Event` |          |  `1.0.0` |
 |       `install`      |  `App::install`  |        `(string) $plugin`          |  `Event` |          |  `1.0.0` |
 |      `uninstall`     | `App::uninstall` |        `(string) $plugin`          |  `Event` |          |  `1.0.0` |
-|      `slug_taken`    |  `App::slugify`  |                                    |  `Event` |          |  `1.0.0` |
+|      `slug_taken`    |  `App::slugify`  |                                    |  `Filter`|          |  `1.0.0` |
 |          `go`        |     `App::go`    |       `(string) $location`         |  `Event` |          |  `1.0.0` |
 |     `token_error`    |    `App::auth`   |         `(string) $token`          |  `Event` |          |  `1.0.0` |
 |         `login`      |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
-|         `form`       |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
+|         `form`       |   `App::admin`   |                                    |  `Filter`|          |  `1.0.0` |
 |       `on_login`     |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |    `login_success`   |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |     `login_error`    |   `App::admin`   |  `(string) $username, $password`   |  `Event` |          |  `1.0.0` |
 |        `admin`       |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
-|         `type`       |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
-|          `tpl`       |   `App::admin`   |                                    |  `Event` |          |  `2.0.0` |
-|      `thumb_ext`     |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
+|         `type`       |   `App::admin`   |                                    |  `Filter`|          |  `1.0.0` |
+|          `tpl`       |   `App::admin`   |                                    |  `Filter`|          |  `2.0.0` |
+|      `thumb_ext`     |   `App::admin`   |                                    |  `Filter`|          |  `1.0.0` |
 |      `on_create`     |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |    `create_success`  |   `App::admin`   |       `(string) $permalink`        |  `Event` |          |  `1.0.0` |
 |     `create_error`   |   `App::admin`   |`(string) $permalink, (array) $_POST`| `Event` |          |  `1.0.0` |
@@ -42,11 +42,11 @@ Here are the list of all preserved actions.
 |      `on_update`     |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |    `update_success`  |   `App::admin`   |         `(string) $action`         |  `Event` |          |  `1.0.0` |
 |     `update_error`   |   `App::admin`   | `(string) $action, (array) $_POST` |  `Event` |          |  `1.0.0` |
-|    `media_list_top`  |   `App::admin`   |          `(string) $media`         |  `Event` |          |  `1.0.0` |
-|    `media_list_end`  |   `App::admin`   |          `(string) $media`         |  `Event` |          |  `1.0.0` |
+|    `media_list_top`  |   `App::admin`   |          `(string) $media`         |  `Filter`|          |  `1.0.0` |
+|    `media_list_end`  |   `App::admin`   |          `(string) $media`         |  `Filter`|          |  `1.0.0` |
 |      `on_media`      |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
-|   `plugin_list_top`  |   `App::admin`   |         `(string) $plugin`         |  `Event` |          |  `1.0.0` |
-|   `plugin_list_end`  |   `App::admin`   |         `(string) $plugin`         |  `Event` |          |  `1.0.0` |
+|   `plugin_list_top`  |   `App::admin`   |         `(string) $plugin`         |  `Filter`|          |  `1.0.0` |
+|   `plugin_list_end`  |   `App::admin`   |         `(string) $plugin`         |  `Filter`|          |  `1.0.0` |
 |      `on_plugin`     |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |        `logout`      |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |     `on_settings`    |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
@@ -58,6 +58,7 @@ Here are the list of all preserved actions.
 |   `password_error`   |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |      `dashboard`     |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |       `render`       |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
+|        `index`       |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
 |        `home`        |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
 |   `{PAGE_TYPE}_type` |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
 |         `404`        |   `App::render`  |          `(string) $page`          |  `Event` |          |  `1.0.0` |
