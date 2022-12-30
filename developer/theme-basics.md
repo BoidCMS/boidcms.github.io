@@ -12,11 +12,12 @@ themes/
     └── theme.php
 ```
 
-Some files which aren't necessarily required includes `post.php` (Custom template for page with `post` type) and `blank.php` (Blank template).
+Some files which aren't necessarily required includes `post.php` (Custom template for page with `post` type) and `blank.php` (Blank template for plugins that creates dynamic pages).
 
 ## Theme code example
 
-### blog.php
+### blog.php **(required)**
+Use this template to create a listing of published posts.
 
 ```php
 <?php global $App ?>
@@ -42,7 +43,8 @@ Some files which aren't necessarily required includes `post.php` (Custom templat
 </html>
 ```
 
-### theme.php
+### theme.php **(required)**
+Use this template to create a normal **static page** design.
 
 ```php
 <?php global $App ?>
@@ -54,6 +56,43 @@ Some files which aren't necessarily required includes `post.php` (Custom templat
   <body>
     <h1><?= $App->page( 'title' ) ?></h1>
     <div><?= $App->page( 'content' ) ?></div>
+    <footer><?= $App->get( 'footer' ) ?></footer>
+  </body>
+</html>
+```
+
+### post.php **(not required)**
+Use this template to create a **post page** design.
+
+```php
+<?php global $App ?>
+<!DOCTYPE html>
+<html lang="<?= $App->get( 'lang' ) ?>">
+  <head>
+    <title><?= $App->page( 'title' ) ?></title>
+  </head>
+  <body>
+    <h1><?= $App->page( 'title' ) ?></h1>
+    <p>Written by <b>John Doe</b> in category <b>Post</b></p>
+    <div><?= $App->page( 'content' ) ?></div>
+    <footer><?= $App->get( 'footer' ) ?></footer>
+  </body>
+</html>
+```
+
+### blank.php **(not required)**
+Use this template to create a layout of a normal **static page**.
+
+```php
+<?php global $App ?>
+<!DOCTYPE html>
+<html lang="<?= $App->get( 'lang' ) ?>">
+  <head>
+    <title><?= $layout[ 'title' ] ?></title>
+  </head>
+  <body>
+    <h1><?= $layout[ 'title' ] ?></h1>
+    <div><?= $layout[ 'content' ] ?></div>
     <footer><?= $App->get( 'footer' ) ?></footer>
   </body>
 </html>
