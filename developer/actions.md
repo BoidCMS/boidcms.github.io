@@ -56,9 +56,9 @@ Here are the list of all preserved actions.
 |     `on_password`    |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |  `password_success`  |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
 |   `password_error`   |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
-|      `dashboard`     |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
+|      `dashboard`     |   `App::admin`   |                                    |  `Filter`|          |  `1.0.0` |
 |       `render`       |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
-|        `index`       |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
+|        `index`       |   `App::render`  |                                    |  `Filter`|          |  `1.0.0` |
 |        `home`        |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
 |   `{PAGE_TYPE}_type` |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
 |         `404`        |   `App::render`  |          `(string) $page`          |  `Event` |          |  `1.0.0` |
@@ -83,6 +83,7 @@ Here are the list of all preserved actions.
 
 |        Action       |      Execute in     |   Parameters   |   Type  |  Info   |  Since  |
 | :-----------------: | :-----------------: | :------------: | :-----: | :-----: | :-----: |
+|       `favicon`     |                     |                | `Filter`|         | `1.0.0` |
 |     `site_head`     |                     |                | `Filter`|         | `1.0.0` |
 |      `site_top`     |                     |                | `Filter`|         | `1.0.0` |
 |    `site_footer`    |                     |                | `Filter`|         | `1.0.0` |
