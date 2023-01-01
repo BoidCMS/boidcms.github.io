@@ -84,6 +84,7 @@ Here are the list of all preserved actions.
 |        Action       |      Execute in     |   Parameters   |   Type  |  Info   |  Since  |
 | :-----------------: | :-----------------: | :------------: | :-----: | :-----: | :-----: |
 |       `favicon`     |                     |                | `Filter`|         | `1.0.0` |
+|      `site_nav`     |                     |                | `Filter`|         | `1.0.0` |
 |     `site_head`     |                     |                | `Filter`|         | `1.0.0` |
 |      `site_top`     |                     |                | `Filter`|         | `1.0.0` |
 |    `site_footer`    |                     |                | `Filter`|         | `1.0.0` |
