@@ -65,6 +65,13 @@ Here are the list of all preserved actions.
 |      `rendered`      |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
 
 
+## Preserved
+|         Action       |    Execute in    |               Parameters           |    Type   |   Info   |   Since  |
+| :------------------: | :--------------: | :--------------------------------: | :-------: | :------: | :------: |
+|   `editable_pages`   |                  |                                    |  `Filter` |          |  `1.0.0` |
+
+
+
 ## Admin view
 
 |       Action      |      Execute in     |  Parameters  |   Type  |  Info   |  Since  |
