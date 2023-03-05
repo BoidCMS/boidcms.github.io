@@ -69,7 +69,7 @@ function my_filter_callback_function( $value ) {
  */
 $filtered = $App->get_filter( 'My default value', 'filter_unique_id' );
 
-// Or just
+// Or use the alternate method `App::_`
 
 /**
  * public function _( mixed $value, string $action = 'default', mixed ...$args ): void;
