@@ -47,7 +47,7 @@
         function(hook, vm) {
           hook.beforeEach(function(html) {
             var url = 'https://github.com/BoidCMS/boidcms.github.io/blob/master/' + vm.route.file;
-            var editHtml = '[📝 Edit This Page](' + url + ')\n';
+            var editHtml = '[📝 Help improve this page](' + url + ')\n';
             return ( editHtml + '\n' + html + '\n----\n' + 'Last modified {docsify-updated}' );
           });
         }
