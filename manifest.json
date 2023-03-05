@@ -4,7 +4,6 @@
   "dir": "ltr",
   "display": "standalone",
   "name": "BoidCMS",
-  "orientation": "any",
   "scope": "/",
   "short_name": "BoidCMS",
   "start_url": "/",
@@ -15,6 +14,7 @@
     {
       "src": "/_media/logo.svg",
       "type": "image/svg+xml",
+      "purpose": "any",
       "sizes": "any"
     },
     {
