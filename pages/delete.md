@@ -9,4 +9,4 @@ Select the posts or pages you want to delete. You can select multiple items at o
 
 Once you have made your selection, click the `Delete` button to remove them permanently.
 
-!> **Note**: Be cautious when deleting content as it cannot be undone. It is recommended to make a backup before performing any deletions.
+!> Be cautious when deleting content as it cannot be undone. It is recommended to make a backup before performing any deletions.
