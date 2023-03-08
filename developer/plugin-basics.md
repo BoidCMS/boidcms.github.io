@@ -4,8 +4,6 @@ Plugins in BoidCMS are essential to extend the functionality of the website and 
 Each plugin in BoidCMS follows a standardized structure, which includes a plugin main file. The plugin main file contains metadata about the plugin, such as the plugin name, version, and author. 
 
 
-Plugins in BoidCMS are organized in the [`plugins`](/folders?id=plugins) folder and have a predefined structure.
-
 ## Folder and Files Structure
 
 ```plain
