@@ -1,5 +1,5 @@
 # Plugins API
-See [what actions are](developer/actions) in BoidCMS.
+[Visit here](/developer/actions) to view the available actions in BoidCMS, which provides a comprehensive list of available actions or hooks that plugins can listen to and act upon to extend the functionality of the website.
 
 ## Event
 Events are actions that are executed when a specified event occurs.
