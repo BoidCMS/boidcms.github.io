@@ -1,5 +1,5 @@
 # Default database structure
-This is an example of beautified JSON of newly created database.
+Below is an example of a formatted JSON representation of a newly created database
 
 ```json
 {
@@ -53,6 +53,6 @@ This is an example of beautified JSON of newly created database.
             "pub": true
         }
     },
-    "installed": {}
+    "installed": []
 }
 ```
