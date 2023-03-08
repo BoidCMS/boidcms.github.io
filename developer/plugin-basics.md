@@ -1,4 +1,9 @@
 # Plugin Basics
+Plugins in BoidCMS are essential to extend the functionality of the website and are organized in the [`plugins`](/folders?id=plugins) folder with a predefined structure.
+
+Each plugin in BoidCMS follows a standardized structure, which includes a plugin main file. The plugin main file contains metadata about the plugin, such as the plugin name, version, and author. 
+
+
 Plugins in BoidCMS are organized in the [`plugins`](/folders?id=plugins) folder and have a predefined structure.
 
 ## Folder and Files Structure
@@ -11,13 +16,13 @@ plugins/
 
 
 ## Plugin code
-The Example plugin code below must be in the `plugin.php` file.     
+To properly add functionality to a plugin in BoidCMS, it's important to organize the code in a specific manner within the plugin's PHP file. The following code should be added to the `plugin.php` file of the example plugin:
 
 ```php
 <?php defined( 'App' ) or die( 'BoidCMS' );
 /**
  *
- * Plugin example
+ * Plugin example that do nothing but log
  *
  * @package BoidCMS
  * @subpackage Plugin_Example
@@ -57,4 +62,6 @@ function example_uninstall( string $plugin ): void {
 ?>
 ```
 
-Besides `install` and `uninstall`, there are many events (actions) to listen to. They can be found [here](/developer/actions).
+In addition to the `install` and `uninstall` events, BoidCMS provides many other events or actions that can be listened to and acted upon by plugins. These actions provide opportunities for plugins to modify the behavior of the website or to respond to specific user interactions.
+
+A comprehensive list of available [actions can be found in here](/developer/actions), which includes details on when each action is triggered and the parameters that are available for each action.
