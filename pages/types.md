@@ -1,8 +1,8 @@
 # Content types
-BoidCMS comes with two content types by default.
+BoidCMS comes with two pre-defined content types out-of-the-box.
 
 ## Post
-This could be an article/blog post, or whatever the case may be. It's listed in the homepage as a post.
+Posts are dynamic content items that are typically used for articles, blog posts, news updates, or any other kind of time-sensitive content that gets added to your website over time. They are listed on your homepage as individual posts and can be sorted by date, or other criteria.
 
 ## Page
-This is a static page that can be accessed via link, but which is hidden inside the website. It could be added anywhere in the content or placed in a block such as the navigation bar or footer to make it visible.
+Pages are static content items that are used for content that doesn't change frequently, such as an "About Us" page, a "Contact Us" page, or a page with specific information that you want to share with your visitors. Pages can be accessed through a link, but they are not listed on your homepage. You can add them to the website navigation menu, footer, or any other section of your website to make them more visible to your visitors.
