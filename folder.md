@@ -1,6 +1,6 @@
 # Folder Structure
 
-```plain
+```tree
 app/
 data/
 media/
@@ -9,17 +9,16 @@ themes/
 ```
 
 ## `app/`
-This is the BoidCMS's main folder, which stores core file and admin view. You should not edit any files in this folder; instead, write [custom plugins](/developer/plugin-api) or add to the current theme a `functions.php` file.
+The BoidCMS's main folder, contains essential files such as the core file and admin view. It is recommended not to modify any of the files in this directory directly. Instead, it's best to create [custom plugins](/developer/plugin-api) or add functionality to the current theme using a `functions.php` file. This approach will ensure that the system remains stable and can be easily updated without any conflicts arising from changes made to the core files.
 
 ## `data/`
-This folder is created during the first time visit to the website, used to store the database file and debug log file. **The folder is protected** by default; developers should use this folder for storing data.
+When the website is first visited, this folder is automatically created to store the database file and debug log file. **This folder is protected** by default and should be used by developers for storing data. It is important to note that modifying or deleting any files within this folder can result in errors and data loss. Therefore, it's best to exercise caution and ensure that appropriate backups are in place before making any changes.
 
 ## `media/`
-This folder is created during the first time visit to the website, and it's used to store uploaded media files.        
+When the website is visited for the first time, this folder is automatically created to store all uploaded media files. This folder is essential for storing images, videos, audio files, and other media content that admin may upload to the website.
 
 ## `plugins/`
-All the plugins are stored inside this folder.
+This folder contains all the plugins that are currently uploaded on the website.
 
 ## `themes/`
-All the themes are stored inside this folder.
-
+This folder contains all the themes that are currently uploaded on the website.
