@@ -1,12 +1,12 @@
 # Update post or page
 
 ![Update choose](https://boidcms.github.io/_media/updatechoose.png)
-
+------
 ![Update page](https://boidcms.github.io/_media/update.png)
 
-Log in to the **Admin panel** using your username and password.
+Log in to the `Admin panel` using your username and password.
 
-Navigate to the **`Update`** section of the panel.
+Navigate to the `Update` section of the panel.
 
 Select the post or page you wish to update from the list provided.
 
@@ -21,4 +21,5 @@ Your post or page will be updated immediately, and the changes will be reflected
 
 
 
-By default, BoidCMS doesn't include any content editor, but you can use [plugins](plugins/) such as [Trumbowyg](https://github.com/BoidCMS/trumbowyg)<!-- or [Summernote](https://github.com/BoidCMS/summernote)-->.
+By default, BoidCMS doesn't include any content editor, but you can use [plugins](plugins/) such as [Trumbowyg](https://github.com/BoidCMS/trumbowyg).
+
