@@ -18,7 +18,7 @@ git clone https://github.com/BoidCMS/BoidCMS boidcms
 cd boidcms
 ```
 
-Modify `index.php` and add the following one-line php code right before `$App->render();`
+Modify `index.php` and add the following php code right before `$App->render();` line
 
 ```php
 $App->page = ltrim( $_SERVER[ 'PATH_INFO' ] ?? '', '/' );
