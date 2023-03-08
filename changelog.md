@@ -4,7 +4,7 @@
 - Blog option
 - Custom page template
 - New admin panel page `Themes`
-- Improve speed
+- Improved speed
 
 **Full Changelog**: https://github.com/BoidCMS/BoidCMS/compare/v1.0.1...v2.0.0
 
