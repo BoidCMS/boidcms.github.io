@@ -1,5 +1,6 @@
 # Allowed mime types
-Here is a list of allowed mime types by default for files upload, custom mime types can always be added using `media_mime` [action](https://boidcms.github.io/#/developer/actions?id=core).      
+To ensure that your website runs smoothly and securely, certain restrictions may be placed on the types of files that can be uploaded. Here is a list of the allowed MIME types for file uploads by default:
+
 
 ```plain
 application/json
@@ -42,5 +43,4 @@ video/x-matroska
 video/x-ms-wmv
 ```
 
-
-
+However, if you need to upload a file type that is not listed here, you can add it using the `media_mime` [action](/developer/actions?id=core). This allows you to specify custom MIME types that your website will recognize and accept. Please keep in mind that adding custom MIME types should be done with caution, as it can pose a security risk if not properly implemented.
