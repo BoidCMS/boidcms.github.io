@@ -78,8 +78,8 @@ Here is a list of all the actions.
 |     `admin_top`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel after the `<body>` tag. | `1.0.0` |
 |     `admin_nav`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin navigation menu. | `1.0.0` |
 |   `admin_middle`  |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML below the alerts section on the admin panel. | `1.0.0` |
-|    `{PAGE}_top`   |   `app/layout.php`  |              | `Filter`|         | `1.0.0` |
-|    `{PAGE}_end`   |   `app/layout.php`  |              | `Filter`|         | `1.0.0` |
+|    `{PAGE}_top`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel above the title of specific pages. | `1.0.0` |
+|    `{PAGE}_end`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel below the content of specific pages. | `1.0.0` |
 |   `admin_footer`  |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the footer section of the admin pages. | `1.0.0` |
 |     `admin_end`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel before the `</body>` tag. | `1.0.0` |
 
@@ -88,25 +88,24 @@ Here is a list of all the actions.
 
 |        Action       |      Execute in     |   Parameters   |   Type  |  Info   |  Since  |
 | :-----------------: | :-----------------: | :------------: | :-----: | :-----: | :-----: |
-|       `favicon`     |                     |                | `Filter`|         | `1.0.0` |
-|      `site_nav`     |                     |                | `Filter`|         | `1.0.0` |
-|     `site_head`     |                     |                | `Filter`|         | `1.0.0` |
-|      `site_top`     |                     |                | `Filter`|         | `1.0.0` |
-|    `site_footer`    |                     |                | `Filter`|         | `1.0.0` |
-|      `site_end`     |                     |                | `Filter`|         | `1.0.0` |
-|`site_under_subtitle`|                     |                | `Filter`|         | `1.0.0` |
-|      `home_top`     |                     |                | `Filter`|         | `1.0.0` |
-|   `post_list_top`   |                     |`(string) $slug`| `Filter`|         | `1.0.0` |
-|   `post_list_end`   |                     |`(string) $slug`| `Filter`|         | `1.0.0` |
-|      `home_end`     |                     |                | `Filter`|         | `1.0.0` |
-|      `post_top`     |                     |                | `Filter`|         | `1.0.0` |
-| `site_under_title`  |                     |                | `Filter`|         | `1.0.0` |
-| `post_content_top`  |                     |                | `Filter`|         | `1.0.0` |
-| `post_content_end`  |                     |                | `Filter`|         | `1.0.0` |
-|      `post_end`     |                     |                | `Filter`|         | `1.0.0` |
-|      `home_end`     |                     |                | `Filter`|         | `1.0.0` |
-|      `page_top`     |                     |                | `Filter`|         | `1.0.0` |
-|      `page_end`     |                     |                | `Filter`|         | `1.0.0` |
+|       `favicon`     |                     |                | `Filter`| This filter is used to add custom HTML `favicon` tags to the website. | `1.0.0` |
+|      `site_nav`     |                     |                | `Filter`| This filter is used to add a custom menu item to the site's navigation menu. | `1.0.0` |
+|     `site_head`     |                     |                | `Filter`| This filter is used to add custom HTML to the `<head>` section of the site, such as meta tags or scripts. | `1.0.0` |
+|      `site_top`     |                     |                | `Filter`| This filter is used to add custom HTML immediately before the closing `</body>` tag. | `1.0.0` |
+|    `site_footer`    |                     |                | `Filter`| This filter is used to add custom HTML to the site footer, which appears at the bottom of every page. | `1.0.0` |
+|      `site_end`     |                     |                | `Filter`| This filter is used to add custom HTML immediately after the opening `<body>` tag. | `1.0.0` |
+|`site_under_subtitle`|                     |                | `Filter`| This filter is used to add custom HTML below the site subtitle, in a specific section of the site determined by the theme or page template. | `1.0.0` |
+|      `home_top`     |                     |                | `Filter`| This filter is used to add custom HTML to the top of the blog homepage, which usually displays a selection of recent posts. | `1.0.0` |
+|   `post_list_top`   |                     |`(string) $slug`| `Filter`| This filter is used to add custom HTML to the top of each post in the list of articles. | `1.0.0` |
+|   `post_list_end`   |                     |`(string) $slug`| `Filter`| This filter is used to add custom HTML to the bottom of each post in the list of articles. | `1.0.0` |
+|      `home_end`     |                     |                | `Filter`| This filter is used to add custom HTML to the bottom of the blog homepage, which usually displays a selection of recent posts. | `1.0.0` |
+|      `post_top`     |                     |                | `Filter`| This filter is used to add custom HTML at the beginning of each blog post, before the title and content. | `1.0.0` |
+| `site_under_title`  |                     |                | `Filter`| This filter is used to add custom HTML below the title of each page. | `1.0.0` |
+| `post_content_top`  |                     |                | `Filter`| This filter is used to add custom HTML immediately before the post content, such as buttons for sharing on social media. | `1.0.0` |
+| `post_content_end`  |                     |                | `Filter`| This filter is used to add custom HTML immediately after the post content, for example, comments. | `1.0.0` |
+|      `post_end`     |                     |                | `Filter`| This filter is used to add custom HTML to the bottom of each blog post page, such as related posts or author information. | `1.0.0` |
+|      `page_top`     |                     |                | `Filter`| This filter is used to add custom HTML to the top of each static page. | `1.0.0` |
+|      `page_end`     |                     |                | `Filter`| This filter is used to add custom HTML to the bottom of each static page. | `1.0.0` |
 
 ?> It's possible that not all themes will support the actions listed above.
 
