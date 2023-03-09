@@ -22,8 +22,7 @@ To properly add functionality to a plugin in BoidCMS, it's important to organize
  *
  * Plugin example that do nothing but log
  *
- * @package BoidCMS
- * @subpackage Plugin_Example
+ * @package Plugin_Example
  * @author Author Name
  * @version 1.0.0
  */
