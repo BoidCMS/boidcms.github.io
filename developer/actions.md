@@ -1,11 +1,9 @@
 # Actions
-The word `Actions` in BoidCMS represents both the [`Events`](/developer/plugin-api?id=event) and the [`Filters`](/developer/plugin-api?id=filter). 
+In BoidCMS, the term `Actions` encompasses both [`Events`](/developer/plugin-api?id=event) and [`Filters`](/developer/plugin-api?id=filter).
 
-<!--BoidCMS has a lot of actions called within the core and the templates, And that makes it **super extensible**.     
-Actions are used to extend and/or to implement something to the site, actions can be used in and by [Plugins](plugins/) or [Themes](themes/).    -->
-BoidCMS offers a wide range of actions for developers to extend the functionality of their site. These include actions that are used in plugins and themes, as well as those that are implemented within the core itself.
+Developers can extend the functionality of their site using a variety of actions offered by BoidCMS. These actions include those utilized in plugins and themes, as well as those integrated into the core itself.
 
-Here are the list of all preserved actions.
+Here is a list of all the actions.
 
 ## Core
 
@@ -110,8 +108,7 @@ Here are the list of all preserved actions.
 |      `page_top`     |                     |                | `Filter`|         | `1.0.0` |
 |      `page_end`     |                     |                | `Filter`|         | `1.0.0` |
 
-?> Not all themes might support the actions listed above.
-
+?> It's possible that not all themes will support the actions listed above.
 
 
 
