@@ -66,7 +66,7 @@ Here is a list of all the actions.
 ## Preserved
 |         Action       |    Execute in    |               Parameters           |    Type   |   Info   |   Since  |
 | :------------------: | :--------------: | :--------------------------------: | :-------: | :------: | :------: |
-|   `editable_pages`   |                  |                                    |  `Filter` |          |  `1.0.0` |
+|   `editable_pages`   |                  |                                    |  `Filter` | This filter is used to add custom admin panels that contain editable fields for specific settings. |  `1.0.0` |
 
 
 
