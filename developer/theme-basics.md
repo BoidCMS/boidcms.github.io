@@ -1,9 +1,8 @@
 # Theme Basics
-All themes reside in the `themes` folder, And they have a predefined structure.
-
+The `themes` folder contains all of the themes, which adhere to a predefined structure.
 
 ## Folder and Files Structure
-This is the folder and the most required files structure for themes.     
+The following folder and file structure is essential for themes.
 
 ```plain
 themes/
@@ -12,12 +11,12 @@ themes/
     └── theme.php
 ```
 
-Some files which aren't necessarily required includes `post.php` (Custom template for page with `post` type) and `blank.php` (Blank template for plugins that creates dynamic pages).
+While not strictly necessary, some useful files to include in your theme are `post.php` (a custom template for pages with `post` types) and `blank.php` (a blank template for plugins that create dynamic pages).
 
 ## Theme code example
 
 ### blog.php **(required)**
-Use this template to create a listing of published posts.
+To create a list of published posts, use the following template as a starting point.
 
 ```php
 <?php global $App ?>
@@ -29,13 +28,11 @@ Use this template to create a listing of published posts.
   <body>
     <h1>Published Posts</h1>
     <?php foreach ( $App->data()[ 'pages' ] as $slug => $page ): ?>
-      <?php if ( 'post' === $page[ 'type' ] ): ?>
-        <?php if ( $page[ 'pub' ] ): ?>
+      <?php if ( 'post' === $page[ 'type' ] && $page[ 'pub' ] ): ?>
         <section>
           <h2><a href="<?= $slug ?>"><?= $page[ 'title' ] ?></a></h2>
           <p><?= $page[ 'descr' ] ?></p>
         </section>
-        <?php endif ?>
       <?php endif ?>
     <?php endforeach ?>
     <footer><?= $App->get( 'footer' ) ?></footer>
@@ -44,7 +41,7 @@ Use this template to create a listing of published posts.
 ```
 
 ### theme.php **(required)**
-Use this template to create a normal **static page** design.
+To create a **static page** design, use this template as a starting point.
 
 ```php
 <?php global $App ?>
@@ -62,7 +59,7 @@ Use this template to create a normal **static page** design.
 ```
 
 ### post.php **(not required)**
-Use this template to create a **post page** design.
+To create a design for a **post page**, use this template as a starting point.
 
 ```php
 <?php global $App ?>
@@ -81,7 +78,7 @@ Use this template to create a **post page** design.
 ```
 
 ### blank.php **(not required)**
-Use this template to create a layout of a normal **static page**.
+To create a layout for a normal **static page**, use this template as a starting point.
 
 ```php
 <?php global $App ?>
@@ -98,8 +95,7 @@ Use this template to create a layout of a normal **static page**.
 </html>
 ```
 
-?> You can add more features to it, [Theme Tags](/themes/tags) and [Actions](/developer/actions?id=themes) are most needed.
-
+?> To enhance your theme's functionality, consider adding additional features such as [theme tags](/themes/tags) and [actions](/developer/actions?id=themes). These are particularly useful and highly recommended.
 
 
 
