@@ -45,15 +45,15 @@ Here is a list of all the actions.
 |      `on_media`      |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form on the file manager page is submitted. |  `1.0.0` |
 |   `plugin_list_top`  |   `App::admin`   |         `(string) $plugin`         |  `Filter`|          |  `1.0.0` |
 |   `plugin_list_end`  |   `App::admin`   |         `(string) $plugin`         |  `Filter`|          |  `1.0.0` |
-|      `on_plugin`     |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
+|      `on_plugin`     |   `App::admin`   |                                    |  `Event` | This event is triggered every time a button to install a plugin is clicked. |  `1.0.0` |
 |        `logout`      |   `App::admin`   |                                    |  `Event` | This event is triggered every time a logged-in admin visits the logout page. |  `1.0.0` |
 |     `on_settings`    |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update the settings on the settings page is submitted. |  `1.0.0` |
-|    `change_theme`    |   `App::admin`   |     `(string) $_POST[ 'theme' ]`   |  `Event` |          |  `1.0.0` |
-|  `settings_success`  |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
-|   `settings_error`   |   `App::admin`   |          `(array) $data`           |  `Event` |          |  `1.0.0` |
+|    `change_theme`    |   `App::admin`   |     `(string) $_POST[ 'theme' ]`   |  `Event` | This event is triggered every time a form to update the settings on the settings page is submitted, specifically to check if the theme has been changed or not. |  `1.0.0` |
+|  `settings_success`  |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form on the settings page is submitted and the settings are successfully saved. |  `1.0.0` |
+|   `settings_error`   |   `App::admin`   |          `(array) $data`           |  `Event` | This event is triggered every time a form on the settings page is submitted, but the settings are not saved. |  `1.0.0` |
 |     `on_password`    |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update the password on the settings page is submitted. |  `1.0.0` |
-|  `password_success`  |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
-|   `password_error`   |   `App::admin`   |                                    |  `Event` |          |  `1.0.0` |
+|  `password_success`  |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update the password on the settings page is submitted and the new password is successfully saved. |  `1.0.0` |
+|   `password_error`   |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update the password on the settings page is submitted, but the new password is not saved because the old password provided is incorrect. |  `1.0.0` |
 |      `dashboard`     |   `App::admin`   |                                    |  `Filter`|          |  `1.0.0` |
 |       `render`       |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
 |        `index`       |   `App::render`  |                                    |  `Filter`|          |  `1.0.0` |
