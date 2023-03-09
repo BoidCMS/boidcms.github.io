@@ -1,10 +1,10 @@
 # Theme tags
 
 ## Site
-The following are values from the key "site" in the database.
+The following values are retrieved from the `site` key in the database.
 
 ### Language code
-This is the short name for the main language of the website used in the HTML "lang" attribute.
+This is the language code for the main language of the website, which is used in the HTML `lang` attribute. 
 
 ```php
 <?php echo $App->get( 'lang' ) ?>
@@ -18,21 +18,21 @@ The name of the website.
 ```
 
 ### Keywords
-The SEO keywords for the website homepage.
+This is the SEO keywords intended for the homepage of the website.
 
 ```php
 <?php echo $App->get( 'keywords' ) ?>
 ```
 
 ### Subtitle
-The website subtitle/slogan.
+The subtitle or slogan of the website.
 
 ```php
 <?php echo $App->get( 'subtitle' ) ?>
 ```
 
 ### Description
-The description of the website's homepage.
+The homepage description of the website.
 
 ```php
 <?php echo $App->get( 'descr' ) ?>
@@ -46,21 +46,21 @@ The website's host URL.
 ```
 
 ### Email
-The website's admin email address.
+The email address of the website's administrator.
 
 ```php
 <?php echo $App->get( 'email' ) ?>
 ```
 
 ### Username
-The name used as a security name which is required to access the website's admin panel.
+The security username used to access the website's admin panel.
 
 ```php
 <?php echo $App->get( 'username' ) ?>
 ```
 
 ### Password
-The encoded combination of characters used as a way of securing the admin panel.
+The encoded character combination utilized for securing the admin panel.
 
 ```php
 <?php echo $App->get( 'password' ) ?>
@@ -74,14 +74,14 @@ The website's footer could be copyright, HTML or combination of both.
 ```
 
 ### Theme
-The name of the current installed theme.
+The name of the currently installed theme.
 
 ```php
 <?php echo $App->get( 'theme' ) ?>
 ```
 
 ### Admin URL
-The user-customized admin login page URL.
+The customized URL for the admin login page.
 
 ```php
 <?php echo $App->get( 'admin' ) ?>
@@ -89,7 +89,7 @@ The user-customized admin login page URL.
 
 
 ## Page
-The following are values from each page in the database, regardless of the type.
+The values below are retrieved from every page in the database, irrespective of its type.
 
 ### Type
 The page type.
@@ -134,7 +134,7 @@ The thumbnail of the page.
 ```
 
 ### Publish
-The status of the page, published or not.
+The page's status: whether it has been published or not.
 
 ```php
 <?php $App->page( 'pub' ) ?>
