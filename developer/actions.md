@@ -11,6 +11,7 @@ Here is a list of all the actions.
 | :------------------: | :--------------: | :--------------------------------: | :------: | :------: | :------: |
 |         `log`        |    `App::log`    |     `(string) $message, $type`     |  `Event` | This event is triggered every time a message is logged using the `App::log` method. |  `1.0.0` |
 |         `save`       |    `App::save`   |                                    |  `Event` | This event is triggered every time the database is saved. |  `1.0.0` |
+|         `page`       |    `App::page`   |`(mixed) $content, (string) $index, (string) $page, (array) $data` |`Filter`| This filter is used to dynamically modify the value of a specific key within a given page. | `1.0.0` |
 |      `create_page`   |`App::create_page`|  `(string) $slug, (array) $details`|  `Event` | This event is triggered whenever a new page is created. |  `1.0.0` |
 |      `update_page`   |`App::update_page`|`(string) $slug, (string) $permalink, (array) $updates`|`Event`| This event is triggered whenever a page is updated. |  `1.0.0` |
 |      `delete_page`   |`App::delete_page`|           `(string) $slug`         |  `Event` | This event is triggered whenever a page is deleted. |  `1.0.0` |
