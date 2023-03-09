@@ -55,12 +55,12 @@ Here is a list of all the actions.
 |  `password_success`  |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update the password on the settings page is submitted and the new password is successfully saved. |  `1.0.0` |
 |   `password_error`   |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update the password on the settings page is submitted, but the new password is not saved because the old password provided is incorrect. |  `1.0.0` |
 |      `dashboard`     |   `App::admin`   |                                    |  `Filter`|          |  `1.0.0` |
-|       `render`       |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
+|       `render`       |   `App::render`  |                                    |  `Event` | This event is triggered on every page load as the first event. |  `1.0.0` |
 |        `index`       |   `App::render`  |                                    |  `Filter`|          |  `1.0.0` |
-|        `home`        |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
-|   `{PAGE_TYPE}_type` |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
-|         `404`        |   `App::render`  |          `(string) $page`          |  `Event` |          |  `1.0.0` |
-|      `rendered`      |   `App::render`  |                                    |  `Event` |          |  `1.0.0` |
+|        `home`        |   `App::render`  |                                    |  `Event` | This event is triggered on every page load that is the homepage. |  `1.0.0` |
+|   `{PAGE_TYPE}_type` |   `App::render`  |                                    |  `Event` | This event is triggered on every page load that is not the homepage. |  `1.0.0` |
+|         `404`        |   `App::render`  |          `(string) $page`          |  `Event` | This event is triggered when the requested page does not exist. |  `1.0.0` |
+|      `rendered`      |   `App::render`  |                                    |  `Event` | This event is triggered on every page load as the last event. |  `1.0.0` |
 
 
 ## Preserved
