@@ -14,6 +14,7 @@ When a particular event is triggered, certain actions are executed in response. 
  * @param object $App An instance of the App class.
  * @param callable $callback The callback function to execute.
  * @param int $priority The priority of the callback function.
+ * @return void
  */
 function register_my_event_callback( App $App, callable $callback, int $priority = 10 ): void {
   $App->set_action( 'my_event', $callback, $priority );
@@ -21,6 +22,8 @@ function register_my_event_callback( App $App, callable $callback, int $priority
 
 /**
  * Callback function for the "my_event" event.
+ *
+ * @return void
  */
 function my_event_callback_function(): void {
   // Do stuff...
@@ -53,7 +56,7 @@ $App->get_action( 'my_event' );
 
 
 ## Filter
-Filters enable dynamic modification of a variable's value through the use of specific actions.
+Filters enable dynamic modification of a value through the use of specific actions.
 
 ### Set
 
