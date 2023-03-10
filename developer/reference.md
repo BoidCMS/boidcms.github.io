@@ -5,9 +5,11 @@
 
 #### [`App`](developer/constant/app)
 
-## Variables
+## Global Variables
 
-#### [`$App`](developer/variable/app)
+- **[`$App`](developer/variable/app) (`object`)**:
+This is the global instance of the `App` class.
+
 #### [`$page`](developer/variable/page)
 #### [`$action`](developer/variable/action)
 #### [`$layout`](developer/variable/layout)
