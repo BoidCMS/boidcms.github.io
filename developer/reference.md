@@ -7,7 +7,7 @@
 
 ## Global Variables
 
-- **[`$App`](developer/variable/app) (`object`)**:
+- **`$App` (`object`)**:
 This is the global instance of the `App` class.
 
 #### [`$page`](developer/variable/page)
