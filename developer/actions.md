@@ -79,8 +79,8 @@ Here is a list of all the actions.
 |     `admin_top`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel after the `<body>` tag. | `1.0.0` |
 |     `admin_nav`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin navigation menu. | `1.0.0` |
 |   `admin_middle`  |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML below the alerts section on the admin panel. | `1.0.0` |
-|    `{PAGE}_top`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel above the title of specific pages. | `1.0.0` |
-|    `{PAGE}_end`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel below the content of specific pages. | `1.0.0` |
+|    `{$page}_top`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel above the title of specific pages. | `1.0.0` |
+|    `{$page}_end`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel below the content of specific pages. | `1.0.0` |
 |   `admin_footer`  |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the footer section of the admin pages. | `1.0.0` |
 |     `admin_end`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel before the `</body>` tag. | `1.0.0` |
 
