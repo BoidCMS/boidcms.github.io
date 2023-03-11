@@ -16,7 +16,7 @@ While not strictly necessary, some useful files to include in your theme are `po
 ## Theme code example
 
 ### blog.php **(required)**
-To create a list of published posts, use the following template as a starting point.
+To create a **list of published posts**, use the following template as a starting point.
 
 ```php
 <?php global $App ?>
@@ -48,7 +48,7 @@ To create a **static page** design, use this template as a starting point.
 <!DOCTYPE html>
 <html lang="<?= $App->get( 'lang' ) ?>">
   <head>
-    <title><?= $App->page( 'title' ) ?></title>
+    <title><?= $App->page( 'title' ) ?> - <?= $App->get( 'title' ) ?></title>
   </head>
   <body>
     <h1><?= $App->page( 'title' ) ?></h1>
@@ -66,7 +66,7 @@ To create a design for a **post page**, use this template as a starting point.
 <!DOCTYPE html>
 <html lang="<?= $App->get( 'lang' ) ?>">
   <head>
-    <title><?= $App->page( 'title' ) ?></title>
+    <title><?= $App->page( 'title' ) ?> - <?= $App->get( 'title' ) ?></title>
   </head>
   <body>
     <h1><?= $App->page( 'title' ) ?></h1>
@@ -81,11 +81,11 @@ To create a design for a **post page**, use this template as a starting point.
 To create a layout for a normal **static page**, use this template as a starting point.
 
 ```php
-<?php global $App ?>
+<?php global $App, $layout ?>
 <!DOCTYPE html>
 <html lang="<?= $App->get( 'lang' ) ?>">
   <head>
-    <title><?= $layout[ 'title' ] ?></title>
+    <title><?= $layout[ 'title' ] ?> - <?= $App->get( 'title' ) ?></title>
   </head>
   <body>
     <h1><?= $layout[ 'title' ] ?></h1>
