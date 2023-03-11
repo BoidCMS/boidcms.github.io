@@ -21,7 +21,7 @@ Here is a list of all the actions.
 |       `install`      |  `App::install`  |        `(string) $plugin`          |  `Event` | This event is triggered whenever a plugin is installed. |  `1.0.0` |
 |      `uninstall`     | `App::uninstall` |        `(string) $plugin`          |  `Event` | This event is triggered whenever a plugin is uninstalled. |  `1.0.0` |
 |      `slug_taken`    |  `App::slugify`  |                                    |  `Filter`| This filter is used to specify custom paths that are already taken and therefore not valid for creating new pages. |  `1.0.0` |
-|          `go`        |     `App::go`    |       `(string) $location`         |  `Event` | This event is triggered whenever the App:go method is used to send a redirection. |  `1.0.0` |
+|          `go`        |     `App::go`    |       `(string) $location`         |  `Event` | This event is triggered whenever the `App::go` method is used to send a redirection. |  `1.0.0` |
 |     `token_error`    |    `App::auth`   |         `(string) $token`          |  `Event` | This event is triggered whenever an invalid token is received in the admin panel. |  `1.0.0` |
 |         `login`      |   `App::admin`   |                                    |  `Event` | This event is triggered when a user is not logged in and attempts to access the admin panel. |  `1.0.0` |
 |         `form`       |   `App::admin`   |                                    |  `Filter`| This filter is used to add custom HTML to every form that is displayed in the admin panel, including the login page. It provides an opportunity to enhance the appearance and functionality of forms and add custom elements, such as buttons or fields, to the forms. |  `1.0.0` |
@@ -36,8 +36,8 @@ Here is a list of all the actions.
 |    `create_success`  |   `App::admin`   |       `(string) $permalink`        |  `Event` | This event is triggered when a form to create a new page is submitted and the page is successfully created. |  `1.0.0` |
 |     `create_error`   |   `App::admin`   |`(string) $permalink, (array) $_POST`| `Event` | This event is triggered when a form to create a new page is submitted, but the page creation process fails. |  `1.0.0` |
 |      `on_delete`     |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to delete a page is submitted. |  `1.0.0` |
-|   `delete_success`   |   `App::admin`   |          `(string) $page`          |  `Event` | This event is triggered when a form to delete a page is submitted and the page(s) are successfully deleted. |  `1.0.0` |
-|    `delete_error`    |   `App::admin`   |          `(string) $page`          |  `Event` | This event is triggered when a form to delete a page is submitted, but the page(s) fail to be deleted. |  `1.0.0` |
+|   `delete_success`   |   `App::admin`   |          `(string) $page`          |  `Event` | This event is triggered when a form to delete a page is submitted and the page is successfully deleted. |  `1.0.0` |
+|    `delete_error`    |   `App::admin`   |          `(string) $page`          |  `Event` | This event is triggered when a form to delete a page is submitted, but the page fail to be deleted. |  `1.0.0` |
 |      `on_update`     |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update a page is submitted. |  `1.0.0` |
 |    `update_success`  |   `App::admin`   |         `(string) $action`         |  `Event` | This event is triggered when a form to update a page is submitted and the page is successfully updated. |  `1.0.0` |
 |     `update_error`   |   `App::admin`   | `(string) $action, (array) $_POST` |  `Event` | This event is triggered when a form to update a page is submitted, but the page update process fails. |  `1.0.0` |
@@ -79,8 +79,8 @@ Here is a list of all the actions.
 |     `admin_top`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel after the `<body>` tag. | `1.0.0` |
 |     `admin_nav`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin navigation menu. | `1.0.0` |
 |   `admin_middle`  |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML below the alerts section on the admin panel. | `1.0.0` |
-|    `{$page}_top`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel above the title of specific pages. | `1.0.0` |
-|    `{$page}_end`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel below the content of specific pages. | `1.0.0` |
+|    `{$page}_top`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel above the title of specific page. | `1.0.0` |
+|    `{$page}_end`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel below the content of specific page. | `1.0.0` |
 |   `admin_footer`  |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the footer section of the admin pages. | `1.0.0` |
 |     `admin_end`   |   `app/layout.php`  |              | `Filter`| This filter is used to add custom HTML to the admin panel before the `</body>` tag. | `1.0.0` |
 
@@ -89,12 +89,12 @@ Here is a list of all the actions.
 
 |        Action       |      Execute in     |   Parameters   |   Type  |  Info   |  Since  |
 | :-----------------: | :-----------------: | :------------: | :-----: | :-----: | :-----: |
-|       `favicon`     |                     |                | `Filter`| This filter is used to add custom HTML `favicon` tags to the website. | `1.0.0` |
+|       `favicon`     |                     |`(string) $link`| `Filter`| This filter is used to add custom HTML `favicon` tags to the website. | `1.0.0` |
 |      `site_nav`     |                     |                | `Filter`| This filter is used to add a custom menu item to the site's navigation menu. | `1.0.0` |
 |     `site_head`     |                     |                | `Filter`| This filter is used to add custom HTML to the `<head>` section of the site, such as meta tags or scripts. | `1.0.0` |
-|      `site_top`     |                     |                | `Filter`| This filter is used to add custom HTML immediately before the closing `</body>` tag. | `1.0.0` |
+|      `site_top`     |                     |                | `Filter`| This filter is used to add custom HTML immediately after the opening `<body>` tag. | `1.0.0` |
 |    `site_footer`    |                     |                | `Filter`| This filter is used to add custom HTML to the site footer, which appears at the bottom of every page. | `1.0.0` |
-|      `site_end`     |                     |                | `Filter`| This filter is used to add custom HTML immediately after the opening `<body>` tag. | `1.0.0` |
+|      `site_end`     |                     |                | `Filter`| This filter is used to add custom HTML immediately before the closing `</body>` tag. | `1.0.0` |
 |`site_under_subtitle`|                     |                | `Filter`| This filter is used to add custom HTML below the site subtitle, in a specific section of the site determined by the theme or page template. | `1.0.0` |
 |      `home_top`     |                     |                | `Filter`| This filter is used to add custom HTML to the top of the blog homepage, which usually displays a selection of recent posts. | `1.0.0` |
 |   `post_list_top`   |                     |`(string) $slug`| `Filter`| This filter is used to add custom HTML to the top of each post in the list of articles. | `1.0.0` |
