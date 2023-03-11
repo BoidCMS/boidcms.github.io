@@ -10,5 +10,5 @@ BoidCMS allows you to customize the appearance of your website using themes. You
 
 ## How to activate a theme
 - Visit `Admin panel`.
-- Navigate to `Themes`.
+- Navigate to `Themes` section.
 - Look for the theme in the list and click on `Activate`.
