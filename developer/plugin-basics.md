@@ -34,7 +34,7 @@ $App->set_action( 'uninstall', 'example_uninstall' );
 /**
  * Log a debug message while installing
  * @param string $plugin
- * @return string
+ * @return void
  */
 function example_install( string $plugin ): void {
   global $App;
@@ -47,7 +47,7 @@ function example_install( string $plugin ): void {
 /**
  * Log a debug message before uninstalling
  * @param string $plugin
- * @return string
+ * @return void
  */
 function example_uninstall( string $plugin ): void {
   global $App;
