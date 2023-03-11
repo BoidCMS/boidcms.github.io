@@ -12,7 +12,7 @@ Plugins can be used to add new features, improve existing ones, or customize you
 
 ## How to activate and configure a plugin
 - Visit `Admin panel`.
-- Navigate to `Plugins`.
+- Navigate to `Plugins` panel.
 - Look for the plugin in the list and click `Install`.
 
 Some of the plugins allow some configurations when clicking `Configure`.
