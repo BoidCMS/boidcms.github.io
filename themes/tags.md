@@ -1,7 +1,7 @@
 # Theme tags
 
 ## Site
-The following values are retrieved from the `site` key in the database.
+The following values are retrieved from the `site` key in the database. See [database structure](/database).
 
 ### Language code
 This is the language code for the main language of the website, which is used in the HTML `lang` attribute. 
