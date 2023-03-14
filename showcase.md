@@ -2,7 +2,7 @@
 
 - [BoidCMS Demo](https://boidcms.alwaysdata.net)
 - [Another Demo](https://shoaiyb.alwaysdata.net)
-- [CMSLab](https://cmslab.se/)
+<!-- [CMSLab](https://cmslab.se/) -->
 
 ## Share
 
