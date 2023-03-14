@@ -49,7 +49,7 @@ Here is a list of all the actions.
 |      `on_plugin`     |   `App::admin`   |                                    |  `Event` | This event is triggered every time a button to install a plugin is clicked. |  `1.0.0` |
 |        `logout`      |   `App::admin`   |                                    |  `Event` | This event is triggered every time a logged-in admin visits the logout page. |  `1.0.0` |
 |     `on_settings`    |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update the settings on the settings page is submitted. |  `1.0.0` |
-|    `change_theme`    |   `App::admin`   |     `(string) $_POST[ 'theme' ]`   |  `Event` | This event is triggered every time a form to update the settings on the settings page is submitted, specifically to check if the theme has been changed or not. |  `1.0.0` |
+|    `change_theme`    |   `App::admin`   |         `(string) $theme`          |  `Event` | This event is triggered whenever a theme is activated. |  `1.0.0` |
 |  `settings_success`  |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form on the settings page is submitted and the settings are successfully saved. |  `1.0.0` |
 |   `settings_error`   |   `App::admin`   |          `(array) $data`           |  `Event` | This event is triggered every time a form on the settings page is submitted, but the settings are not saved. |  `1.0.0` |
 |     `on_password`    |   `App::admin`   |                                    |  `Event` | This event is triggered every time a form to update the password on the settings page is submitted. |  `1.0.0` |
