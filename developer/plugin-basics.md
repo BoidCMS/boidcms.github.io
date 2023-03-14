@@ -13,7 +13,7 @@ plugins/
 ```
 
 
-## Plugin code
+## Plugin code example
 To properly add functionality to a plugin in BoidCMS, it's important to organize the code in a specific manner within the plugin's PHP file. The following code should be added to the `plugin.php` file of the example plugin:
 
 ```php
