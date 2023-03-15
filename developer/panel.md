@@ -4,6 +4,7 @@ BoidCMS offers the ability to create custom pages for the admin panel via the [`
 
 
 ## Example code
+The following code creates an admin panel page with the slug `custom-admin-panel-page-slug`.
 
 ```php
 <?php
@@ -11,20 +12,48 @@ BoidCMS offers the ability to create custom pages for the admin panel via the [`
 $App->set_action( 'admin', 'custom_admin_panel_page' );
 
 /**
- * Custom HTML
+ * Custom admin view
  * @return void
  */
 function custom_admin_panel_page(): void {
   global $App, $layout, $page;
+  
   // Define the custom page path and check
-  if ( 'custom-panel-page' === $page ) {
-    // The page matches, modify the output
+  // if the page matches, then modify the output
+  if ( 'custom-panel-page-slug' === $page ) {
+    
+    // Set custom title
     $layout[ 'title' ] = 'Custom Admin Panel Page';
-    $layout[ 'content' ] = '
-    <h2 class="ss-monospace">Custom Admin Panel Page</h2>
-    <p>This is the custom admin panel page.</p>';
+    
+    // Set the HTML view content
+    $layout[ 'content' ] = '<p>This is the custom admin panel page <b>HTML</b> content.</p>';
+    
+    // Include the template file
     require_once $App->root( 'app/layout.php' );
   }
 }
 ?>
 ```
+
+### Add link to navigation menu
+
+```php
+<?php
+
+$App->set_action( 'admin_nav', 'custom_admin_panel_page_nav' );
+
+/**
+ * Custom admin view link
+ * @return string
+ */
+function custom_admin_panel_page_nav(): string {
+  global $App, $page;
+  $slug = $App->admin_url( '?page=custom-panel-page-slug' );
+  $active = ( 'custom-panel-page-slug' === $page ? ' ss-dotted' : '' );
+  return '<a href="' . $slug . '" class="ss-btn ss-inverted ss-bd-none ss-white' . $active . '">Custom Page</a>';
+}
+?>
+```
+
+
+
