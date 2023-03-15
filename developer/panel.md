@@ -4,7 +4,7 @@ BoidCMS offers the ability to create custom pages for the admin panel via the [`
 
 
 ## Example code
-The following code creates an admin panel page with the slug `custom-admin-panel-page-slug`.
+The following code generates an admin panel page with the slug `custom-admin-panel-page-slug`.
 
 ```php
 <?php
@@ -36,6 +36,7 @@ function custom_admin_panel_page(): void {
 ```
 
 ### Add link to navigation menu
+The following code adds a link to the admin navigation menu.
 
 ```php
 <?php
