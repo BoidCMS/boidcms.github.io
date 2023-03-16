@@ -6,13 +6,21 @@
 #### [`App`](developer/constant/app)
 
 ## Global Variables
+To access a global variable in your code, you need to first declare it as a global variable using the syntax `global $variable`. 
 
 - **`$App` (`object`)**:
 This is the global instance of the `App` class.
 
-#### [`$page`](developer/variable/page)
-#### [`$action`](developer/variable/action)
-#### [`$layout`](developer/variable/layout)
+### Admin Global Variables
+
+- **`$page` (`string`)**:
+This is the slug of the page being visited (current page) in the admin area.
+
+- **`$action` (`string`)**:
+This is a reserved variable that can be used as a sub-action slug.
+
+- **`$layout` (`array`)**:
+This variable contains the layout data for the admin panel.
 
 ## Properties
 
