@@ -1,10 +1,6 @@
 # Code Reference
 
 
-## Constants
-
-#### [`App`](developer/constant/app)
-
 ## Global Variables
 To access a global variable in your code, you need to first declare it as a global variable using the syntax `global $variable`. 
 
@@ -22,6 +18,10 @@ This is a reserved variable that can be used as a sub-action slug.
 - **`$layout` (`array`)**:
 This variable contains the layout data for the admin panel.
 
+## Constants
+
+- **`App` (bool)**:
+
 ## Properties
 
 #### [`App::root`](developer/property/root)
@@ -36,9 +36,9 @@ This variable contains the layout data for the admin panel.
 
 ## Methods
 
-#### [`App::__construct()`](developer/method/__construct)
-#### [`App::_()`](developer/method/_)
-#### [`App::_l()`](developer/method/_l)
+- **`App::__construct()` (method)**:
+- **`App::_()` (method)**:
+#### [`App::_l()`](method)**:
 #### [`App::log()`](developer/method/log)
 #### [`App::set()`](developer/method/set)
 #### [`App::unset()`](developer/method/unset)
