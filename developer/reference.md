@@ -20,57 +20,102 @@ This variable contains the layout data for the admin panel.
 
 ## Constants
 
-- **`App` (bool)**:
+- **`App` (`bool`)**:
 
 ## Properties
 
-#### [`App::root`](developer/property/root)
-#### [`App::page`](developer/property/page)
-#### [`App::medias`](developer/property/medias)
-#### [`App::themes`](developer/property/themes)
-#### [`App::plugins`](developer/property/plugins)
-#### [`App::version`](developer/property/version)
-#### [`App::logged_in`](developer/property/logged_in)
-#### [`App::actions`](developer/property/actions)
-#### [`App::database`](developer/property/database)
+- **`App::root` (`string`)**:
+
+- **`App::page` (`string`)**:
+
+- **`App::medias` (`string`)**:
+
+- **`App::themes` (`array`)**:
+
+- **`App::plugins` (`array`)**:
+
+- **`App::version` (`string`)**:
+
+- **`App::logged_in` (`bool`)**:
+
+- **`App::actions` (`array`)**:
+
+- **`App::database` (`array`)**:
 
 ## Methods
 
-- **`App::__construct()` (method)**:
-- **`App::_()` (method)**:
-#### [`App::_l()`](method)**:
-#### [`App::log()`](developer/method/log)
-#### [`App::set()`](developer/method/set)
-#### [`App::unset()`](developer/method/unset)
-#### [`App::get()`](developer/method/get)
-#### [`App::url()`](developer/method/url)
-#### [`App::admin_url()`](developer/method/admin_url)
-#### [`App::root()`](developer/method/root)
-#### [`App::theme()`](developer/method/theme)
-#### [`App::save()`](developer/method/save)
-#### [`App::data()`](developer/method/data)
-#### [`App::token()`](developer/method/token)
-#### [`App::set_action()`](developer/method/set_action)
-#### [`App::unset_action()`](developer/method/unset_action)
-#### [`App::get_action()`](developer/method/get_action)
-#### [`App::get_filter()`](developer/method/get_filter)
-#### [`App::load_actions()`](developer/method/load_actions)
-#### [`App::alert()`](developer/method/alert)
-#### [`App::alerts()`](developer/method/alerts)
-#### [`App::page()`](developer/method/page)
-#### [`App::create_page()`](developer/method/create_page)
-#### [`App::update_page()`](developer/method/update_page)
-#### [`App::delete_page()`](developer/method/delete_page)
-#### [`App::upload_media()`](developer/method/upload_media)
-#### [`App::delete_media()`](developer/method/delete_media)
-#### [`App::install()`](developer/method/install)
-#### [`App::uninstall()`](developer/method/uninstall)
-#### [`App::installed()`](developer/method/installed)
-#### [`App::slugify()`](developer/method/slugify)
-#### [`App::go()`](developer/method/go)
-#### [`App::esc_slug()`](developer/method/esc_slug)
-#### [`App::esc()`](developer/method/esc)
-#### [`App::auth()`](developer/method/auth)
-#### [`App::admin()`](developer/method/admin)
-#### [`App::render()`](developer/method/render)
+- **`App::__construct()` (`void`)**:
+
+- **`App::_()` (`mixex`)**:
+
+- **`App::_l()` (`array`)**:
+
+- **`App::log()` (`bool`)**:
+
+- **`App::set()` (`bool`)**:
+
+- **`App::unset()` (`bool`)**:
+
+- **`App::get()` (`mixed`)**:
+
+- **`App::url()` (`string`)**:
+
+- **`App::admin_url()` (`string`)**:
+
+- **`App::root()` (`string`)**:
+
+- **`App::theme()` (`string`)**:
+
+- **`App::save()` (`bool`)**:
+
+- **`App::data()` (`array`)**:
+
+- **`App::token()` (`string`)**:
+
+- **`App::set_action()` (`void`)**:
+
+- **`App::unset_action()` (`void`)**:
+
+- **`App::get_action()` (`string`)**:
+
+- **`App::get_filter()` (`mixed`)**:
+
+- **`App::load_actions()` (`void`)**:
+
+- **`App::alert()` (`void`)**:
+
+- **`App::alerts()` (`void`)**:
+
+- **`App::page()` (`mixed`)**:
+
+- **`App::create_page()` (`bool`)**:
+
+- **`App::update_page()` (`bool`)**:
+
+- **`App::delete_page()` (`bool`)**:
+
+- **`App::upload_media()` (`bool`)**:
+
+- **`App::delete_media()` (`bool`)**:
+
+- **`App::install()` (`bool`)**:
+
+- **`App::uninstall()` (`bool`)**:
+
+- **`App::installed()` (`bool`)**:
+
+- **`App::slugify()` (`string`)**:
+
+- **`App::go()` (`void`)**:
+
+- **`App::esc_slug()` (`string`)**:
+
+- **`App::esc()` (`string`)**:
+
+- **`App::auth()` (`void`)**:
+
+- **`App::admin()` (`void`)**:
+
+- **`App::render()` (`void`)**:
+
 
