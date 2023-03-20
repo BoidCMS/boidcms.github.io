@@ -54,75 +54,79 @@ This is a **protected** property that stores the complete database data.
 
 ## Methods
 
-- **`App::__construct()` (`void`)**:
+- **`App::__construct( string $root )` (`void`)**:
+This method is the constructor.  
 
-- **`App::_()` (`mixex`)**:
+- **`App::_( mixed $value, string $callback = 'default', mixed ...$args )` (`mixed`)**:
 
-- **`App::_l()` (`array`)**:
 
-- **`App::log()` (`bool`)**:
+- **`App::_l( string $callback, array $custom = array() )` (`array`)**:
 
-- **`App::set()` (`bool`)**:
+- **`App::log( string $message, string $type = 'debug' )` (`bool`)**:
 
-- **`App::unset()` (`bool`)**:
+- **`App::set( mixed $value, string $index )` (`bool`)**:
 
-- **`App::get()` (`mixed`)**:
+- **`App::unset( string $index )` (`bool`)**:
 
-- **`App::url()` (`string`)**:
+- **`App::get( string $index )` (`mixed`)**:
 
-- **`App::admin_url()` (`string`)**:
+- **`App::url( string $location = '' )` (`string`)**:
 
-- **`App::root()` (`string`)**:
+- **`App::admin_url( string $location = '', bool $abs = false )` (`string`)**:
 
-- **`App::theme()` (`string`)**:
+- **`App::root( string $location )` (`string`)**:
 
-- **`App::save()` (`bool`)**:
+- **`App::theme( string $location, bool $system = true )` (`string`)**:
 
-- **`App::data()` (`array`)**:
+- **`App::save( ?array $data = null )` (`bool`)**:
+
+- **`App::data( ?string $index = null )` (`array`)**:
 
 - **`App::token()` (`string`)**:
 
-- **`App::set_action()` (`void`)**:
+- **`App::set_action( string|array $action, callable $callback, int $priority = 10 )` (`void`)**:
 
-- **`App::unset_action()` (`void`)**:
+- **`App::unset_action( string $action )` (`void`)**:
 
-- **`App::get_action()` (`string`)**:
+- **`App::get_action( string $action, mixed ...$args )` (`string`)**:
 
-- **`App::get_filter()` (`mixed`)**:
+- **`App::get_filter( mixed $value, string $action, mixed ...$args )` (`mixed`)**:
 
 - **`App::load_actions()` (`void`)**:
 
-- **`App::alert()` (`void`)**:
+- **`App::alert( string $message, string $type = 'info' )` (`void`)**:
 
 - **`App::alerts()` (`void`)**:
 
-- **`App::page()` (`mixed`)**:
+- **`App::page( string $index, ?string $page = null )` (`mixed`)**:
 
-- **`App::create_page()` (`bool`)**:
+- **`App::create_page( string $slug, array $details )` (`bool`)**:
 
-- **`App::update_page()` (`bool`)**:
+- **`App::update_page( string $slug, string $permalink, array $updates )` (`bool`)**:
 
-- **`App::delete_page()` (`bool`)**:
+- **`App::delete_page( string $slug )` (`bool`)**:
 
-- **`App::upload_media()` (`bool`)**:
+- **`App::is_page( string $page )` (`bool`)**:
 
-- **`App::delete_media()` (`bool`)**:
+- **`App::upload_media( ?string &$msg = null, ?string &$basename = null )` (`bool`)**:
 
-- **`App::install()` (`bool`)**:
+- **`App::delete_media( string $media )` (`bool`)**:
 
-- **`App::uninstall()` (`bool`)**:
+- **`App::install( string $plugin )` (`bool`)**:
 
-- **`App::installed()` (`bool`)**:
+- **`App::uninstall( string $plugin )` (`bool`)**:
 
-- **`App::slugify()` (`string`)**:
+- **`App::installed( string $plugin )` (`bool`)**:
 
-- **`App::go()` (`void`)**:
+- **`App::slugify( string $title )` (`string`)**:
 
-- **`App::esc_slug()` (`string`)**:
+- **`App::go( string $location = '' )` (`void`)**:
 
-- **`App::esc()` (`string`)**:
+- **`App::esc_slug( string $slug, string $alt = '' )` (`string`)**:
 
-- **`App::auth()` (`void`)**:
+- **`App::esc( string|array|null $text, bool $trim = true )` (`string`)**:
+
+- **`App::auth( ?string $location = null, bool $post = true )` (`void`)**:
 
 - **`App::admin()` (`void`)**:
 
