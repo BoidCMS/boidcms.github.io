@@ -54,10 +54,17 @@ This is a **protected** property that stores the complete database data.
 
 ## Methods
 
-- **`App::__construct( string $root )` (`void`)**:
+- **`App::__construct()`**:
+```php
+App::__construct( string $root ): void
+```
 This method is the constructor.  
 
-- **`App::_( mixed $value, string $callback = 'default', mixed ...$args )` (`mixed`)**:
+
+- **`App::_()`**:
+```php
+App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
+```
 
 
 - **`App::_l( string $callback, array $custom = array() )` (`array`)**:
