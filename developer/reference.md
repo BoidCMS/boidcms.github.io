@@ -67,76 +67,219 @@ App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 ```
 
 
-- **`App::_l( string $callback, array $custom = array() )` (`array`)**:
+- **`App::_l()`**:
 
-- **`App::log( string $message, string $type = 'debug' )` (`bool`)**:
+```php
+App::_l( string $callback, array $custom = array() ): array
+```
 
-- **`App::set( mixed $value, string $index )` (`bool`)**:
+- **`App::log()`**:
 
-- **`App::unset( string $index )` (`bool`)**:
+```php
+App::log( string $message, string $type = 'debug' ): bool
+```
 
-- **`App::get( string $index )` (`mixed`)**:
+- **`App::set()`**:
 
-- **`App::url( string $location = '' )` (`string`)**:
+```php
+App::( mixed $value, string $index ): bool
+```
 
-- **`App::admin_url( string $location = '', bool $abs = false )` (`string`)**:
+- **`App::unset()`**:
 
-- **`App::root( string $location )` (`string`)**:
+```php
+App::( string $index ): bool
+```
 
-- **`App::theme( string $location, bool $system = true )` (`string`)**:
+- **`App::get()`**:
 
-- **`App::save( ?array $data = null )` (`bool`)**:
+```php
+App::get( string $index ): mixed
+```
 
-- **`App::data( ?string $index = null )` (`array`)**:
+- **`App::url()`**:
 
-- **`App::token()` (`string`)**:
+```php
+App:url( string $location = '' ): string
+```
 
-- **`App::set_action( string|array $action, callable $callback, int $priority = 10 )` (`void`)**:
+- **`App::admin_url()`**:
 
-- **`App::unset_action( string $action )` (`void`)**:
+```php
+App::admin_url( string $location = '', bool $abs = false ): string
+```
 
-- **`App::get_action( string $action, mixed ...$args )` (`string`)**:
+- **`App::root()`**:
 
-- **`App::get_filter( mixed $value, string $action, mixed ...$args )` (`mixed`)**:
+```php
+App::root( string $location ): string
+```
 
-- **`App::load_actions()` (`void`)**:
+- **`App::theme()`**:
 
-- **`App::alert( string $message, string $type = 'info' )` (`void`)**:
+```php
+App::theme( string $location, bool $system = true ): string
+```
+
+- **`App::save()`**:
+
+```php
+App::save( ?array $data = null ): bool
+```
+
+- **`App::data()`**:
+
+```php
+App::data( ?string $index = null ): array
+```
+
+- **`App::token()`**:
+
+```php
+App::token(): string
+```
+
+- **`App::set_action()`**:
+
+```php
+App::set_action( string|array $action, callable $callback, int $priority = 10 ): void
+```
+
+- **`App::unset_action()`**:
+
+```php
+App::unset_action( string $action ): void
+```
+
+- **`App::get_action()`**:
+
+```php
+App::get_action( string $action, mixed ...$args ): string
+```
+
+- **`App::get_filter()`**:
+
+```php
+App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
+```
+
+- **`App::load_actions()`**:
+
+```php
+App::load_actions(): void
+```
+
+- **`App::alert()`**:
+
+```php
+App::alert( string $message, string $type = 'info' ): void
+```
 
 - **`App::alerts()` (`void`)**:
 
-- **`App::page( string $index, ?string $page = null )` (`mixed`)**:
+```php
+App::alerts(): void
+```
 
-- **`App::create_page( string $slug, array $details )` (`bool`)**:
+- **`App::page()`**:
 
-- **`App::update_page( string $slug, string $permalink, array $updates )` (`bool`)**:
+```php
+App::page( string $index, ?string $page = null ): mixed
+```
 
-- **`App::delete_page( string $slug )` (`bool`)**:
+- **`App::create_page()`**:
 
-- **`App::is_page( string $page )` (`bool`)**:
+```php
+App::create_page( string $slug, array $details ): bool
+```
 
-- **`App::upload_media( ?string &$msg = null, ?string &$basename = null )` (`bool`)**:
+- **`App::update_page()`**:
 
-- **`App::delete_media( string $media )` (`bool`)**:
+```php
+App::update_page( string $slug, string $permalink, array $updates ): bool
+```
 
-- **`App::install( string $plugin )` (`bool`)**:
+- **`App::delete_page()`**:
 
-- **`App::uninstall( string $plugin )` (`bool`)**:
+```php
+App::delete_page( string $slug ): bool
+```
 
-- **`App::installed( string $plugin )` (`bool`)**:
+- **`App::is_page()`**:
 
-- **`App::slugify( string $title )` (`string`)**:
+```php
+App::is_page( string $page ): bool
+```
 
-- **`App::go( string $location = '' )` (`void`)**:
+- **`App::upload_media()`**:
 
-- **`App::esc_slug( string $slug, string $alt = '' )` (`string`)**:
+```php
+App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
+```
 
-- **`App::esc( string|array|null $text, bool $trim = true )` (`string`)**:
+- **`App::delete_media()`**:
 
-- **`App::auth( ?string $location = null, bool $post = true )` (`void`)**:
+```php
+App::delete_media( string $media ): bool
+```
 
-- **`App::admin()` (`void`)**:
+- **`App::install()`**:
 
-- **`App::render()` (`void`)**:
+```php
+App::install( string $plugin ): bool
+```
 
+- **`App::uninstall()`**:
+
+```php
+App::uninstall( string $plugin ): bool
+```
+
+- **`App::installed()`**:
+
+```php
+App::installed( string $plugin ): bool
+```
+
+- **`App::slugify()`**:
+
+```php
+App::slugify( string $title ): string
+```
+
+- **`App::go()`**:
+
+```php
+App::go( string $location = '' ): void
+```
+
+- **`App::esc_slug()`**:
+
+```php
+App::esc_slug( string $slug, string $alt = '' ): string
+```
+
+- **`App::esc()`**:
+
+```php
+App::esc( string|array|null $text, bool $trim = true ): string
+```
+
+- **`App::auth()`**:
+
+```php
+App::auth( ?string $location = null, bool $post = true ): void
+```
+
+- **`App::admin()**:
+
+```php
+App::admin(): void
+```
+
+- **`App::render()`**:
+
+```php
+App::render(): void
+```
 
