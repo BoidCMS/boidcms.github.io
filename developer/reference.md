@@ -66,7 +66,7 @@ App::__construct( string $root ): void
 ```
 
 **Parameters**:
- - `$root` (`string`) **required**: This is the installation directory passed during initiation.
+ - `$root` (`string`) **required**: This is the installation directory passed as a parameter during the class initialization.
 
 ------
 
@@ -77,10 +77,9 @@ App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 ```
 
 **Parameters**:
- - `$value` (`mixed`) **required**: This is the filter value.
- - `$callback` (`string`) **optional**: This is the filter action. The default value is `default`.
- - `$args` (`mixed`) **optional**: These are the passed arguments. The default value is empty.
-
+ - `$value` (`mixed`) **required**: This is the value that will be processed by the filter.
+ - `$callback` (`string`) **optional**: This is the filter action. By default, it is set to `default`.
+ - `$args` (`mixed`) **optional**: These are the arguments passed to the function. The default value is empty.
 ------
 
 - **`App::_l()`**:
