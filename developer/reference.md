@@ -330,6 +330,11 @@ App::create_page( string $slug, array $details ): bool
 App::update_page( string $slug, string $permalink, array $updates ): bool
 ```
 
+**Parameters**:
+ - `$slug` (`string`) **required**: This is the old slug of the page to be updated.
+ - `$permalink` (`string`) **required**: This is the new slug for the page, the old one could be used if not changing it.
+ - `$updates` (`array`) **required**: This is the updated page data.
+
 -------
 
 - **`App::delete_page()`**:
@@ -337,6 +342,9 @@ App::update_page( string $slug, string $permalink, array $updates ): bool
 ```php
 App::delete_page( string $slug ): bool
 ```
+
+**Parameters**:
+ - `$slug` (`string`) **required**: This is the slug of the page to be deleted.
 
 -------
 
@@ -346,6 +354,9 @@ App::delete_page( string $slug ): bool
 App::is_page( string $page ): bool
 ```
 
+**Parameters**:
+ - `$page` (`string`) **required**: This is the slug of the page to be checked.
+
 --------
 
 - **`App::upload_media()`**:
@@ -353,6 +364,10 @@ App::is_page( string $page ): bool
 ```php
 App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
 ```
+
+**Parameters**:
+ - `$msg` (`?string`) **optional**: This is the reference variable that stores the uploading response.
+ - `$basename` (`?string`) **optional**: This is the reference variable that stores the uploaded file basename.
 
 -------
 
@@ -362,6 +377,9 @@ App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
 App::delete_media( string $media ): bool
 ```
 
+**Parameters**:
+ - `$media` (`string`) **required**: This is the basename of the media file to be deleted.
+
 --------
 
 - **`App::install()`**:
@@ -369,6 +387,9 @@ App::delete_media( string $media ): bool
 ```php
 App::install( string $plugin ): bool
 ```
+
+**Parameters**:
+ - `$plugin` (`string`) **required**: This is the directory name of the plugin to be installed.
 
 --------
 
@@ -378,6 +399,9 @@ App::install( string $plugin ): bool
 App::uninstall( string $plugin ): bool
 ```
 
+**Parameters**:
+ - `$plugin` (`string`) **required**: This is the directory name of the plugin to be uninstalled.
+
 --------
 
 - **`App::installed()`**:
@@ -385,6 +409,9 @@ App::uninstall( string $plugin ): bool
 ```php
 App::installed( string $plugin ): bool
 ```
+
+**Parameters**:
+ - `$plugin` (`string`) **required**: This is the directory name of the plugin to check.
 
 ---------
 
@@ -394,6 +421,9 @@ App::installed( string $plugin ): bool
 App::slugify( string $title ): string
 ```
 
+**Parameters**:
+ - `$title` (`string`) **required**: This is the text parameter to be slugified.
+
 -------
 
 - **`App::go()`**:
@@ -401,6 +431,9 @@ App::slugify( string $title ): string
 ```php
 App::go( string $location = '' ): void
 ```
+
+**Parameters**:
+ - `$location` (`string`) **optional**: This is the internal path to redirect to.
 
 --------
 
@@ -410,13 +443,21 @@ App::go( string $location = '' ): void
 App::esc_slug( string $slug, string $alt = '' ): string
 ```
 
+**Parameters**:
+ - `$slug` (`string`) **required**: This is slug to be escaped.
+ - `$alt` (`string`) **optional**: This is an alternate slug to return when `$slug` parameter is considered empty.
+
 --------
 
 - **`App::esc()`**:
 
 ```php
-App::esc( string|array|null $text, bool $trim = true ): string
+App::esc( string | array | null $text, bool $trim = true ): string
 ```
+
+**Parameters**:
+ - `$text` (`string|array|null`) **required**: This is the text to be escaped.
+ - `$trim` (`bool`) **optional**: This indicates whether the escaped text should be trimmed.
 
 --------
 
@@ -426,6 +467,10 @@ App::esc( string|array|null $text, bool $trim = true ): string
 App::auth( ?string $location = null, bool $post = true ): void
 ```
 
+**Parameters**:
+ - `$location` (`string|null`) **optional**: This is the internal path to redirect when authentication fails.
+ - `$post` (`bool`) **optional**: This indicates whether the request should be treated as `post` if passed as `true` or `get` otherwise.
+
 --------
 
 - **`App::admin()`**:
@@ -434,6 +479,8 @@ App::auth( ?string $location = null, bool $post = true ): void
 App::admin(): void
 ```
 
+**Parameters**:
+
 --------
 
 - **`App::render()`**:
@@ -441,4 +488,6 @@ App::admin(): void
 ```php
 App::render(): void
 ```
+
+**Parameters**:
 
