@@ -58,23 +58,22 @@ This is a **protected** property that stores the complete database data.
 
 ## Methods
 
-### `App::__construct()`
+- **`App::__construct()`**:
+This is the constructor method.
 
 ```php
 App::__construct( string $root ): void
 ```
 
-#### **Parameters**:
+**Parameters**:
  - `$root` (`string`) **required**: This is the installation directory passed during initiation.
 
-This method is the constructor.  
-
+------
 
 - **`App::_()`**:
 ```php
 App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 ```
-
 
 - **`App::_l()`**:
 
@@ -280,7 +279,7 @@ App::esc( string|array|null $text, bool $trim = true ): string
 App::auth( ?string $location = null, bool $post = true ): void
 ```
 
-- **`App::admin()**:
+- **`App::admin()`**:
 
 ```php
 App::admin(): void
