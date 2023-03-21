@@ -194,7 +194,7 @@ App::save( ?array $data = null ): bool
 ```
 
 **Parameters**:
- - `$data` (`?array`) **optional**: This is the modified database to be saved.
+ - `$data` (`array|null`) **optional**: This is the modified database to be saved.
 
 ------
 
@@ -205,7 +205,7 @@ App::data( ?string $index = null ): array
 ```
 
 **Parameters**:
- - `$index` (`?string`) **optional**: This is the index key of the database table to be returned.
+ - `$index` (`string|null`) **optional**: This is the index key of the database table to be returned.
 
 --------
 
@@ -308,7 +308,7 @@ App::page( string $index, ?string $page = null ): mixed
 
 **Parameters**:
  - `$index` (`string`) **required**: This is the index key of the page field to return.
- - `$page` (`?string`) **optional**: This returns the data from the specified page, or current page if `null`.
+ - `$page` (`string|null`) **optional**: This returns the data from the specified page, or current page if `null`.
 
 --------
 
@@ -366,8 +366,8 @@ App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
 ```
 
 **Parameters**:
- - `$msg` (`?string`) **optional**: This is the reference variable that stores the uploading response.
- - `$basename` (`?string`) **optional**: This is the reference variable that stores the uploaded file basename.
+ - `$msg` (`string|null`) **optional**: This is the reference variable that stores the uploading response.
+ - `$basename` (`string|null`) **optional**: This is the reference variable that stores the uploaded file basename.
 
 -------
 
