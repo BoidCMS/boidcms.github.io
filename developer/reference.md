@@ -58,13 +58,14 @@ This is a **protected** property that stores the complete database data.
 
 ## Methods
 
-### **`App::__construct()`**:
+### `App::__construct()`
+
 ```php
 App::__construct( string $root ): void
 ```
 
 #### **Parameters**:
- - `$root`: This is the installation directory passed during initiation.
+ - `$root` (`string`) **required**: This is the installation directory passed during initiation.
 
 This method is the constructor.  
 
