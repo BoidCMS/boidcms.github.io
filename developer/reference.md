@@ -71,9 +71,12 @@ App::__construct( string $root ): void
 ------
 
 - **`App::_()`**:
+
 ```php
 App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 ```
+
+------
 
 - **`App::_l()`**:
 
@@ -81,11 +84,15 @@ App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 App::_l( string $callback, array $custom = array() ): array
 ```
 
+------
+
 - **`App::log()`**:
 
 ```php
 App::log( string $message, string $type = 'debug' ): bool
 ```
+
+------
 
 - **`App::set()`**:
 
@@ -93,11 +100,15 @@ App::log( string $message, string $type = 'debug' ): bool
 App::( mixed $value, string $index ): bool
 ```
 
+------
+
 - **`App::unset()`**:
 
 ```php
 App::( string $index ): bool
 ```
+
+------
 
 - **`App::get()`**:
 
@@ -105,11 +116,15 @@ App::( string $index ): bool
 App::get( string $index ): mixed
 ```
 
+------
+
 - **`App::url()`**:
 
 ```php
 App:url( string $location = '' ): string
 ```
+
+------
 
 - **`App::admin_url()`**:
 
@@ -117,11 +132,15 @@ App:url( string $location = '' ): string
 App::admin_url( string $location = '', bool $abs = false ): string
 ```
 
+------
+
 - **`App::root()`**:
 
 ```php
 App::root( string $location ): string
 ```
+
+------
 
 - **`App::theme()`**:
 
@@ -129,11 +148,15 @@ App::root( string $location ): string
 App::theme( string $location, bool $system = true ): string
 ```
 
+------
+
 - **`App::save()`**:
 
 ```php
 App::save( ?array $data = null ): bool
 ```
+
+------
 
 - **`App::data()`**:
 
@@ -141,11 +164,15 @@ App::save( ?array $data = null ): bool
 App::data( ?string $index = null ): array
 ```
 
+--------
+
 - **`App::token()`**:
 
 ```php
 App::token(): string
 ```
+
+-------
 
 - **`App::set_action()`**:
 
@@ -153,11 +180,15 @@ App::token(): string
 App::set_action( string|array $action, callable $callback, int $priority = 10 ): void
 ```
 
+------
+
 - **`App::unset_action()`**:
 
 ```php
 App::unset_action( string $action ): void
 ```
+
+------
 
 - **`App::get_action()`**:
 
@@ -165,11 +196,15 @@ App::unset_action( string $action ): void
 App::get_action( string $action, mixed ...$args ): string
 ```
 
+--------
+
 - **`App::get_filter()`**:
 
 ```php
 App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
 ```
+
+--------
 
 - **`App::load_actions()`**:
 
@@ -177,11 +212,15 @@ App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
 App::load_actions(): void
 ```
 
+---------
+
 - **`App::alert()`**:
 
 ```php
 App::alert( string $message, string $type = 'info' ): void
 ```
+
+-------
 
 - **`App::alerts()` (`void`)**:
 
@@ -189,11 +228,15 @@ App::alert( string $message, string $type = 'info' ): void
 App::alerts(): void
 ```
 
+-------
+
 - **`App::page()`**:
 
 ```php
 App::page( string $index, ?string $page = null ): mixed
 ```
+
+--------
 
 - **`App::create_page()`**:
 
@@ -201,11 +244,15 @@ App::page( string $index, ?string $page = null ): mixed
 App::create_page( string $slug, array $details ): bool
 ```
 
+-------
+
 - **`App::update_page()`**:
 
 ```php
 App::update_page( string $slug, string $permalink, array $updates ): bool
 ```
+
+-------
 
 - **`App::delete_page()`**:
 
@@ -213,11 +260,15 @@ App::update_page( string $slug, string $permalink, array $updates ): bool
 App::delete_page( string $slug ): bool
 ```
 
+-------
+
 - **`App::is_page()`**:
 
 ```php
 App::is_page( string $page ): bool
 ```
+
+--------
 
 - **`App::upload_media()`**:
 
@@ -225,11 +276,15 @@ App::is_page( string $page ): bool
 App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
 ```
 
+-------
+
 - **`App::delete_media()`**:
 
 ```php
 App::delete_media( string $media ): bool
 ```
+
+--------
 
 - **`App::install()`**:
 
@@ -237,11 +292,15 @@ App::delete_media( string $media ): bool
 App::install( string $plugin ): bool
 ```
 
+--------
+
 - **`App::uninstall()`**:
 
 ```php
 App::uninstall( string $plugin ): bool
 ```
+
+--------
 
 - **`App::installed()`**:
 
@@ -249,11 +308,15 @@ App::uninstall( string $plugin ): bool
 App::installed( string $plugin ): bool
 ```
 
+---------
+
 - **`App::slugify()`**:
 
 ```php
 App::slugify( string $title ): string
 ```
+
+-------
 
 - **`App::go()`**:
 
@@ -261,11 +324,15 @@ App::slugify( string $title ): string
 App::go( string $location = '' ): void
 ```
 
+--------
+
 - **`App::esc_slug()`**:
 
 ```php
 App::esc_slug( string $slug, string $alt = '' ): string
 ```
+
+--------
 
 - **`App::esc()`**:
 
@@ -273,17 +340,23 @@ App::esc_slug( string $slug, string $alt = '' ): string
 App::esc( string|array|null $text, bool $trim = true ): string
 ```
 
+--------
+
 - **`App::auth()`**:
 
 ```php
 App::auth( ?string $location = null, bool $post = true ): void
 ```
 
+--------
+
 - **`App::admin()`**:
 
 ```php
 App::admin(): void
 ```
+
+--------
 
 - **`App::render()`**:
 
