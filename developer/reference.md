@@ -21,7 +21,11 @@ This variable contains the layout data for the admin panel.
 ## Constants
 
 - **`App` (`bool`)**:
-This constant, defined in the `index.php` file in the root directory, is used to restrict direct access to PHP files. To implement this restriction, use the following syntax or an alternative: `defined( 'App' ) or die( 'Direct access to this file is restricted.' );`  
+This constant, defined in the `index.php` file in the root directory, is used to restrict direct access to PHP files. To implement this restriction, use the following syntax or an alternative: 
+
+```php
+defined( 'App' ) or die( 'Direct access to this file is restricted.' );
+```
 
 ## Properties
 
@@ -54,10 +58,14 @@ This is a **protected** property that stores the complete database data.
 
 ## Methods
 
-- **`App::__construct()`**:
+### **`App::__construct()`**:
 ```php
 App::__construct( string $root ): void
 ```
+
+#### **Parameters**:
+ - `$root`: This is the installation directory passed during initiation.
+
 This method is the constructor.  
 
 
