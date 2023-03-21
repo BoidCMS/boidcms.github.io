@@ -76,6 +76,11 @@ App::__construct( string $root ): void
 App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 ```
 
+**Parameters**:
+ - `$value` (`mixed`) **required**: This is the filter value.
+ - `$callback` (`string`) **optional**: This is the filter action.
+ - `$args` (`mixed`) **optional**: These are the passed arguments.
+
 ------
 
 - **`App::_l()`**:
@@ -83,6 +88,10 @@ App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 ```php
 App::_l( string $callback, array $custom = array() ): array
 ```
+
+**Parameters**:
+ - `$callback` (`string`) **required**: This is the list filter action.
+ - `$custom` (`array`) **optional**: This is the default lists passed.
 
 ------
 
@@ -92,21 +101,32 @@ App::_l( string $callback, array $custom = array() ): array
 App::log( string $message, string $type = 'debug' ): bool
 ```
 
+**Parameters**:
+ - `$message` (`string`) **required**: This is logging message.
+ - `$type` (`string`) **optional**: This is the log type.
+
 ------
 
 - **`App::set()`**:
 
 ```php
-App::( mixed $value, string $index ): bool
+App::set( mixed $value, string $index ): bool
 ```
+
+**Parameters**:
+ - `$value` (`mixed`) **required**: This is the value to be save.
+ - `$index` (`string`) **required**: This is the key index of the value saved.
 
 ------
 
 - **`App::unset()`**:
 
 ```php
-App::( string $index ): bool
+App::unset( string $index ): bool
 ```
+
+**Parameters**:
+ - `$index` (`string`) **required**: This is index key of the value to be removed.
 
 ------
 
@@ -116,13 +136,19 @@ App::( string $index ): bool
 App::get( string $index ): mixed
 ```
 
+**Parameters**:
+ - `$index` (`string`) **required**: This is the index key of the value to be returned.
+
 ------
 
 - **`App::url()`**:
 
 ```php
-App:url( string $location = '' ): string
+App::url( string $location = '' ): string
 ```
+
+**Parameters**:
+ - `$location` (`string`) **optional**: This is the path to be appended to the end of the site url.
 
 ------
 
@@ -132,6 +158,10 @@ App:url( string $location = '' ): string
 App::admin_url( string $location = '', bool $abs = false ): string
 ```
 
+**Parameters**:
+ - `$location` (`string`) **optional**: This is the path to be appended to the end of the admin url.
+ - `$abs` (`bool`) **optional**: This is to return absolute admin url if passed as `true` or as relative url otherwise.
+
 ------
 
 - **`App::root()`**:
@@ -139,6 +169,9 @@ App::admin_url( string $location = '', bool $abs = false ): string
 ```php
 App::root( string $location ): string
 ```
+
+**Parameters**:
+ - `$location` (`string`) **required**: This is the path to be appended to the end of the root directory.
 
 ------
 
@@ -148,6 +181,10 @@ App::root( string $location ): string
 App::theme( string $location, bool $system = true ): string
 ```
 
+**Parameters**:
+ - `$location` (`string`) **required**: This is the path to be appended to the end of the current theme directory.
+ - `$system` (`bool`) **optional**: This is to return a system file path if `true` or full site url with the theme file appended to it.
+
 ------
 
 - **`App::save()`**:
@@ -155,6 +192,9 @@ App::theme( string $location, bool $system = true ): string
 ```php
 App::save( ?array $data = null ): bool
 ```
+
+**Parameters**:
+ - `$data` (`?array`) **optional**: This is the modified database to be saved.
 
 ------
 
@@ -164,6 +204,9 @@ App::save( ?array $data = null ): bool
 App::data( ?string $index = null ): array
 ```
 
+**Parameters**:
+ - `$index` (`?string`) **optional**: This is the index key of the database table to be returned.
+
 --------
 
 - **`App::token()`**:
@@ -172,13 +215,20 @@ App::data( ?string $index = null ): array
 App::token(): string
 ```
 
+**Parameters**:
+
 -------
 
 - **`App::set_action()`**:
 
 ```php
-App::set_action( string|array $action, callable $callback, int $priority = 10 ): void
+App::set_action( string | array $action, callable $callback, int $priority = 10 ): void
 ```
+
+**Parameters**:
+ - `$action` (`string|array`) **required**: This is the action(s) to be registered.
+ - `$callback` (`callable`) **required**: This is the callback function of the action(s).
+ - `$priority` (`int`) **optional**: This is the priority order of the action, the number lower the number the more prioritised the action(s) gets.
 
 ------
 
@@ -188,6 +238,9 @@ App::set_action( string|array $action, callable $callback, int $priority = 10 ):
 App::unset_action( string $action ): void
 ```
 
+**Parameters**:
+ - `$action` (`string`) **required**: This is the action to be removed.
+
 ------
 
 - **`App::get_action()`**:
@@ -195,6 +248,10 @@ App::unset_action( string $action ): void
 ```php
 App::get_action( string $action, mixed ...$args ): string
 ```
+
+**Parameters**:
+ - `$action` (`string`) **required**: This is the action to be triggered.
+ - `$args` (`mixed`) **optional**: These are the arguments to be passed to the action's callback.
 
 --------
 
@@ -204,6 +261,11 @@ App::get_action( string $action, mixed ...$args ): string
 App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
 ```
 
+**Parameters**:
+ - `$value` (`mixed`) **required**: This is the value to be filtered.
+ - `$action` (`string`) **required**: This is the action to be used as the filter.
+ - `$args` (`mixed`) **optional**: These are the arguments to be passed to the action's callback.
+
 --------
 
 - **`App::load_actions()`**:
@@ -211,6 +273,8 @@ App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
 ```php
 App::load_actions(): void
 ```
+
+**Parameters**:
 
 ---------
 
@@ -220,6 +284,10 @@ App::load_actions(): void
 App::alert( string $message, string $type = 'info' ): void
 ```
 
+**Parameters**:
+ - `$message` (`string`) **required**: This is the alert message.
+ - `$type` (`string`) **optional**: This is the alert type, could be `error`, `warning`, `info` and `success`.
+
 -------
 
 - **`App::alerts()` (`void`)**:
@@ -227,6 +295,8 @@ App::alert( string $message, string $type = 'info' ): void
 ```php
 App::alerts(): void
 ```
+
+**Parameters**:
 
 -------
 
@@ -236,6 +306,10 @@ App::alerts(): void
 App::page( string $index, ?string $page = null ): mixed
 ```
 
+**Parameters**:
+ - `$index` (`string`) **required**: This is the index key of the page field to return.
+ - `$page` (`?string`) **optional**: This returns the data from the specified page, or current page if `null`.
+
 --------
 
 - **`App::create_page()`**:
@@ -243,6 +317,10 @@ App::page( string $index, ?string $page = null ): mixed
 ```php
 App::create_page( string $slug, array $details ): bool
 ```
+
+**Parameters**:
+ - `$slug` (`string`) **required**: This is the slugified slug of the page to be created.
+ - `$details` (`array`) **required**: This is the data containing all the fields required, to be saved as the page data.
 
 -------
 
