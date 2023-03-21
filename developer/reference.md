@@ -78,8 +78,8 @@ App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 
 **Parameters**:
  - `$value` (`mixed`) **required**: This is the filter value.
- - `$callback` (`string`) **optional**: This is the filter action.
- - `$args` (`mixed`) **optional**: These are the passed arguments.
+ - `$callback` (`string`) **optional**: This is the filter action. The default value is `default`.
+ - `$args` (`mixed`) **optional**: These are the passed arguments. The default value is empty.
 
 ------
 
@@ -91,7 +91,7 @@ App::_l( string $callback, array $custom = array() ): array
 
 **Parameters**:
  - `$callback` (`string`) **required**: This is the list filter action.
- - `$custom` (`array`) **optional**: This is the default lists passed.
+ - `$custom` (`array`) **optional**: This is the default lists passed. The default value is `array()`.
 
 ------
 
@@ -103,7 +103,7 @@ App::log( string $message, string $type = 'debug' ): bool
 
 **Parameters**:
  - `$message` (`string`) **required**: This is logging message.
- - `$type` (`string`) **optional**: This is the log type.
+ - `$type` (`string`) **optional**: This is the log type. The default value is `debug`.
 
 ------
 
@@ -148,7 +148,7 @@ App::url( string $location = '' ): string
 ```
 
 **Parameters**:
- - `$location` (`string`) **optional**: This is the path to be appended to the end of the site url.
+ - `$location` (`string`) **optional**: This is the path to be appended to the end of the site url. The default value is ``.
 
 ------
 
@@ -159,8 +159,8 @@ App::admin_url( string $location = '', bool $abs = false ): string
 ```
 
 **Parameters**:
- - `$location` (`string`) **optional**: This is the path to be appended to the end of the admin url.
- - `$abs` (`bool`) **optional**: This is to return absolute admin url if passed as `true` or as relative url otherwise.
+ - `$location` (`string`) **optional**: This is the path to be appended to the end of the admin url. The default value is ``.
+ - `$abs` (`bool`) **optional**: This is to return absolute admin url if passed as `true` or as relative url otherwise. The default value is `false`.
 
 ------
 
@@ -183,7 +183,7 @@ App::theme( string $location, bool $system = true ): string
 
 **Parameters**:
  - `$location` (`string`) **required**: This is the path to be appended to the end of the current theme directory.
- - `$system` (`bool`) **optional**: This is to return a system file path if `true` or full site url with the theme file appended to it.
+ - `$system` (`bool`) **optional**: This is to return a system file path if `true` or full site url with the theme file appended to it. The default value is `true`.
 
 ------
 
@@ -194,7 +194,7 @@ App::save( ?array $data = null ): bool
 ```
 
 **Parameters**:
- - `$data` (`array|null`) **optional**: This is the modified database to be saved.
+ - `$data` (`array|null`) **optional**: This is the modified database to be saved. The default value is `null`.
 
 ------
 
@@ -205,7 +205,7 @@ App::data( ?string $index = null ): array
 ```
 
 **Parameters**:
- - `$index` (`string|null`) **optional**: This is the index key of the database table to be returned.
+ - `$index` (`string|null`) **optional**: This is the index key of the database table to be returned. The default value is `null`.
 
 --------
 
@@ -228,7 +228,7 @@ App::set_action( string | array $action, callable $callback, int $priority = 10 
 **Parameters**:
  - `$action` (`string|array`) **required**: This is the action(s) to be registered.
  - `$callback` (`callable`) **required**: This is the callback function of the action(s).
- - `$priority` (`int`) **optional**: This is the priority order of the action, the number lower the number the more prioritised the action(s) gets.
+ - `$priority` (`int`) **optional**: This is the priority order of the action, the number lower the number the more prioritised the action(s) gets. The default value is `10`.
 
 ------
 
@@ -251,7 +251,7 @@ App::get_action( string $action, mixed ...$args ): string
 
 **Parameters**:
  - `$action` (`string`) **required**: This is the action to be triggered.
- - `$args` (`mixed`) **optional**: These are the arguments to be passed to the action's callback.
+ - `$args` (`mixed`) **optional**: These are the arguments to be passed to the action's callback. The default value is empty.
 
 --------
 
@@ -264,7 +264,7 @@ App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
 **Parameters**:
  - `$value` (`mixed`) **required**: This is the value to be filtered.
  - `$action` (`string`) **required**: This is the action to be used as the filter.
- - `$args` (`mixed`) **optional**: These are the arguments to be passed to the action's callback.
+ - `$args` (`mixed`) **optional**: These are the arguments to be passed to the action's callback. The default value is empty.
 
 --------
 
@@ -286,7 +286,7 @@ App::alert( string $message, string $type = 'info' ): void
 
 **Parameters**:
  - `$message` (`string`) **required**: This is the alert message.
- - `$type` (`string`) **optional**: This is the alert type, could be `error`, `warning`, `info` and `success`.
+ - `$type` (`string`) **optional**: This is the alert type, could be `error`, `warning`, `info` and `success`. The default value is `info`.
 
 -------
 
@@ -308,7 +308,7 @@ App::page( string $index, ?string $page = null ): mixed
 
 **Parameters**:
  - `$index` (`string`) **required**: This is the index key of the page field to return.
- - `$page` (`string|null`) **optional**: This returns the data from the specified page, or current page if `null`.
+ - `$page` (`string|null`) **optional**: This returns the data from the specified page, or current page if `null`. The default value is `null`.
 
 --------
 
@@ -366,8 +366,8 @@ App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
 ```
 
 **Parameters**:
- - `$msg` (`string|null`) **optional**: This is the reference variable that stores the uploading response.
- - `$basename` (`string|null`) **optional**: This is the reference variable that stores the uploaded file basename.
+ - `$msg` (`string|null`) **optional**: This is the reference variable that stores the uploading response. The default value is `null`.
+ - `$basename` (`string|null`) **optional**: This is the reference variable that stores the uploaded file basename. The default value is `null`.
 
 -------
 
@@ -433,7 +433,7 @@ App::go( string $location = '' ): void
 ```
 
 **Parameters**:
- - `$location` (`string`) **optional**: This is the internal path to redirect to.
+ - `$location` (`string`) **optional**: This is the internal path to redirect to. The default value is ``.
 
 --------
 
@@ -445,7 +445,7 @@ App::esc_slug( string $slug, string $alt = '' ): string
 
 **Parameters**:
  - `$slug` (`string`) **required**: This is slug to be escaped.
- - `$alt` (`string`) **optional**: This is an alternate slug to return when `$slug` parameter is considered empty.
+ - `$alt` (`string`) **optional**: This is an alternate slug to return when `$slug` parameter is considered empty. The default value is ``.
 
 --------
 
@@ -457,7 +457,7 @@ App::esc( string | array | null $text, bool $trim = true ): string
 
 **Parameters**:
  - `$text` (`string|array|null`) **required**: This is the text to be escaped.
- - `$trim` (`bool`) **optional**: This indicates whether the escaped text should be trimmed.
+ - `$trim` (`bool`) **optional**: This indicates whether the escaped text should be trimmed. The default value is `true`.
 
 --------
 
@@ -469,7 +469,7 @@ App::auth( ?string $location = null, bool $post = true ): void
 
 **Parameters**:
  - `$location` (`string|null`) **optional**: This is the internal path to redirect when authentication fails.
- - `$post` (`bool`) **optional**: This indicates whether the request should be treated as `post` if passed as `true` or `get` otherwise.
+ - `$post` (`bool`) **optional**: This indicates whether the request should be treated as `post` if passed as `true` or `get` otherwise. The default value is `true`.
 
 --------
 
