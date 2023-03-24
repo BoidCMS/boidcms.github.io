@@ -2,9 +2,9 @@
 
 ## v2.0.0
 - Blog option
-- Custom page template
+- Custom template feature
 - New admin section `Themes`
-- Improved speed
+- Improved in speed
 
 **Full Changelog**: https://github.com/BoidCMS/BoidCMS/compare/v1.0.1...v2.0.0
 
