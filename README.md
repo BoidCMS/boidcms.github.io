@@ -32,7 +32,7 @@ This project is a fork of [WonderCMS](https://www.wondercms.com).
 
 ## Requirements
  - PHP 8 or greater
- - Web server (Apache with `mod_rewrite`)
+ - Web server (Apache `mod_rewrite`)
 
 
 ## Installation
