@@ -4,8 +4,7 @@
 
 - Create a new back up of all files and directories
 - Download the latest version from the [official repo](https://github.com/BoidCMS/BoidCMS)
-- Extract the zip.
-- Replace existing files with the new files
+- Extract the zip and replace existing files with the new files
 - Test the site
 
 ## From different major version
@@ -15,11 +14,9 @@
 - Create a new back up of all files and directories
 - Uninstall all the plugins
 - Download the latest version from the [official repo](https://github.com/BoidCMS/BoidCMS)
-- Extract the zip.
-- Replace existing files with the new files
-- Test the site thoroughly
+- Extract the zip and replace existing files with the new files
 - Re-install all the plugins, one at a time
-
+- Test the site thoroughly
 
 Because BoidCMS does not use a database by default, you don't have to run any database migrations.
 
