@@ -14,3 +14,5 @@ This feature is useful for managing various types of files such as images, video
 - Click the `Upload` button to start the uploading process.
 
 Once the upload is complete, you will see the file listed in the File Manager.
+
+It is important to note that uploading a file with the same filename as another existing file will result in the replacement of the old file. Therefore, uploading should be done with care. To avoid the loss of older files, it is recommended that every file is renamed with a unique name before uploading.
