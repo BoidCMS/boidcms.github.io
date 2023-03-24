@@ -9,7 +9,7 @@ Here is a list of all the actions.
 
 |         Action       |    Execute in    |               Parameters           |   Type   |   Info   |   Since  |
 | :------------------: | :--------------: | :--------------------------------: | :------: | :------: | :------: |
-|         `log`        |    `App::log`    |     `(string) $message, $type`     |  `Event` | This event is triggered every time a message is logged using the `App::log` method. |  `1.0.0` |
+|         `log`        |    `App::log`    |     (string) `$message` <br> (`string`) `$type`     |  `Event` | This event is triggered every time a message is logged using the `App::log` method. |  `1.0.0` |
 |         `save`       |    `App::save`   |                                    |  `Event` | This event is triggered every time the database is saved. |  `1.0.0` |
 |         `page`       |    `App::page`   |`(mixed) $content, (string) $index, (string) $page, (array) $data` |`Filter`| This filter is used to dynamically modify the value of a specific key within a given page. | `1.0.0` |
 |      `create_page`   |`App::create_page`|  `(string) $slug, (array) $details`|  `Event` | This event is triggered whenever a new page is created. |  `1.0.0` |
