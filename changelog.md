@@ -9,7 +9,7 @@
 **Full Changelog**: https://github.com/BoidCMS/BoidCMS/compare/v1.0.1...v2.0.0
 
 ## v1.0.1
-- Fix token error multiple redirects
+- Fix (multiple redirects on token error)
 
 **Full Changelog**: https://github.com/BoidCMS/BoidCMS/compare/v1.0.0...v1.0.1
 
