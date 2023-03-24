@@ -16,7 +16,7 @@ Here is a list of all the actions.
 |      `update_page`   |`App::update_page`|(`string`) `$slug`, <br> (`string`) `$permalink`, <br> (`array`) `$updates`|`Event`| This event is triggered whenever a page is updated. |  `1.0.0` |
 |      `delete_page`   |`App::delete_page`|           (`string`) `$slug`         |  `Event` | This event is triggered whenever a page is deleted. |  `1.0.0` |
 |      `media_mime`    |`App::upload_media`|                                   | `Filter` | This filter is used to add custom MIME types that the website can recognize and accept. |  `1.0.0` |
-|     `upload_media`   |`App::upload_media`|   (`string|null`) `&$basename`, <br> (`string|null`) `&$msg`   |  `Event` | This event is triggered whenever a file is uploaded. |  `1.0.0` |
+|     `upload_media`   |`App::upload_media`|(`string\|null`) `&$basename`, <br> (`string\|null`) `&$msg`   |  `Event` | This event is triggered whenever a file is uploaded. |  `1.0.0` |
 |     `delete_media`   |`App::delete_media`|         (`string`) `$media`         |  `Event` | This event is triggered whenever a file is deleted. |  `1.0.0` |
 |       `install`      |  `App::install`  |        (`string`) `$plugin`          |  `Event` | This event is triggered whenever a plugin is installed. |  `1.0.0` |
 |      `uninstall`     | `App::uninstall` |        (`string`) `$plugin`          |  `Event` | This event is triggered whenever a plugin is uninstalled. |  `1.0.0` |
