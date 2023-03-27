@@ -97,6 +97,7 @@ Here is a list of all the actions.
 |      `site_end`     |                     |                    | `Filter`| This filter is used to add custom HTML immediately before the closing `</body>` tag. | `1.0.0` |
 |`site_under_subtitle`|                     |                    | `Filter`| This filter is used to add custom HTML below the site subtitle, in a specific section of the site determined by the theme or page template. | `1.0.0` |
 |      `home_top`     |                     |                    | `Filter`| This filter is used to add custom HTML to the top of the blog homepage, which usually displays a selection of recent posts. | `1.0.0` |
+|    `recent_posts`   |                     | (`array`) `$posts` <br> (`int`) `$pagination` <br> (`int`) `$per_page` | `Filter`| This filter is used to modify or rearrange the order in which posts are displayed on the blog before they are listed. | `1.0.0` |
 |   `post_list_top`   |                     | (`string`) `$slug` | `Filter`| This filter is used to add custom HTML to the top of each post in the list of articles. | `1.0.0` |
 |   `post_list_end`   |                     | (`string`) `$slug` | `Filter`| This filter is used to add custom HTML to the bottom of each post in the list of articles. | `1.0.0` |
 |      `home_end`     |                     |                    | `Filter`| This filter is used to add custom HTML to the bottom of the blog homepage, which usually displays a selection of recent posts. | `1.0.0` |
