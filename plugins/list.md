@@ -1,6 +1,6 @@
 # Plugins List
 
-|       Name      | Description |         Author        | Version | License |                  Link                 |
+|       Name      | Description |         Author        | Version | License |                Source                 |
 |:---------------:|:-----------:|:---------------------:|:-------:|:-------:|:-------------------------------------:|
 |      `AMP`      |             | `Shuaib Yusuf Shuaib` | `1.0.0` |  `MIT`  |     https://github.com/BoidCMS/amp    |
 |      `API`      |             | `Shuaib Yusuf Shuaib` | `0.1.0` |  `MIT`  |     https://github.com/BoidCMS/api    |
