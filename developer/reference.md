@@ -21,7 +21,7 @@ This variable contains the layout data for the admin panel.
 ## Constants
 
 - **`App` (`bool`)**:
-This constant, defined in the `index.php` file in the root directory, is used to restrict direct access to PHP files. To implement this restriction, use the following syntax or an alternative: 
+The `App` constant, defined in the `index.php` file located in the root directory, serves as a security measure to prevent direct access to PHP files. To enforce this restriction, use the following syntax or an alternative method:
 
 ```php
 defined( 'App' ) or die( 'Direct access to this file is restricted.' );
