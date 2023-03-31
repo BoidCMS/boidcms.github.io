@@ -12,15 +12,16 @@ Here is a list of all the actions.
 |         `log`        |    `App::log`    |  (`string`) `$message` <br> (`string`) `$type`   |  `Event` | This event is triggered every time a message is logged using the `App::log` method. |  `1.0.0` |
 |         `save`       |    `App::save`   |                                                  |  `Event` | This event is triggered every time the database is saved. |  `1.0.0` |
 |         `page`       |    `App::page`   |(`mixed`) `$content`, <br> (`string`) `$index`, <br> (`string`) `$page`, <br> (`array`) `$data` |`Filter`| This filter is used to dynamically modify the value of a specific key within a given page. | `1.0.0` |
-|      `create_page`   |`App::create_page`|     (`string`) `$slug`, <br> (`array`) `$details`     |  `Event` | This event is triggered whenever a new page is created. |  `1.0.0` |
-|      `update_page`   |`App::update_page`|(`string`) `$slug`, <br> (`string`) `$permalink`, <br> (`array`) `$updates`|`Event`| This event is triggered whenever a page is updated. |  `1.0.0` |
-|      `delete_page`   |`App::delete_page`|           (`string`) `$slug`         |  `Event` | This event is triggered whenever a page is deleted. |  `1.0.0` |
+|      `create_page`   |`App::create_page`|     (`string`) `$slug`, <br> (`array`) `$details`     |  `Event` | This event is triggered whenever a new page is being created. |  `1.0.0` |
+|      `update_page`   |`App::update_page`|(`string`) `$slug`, <br> (`string`) `$permalink`, <br> (`array`) `$updates`|`Event`| This event is triggered whenever a page is being updated. |  `1.0.0` |
+|      `delete_page`   |`App::delete_page`|           (`string`) `$slug`         |  `Event` | This event is triggered whenever a page is being deleted. |  `1.0.0` |
 |      `media_mime`    |`App::upload_media`|                                   | `Filter` | This filter is used to add custom MIME types that the website can recognize and accept. |  `1.0.0` |
-|     `upload_media`   |`App::upload_media`|(`string\|null`) `&$basename`, <br> (`string\|null`) `&$msg`   |  `Event` | This event is triggered whenever a file is uploaded. |  `1.0.0` |
-|     `delete_media`   |`App::delete_media`|         (`string`) `$media`         |  `Event` | This event is triggered whenever a file is deleted. |  `1.0.0` |
-|       `install`      |  `App::install`  |        (`string`) `$plugin`          |  `Event` | This event is triggered whenever a plugin is installed. |  `1.0.0` |
-|      `uninstall`     | `App::uninstall` |        (`string`) `$plugin`          |  `Event` | This event is triggered whenever a plugin is uninstalled. |  `1.0.0` |
+|     `upload_media`   |`App::upload_media`|         (`string`) `$basename`      |  `Event` | This event is triggered whenever a file is uploaded. |  `1.0.0` |
+|     `delete_media`   |`App::delete_media`|         (`string`) `$media`         |  `Event` | This event is triggered whenever a file is being deleted. |  `1.0.0` |
+|       `install`      |  `App::install`  |        (`string`) `$plugin`          |  `Event` | This event is triggered whenever a plugin is being installed. |  `1.0.0` |
+|      `uninstall`     | `App::uninstall` |        (`string`) `$plugin`          |  `Event` | This event is triggered whenever a plugin is being uninstalled. |  `1.0.0` |
 |      `slug_taken`    |  `App::slugify`  |                                    |  `Filter`| This filter is used to specify custom paths that are already taken and therefore not valid for creating new pages. |  `1.0.0` |
+|       `slugify`      |  `App::slugify`  | (`string`) `$slug`, <br> (`string`) `$title` |  `Filter`| This filter is used to modify the output of the slugifyer. |  `1.0.0` |
 |          `go`        |     `App::go`    |       (`string`) `$location`         |  `Event` | This event is triggered whenever the `App::go` method is used to send a redirection. |  `1.0.0` |
 |     `token_error`    |    `App::auth`   |         (`string`) `$token`          |  `Event` | This event is triggered whenever an invalid token is received in the admin panel. |  `1.0.0` |
 |         `login`      |   `App::admin`   |                                    |  `Event` | This event is triggered when a user is not logged in and attempts to access the admin panel. |  `1.0.0` |
