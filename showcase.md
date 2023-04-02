@@ -1,13 +1,16 @@
-# BoidCMS Websites Showcase
+# Showcase of Websites Built with BoidCMS
 
 - [BoidCMS Demo](https://boidcms.alwaysdata.net)
 - [Another Demo](https://shoaiyb.alwaysdata.net)
-<!-- [CMSLab](https://cmslab.se/) -->
+- [LarsErikP blogg](https://larserikp.com)
+<!-- [CMSLab](https://cmslab.se) -->
 
+<!--
 ## Share
 
 https://github.com/BoidCMS/BoidCMS/discussions/categories/showcase
 
+-->
 <!--form action="https://formspree.io/f/xqknrogy" method="POST">
   <label>
     Site Title:
