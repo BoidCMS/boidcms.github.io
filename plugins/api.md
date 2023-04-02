@@ -1,50 +1,64 @@
-# Api
-The BoidCMS API plugin is designed to provide an easy way to integrate other systems with BoidCMS powered sites.      
-With this plugin, you can retrieve or update data from the database with a simple HTTP request.
+# API
+The BoidCMS API plugin streamlines integration between BoidCMS and other systems. By making HTTP requests, you can easily retrieve or update data from the database without needing to access the admin panel. Whether you're building a custom front-end, integrating with a third-party service, or automating your workflow, the BoidCMS API plugin simplifies the process.  
+
 
 ## Install
 Download the zip file of the plugin on this [repo](https://github.com/BoidCMS/api).     
 Follow this [steps](plugins/) to install.
 
+
 ## Developer
 
 ### Requests
-The api request uri is: `{protocol}://{domain}/api/{endpoint}`.    
-Eg, `http://example.com/api/settings`
 
-|     Endpoint    |  Method  |
-| :-------------: | :------: |
-| `/api/settings` |   `GET`  |
-| `/api/settings` |   `PUT`  |
-|  `/api/medias`  |   `GET`  |
-|  `/api/medias`  |  `POST`  |
-|  `/api/medias`  | `DELETE` |
-|   `/api/pages`  |   `GET`  |
-|   `/api/pages`  |   `PUT`  |
-|   `/api/pages`  |  `POST`  |
-|   `/api/pages`  | `DELETE` |
+To make an API request to BoidCMS, use the following URL format:
+
+```plain
+{protocol}://{domain}/api/v{version}/{endpoint}
+```
+
+To customize the URL, replace the placeholder values with your website's specific information. For example, replace `{protocol}` with "http" or "https" depending on your website's configuration, and replace `{domain}` with your website's domain name. Also, replace `{version}` with the API version you plan to use and `{endpoint}` with the specific endpoint you want to access.   
+
+Example: 
+```plain
+http://api.example.com/api/v1/settings/
+```
+
+|       Endpoint     |  Method  |
+| :----------------: | :------: |
+| `/api/v1/settings` |   `GET`  |
+| `/api/v1/settings` |   `PUT`  |
+|  `/api/v1/medias`  |   `GET`  |
+|  `/api/v1/medias`  |  `POST`  |
+|  `/api/v1/medias`  | `DELETE` |
+|  `/api/v1/pages`   |   `GET`  |
+|  `/api/v1/pages`   |   `PUT`  |
+|  `/api/v1/pages`   |  `POST`  |
+|  `/api/v1/pages`   | `DELETE` |
+|  `/api/v1/slugify` |   `GET`  |
 
 ### Response
 The response content format is `JSON`.
 
 Default return values.     
 
-|    Key    |   Type  |
-| :-------: | :-----: |
-|   `code`  |  `int`  |
-|  `success`|  `bool` |
-|  `message`| `string`|
-|  `result` | `array` |
-|   `error` | `array` |
+|    Field   |   Type  |
+| :--------: | :-----: |
+|   `code`   |  `int`  |
+|  `success` |  `bool` |
+|  `message` | `string`|
+|   `data`   | `array` |
 
 
-### Used hooks/events
+## Actions
 
-|       Hook/Event     |     Execute in    |     Parameters     |   Since   |
+### Used Actions
+
+|         Action       |     Execute in    |     Parameters     |   Since   |
 | :------------------: | :---------------: | :----------------: | :-------: |
-|    `delete_media`    |`App::delete_media`| `(string) $media`  |  `1.0.0`  |
-|     `delete_page`    |`App::delete_page` |  `(string) $page`  |  `1.0.0`  |
-|       `setting`      |   `App::admin`    |                    |  `1.0.0`  |
-|        `render`      |   `App::render`   |                    |  `1.0.0`  |
+|    `delete_media`    |    `api_medias`   | `(string) $media`  |  `0.1.0`  |
+|     `delete_page`    |     `api_pages`   |  `(string) $page`  |  `0.1.0`  |
+|       `setting`      |   `App::admin`    |                    |  `0.1.0`  |
+|        `render`      |   `App::render`   |                    |  `0.1.0`  |
 
 
