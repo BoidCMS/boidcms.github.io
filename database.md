@@ -1,4 +1,4 @@
-# Default database structure
+# Database Default Structure
 Below is an example of a formatted JSON representation of a newly created database
 
 ```json
@@ -53,6 +53,6 @@ Below is an example of a formatted JSON representation of a newly created databa
             "pub": true
         }
     },
-    "installed": []
+    "installed": {}
 }
 ```
