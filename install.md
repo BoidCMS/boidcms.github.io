@@ -8,7 +8,7 @@
 ## Default Login Credentials
 The default login page for the administrator is located at `admin`. To access the login page, simply append `/admin` to the end of your website's URL. For example, if your site's URL is `http://example.com`, then the login page would be located at `http://example.com/admin`. If your website is located in a subdirectory, then you will need to include the subdirectory name before `/admin`.  
 
-It's important to note that the default username and password are both set to `admin` and `password`, respectively. However, to ensure your site's security, it's highly recommended that you change these login details to something more unique and complex. 
+It's important to note that the default username and password are both set to **admin** and **password**, respectively. However, to ensure your site's security, it's highly recommended that you change these login details to something more unique and complex. 
 
 ## Run BoidCMS with PHP Built-In Web Server
 BoidCMS can be quickly run through the command line using PHP's built-in web server.
