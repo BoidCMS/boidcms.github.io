@@ -1,30 +1,37 @@
-## Installation from zip file
+## Installing BoidCMS from a zip file
 
-- Download the latest version from the [official repo](https://github.com/BoidCMS/BoidCMS).
-- Extract the zip file.
-- Upload the extracted content to your server. You can upload the files in the root directory, or in a subdirectory such as `/site/`.
-- Visit your domain. If you uploaded the files in the root directory go to `http://example.com`, if you uploaded the files in a subdirectory `http://example.com/site/`.
-- Follow the admin page to configure your new website.
+- Get the latest version of BoidCMS from the [official repository](https://github.com/BoidCMS/BoidCMS).
+- Extract the zip file and upload the contents to your server. You can upload the files to the root directory or to a subdirectory of your choice.
+- Navigate to your domain. If you uploaded the files to the root directory, go to `http://example.com`. If you uploaded the files to a subdirectory, go to `http://example.com/{subdirectory}`.
+- Use the admin panel to set up and customize your website.
 
-## Default credentials
-The default admin login page is `admin`, append `admin` at the end of your site's URL to get to the login page. Eg, `http://example.com/admin`, or if your site is in a subdirectory `http://example.com/site/admin`.     
-While the default username and password are `admin` and `password` respectively, **Changing the login details is highly encouraged** for additional security.
+## Default Login Credentials
+The default login page for the administrator is located at `admin`. To access the login page, simply append `/admin` to the end of your website's URL. For example, if your site's URL is `http://example.com`, then the login page would be located at `http://example.com/admin`. If your website is located in a subdirectory, then you will need to include the subdirectory name before `/admin`.  
 
-## PHP Built-In web server
-You can run BoidCMS quickly via the command line with the PHP Built-in web server. <!--and the plugin [Localhost](https://github.com/BoidCMS/localhost).-->
+It's important to note that the default username and password are both set to `admin` and `password`, respectively. However, to ensure your site's security, it's highly recommended that you change these login details to something more unique and complex. 
+
+## Run BoidCMS with PHP Built-In Web Server
+BoidCMS can be quickly run through the command line using PHP's built-in web server.
 
 ```bash
 git clone https://github.com/BoidCMS/BoidCMS boidcms
 cd boidcms
 ```
 
-Modify `index.php` and add the following php code right before `$App->render();` line
+To prepare `index.php` for use with the PHP Built-in web server, follow these steps:
 
+- Add the following code before the `$App->render();` method:
 ```php
 $App->page = ltrim( $_SERVER[ 'PATH_INFO' ] ?? '', '/' );
 ```
 
-Then start the server.
+- Save the changes to `index.php`.
+
+- Start the server by running the following command in your terminal:
 ```bash
 php -S localhost:8080
 ```
+
+Once the server is running, you can access BoidCMS by opening a web browser and navigating to `http://localhost:8080` in the address bar.
+
+
