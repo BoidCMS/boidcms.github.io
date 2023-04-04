@@ -96,6 +96,7 @@ Here is a list of all the actions.
 |      `site_top`     |                     |                    | `Filter`| This filter is used to add custom HTML immediately after the opening `<body>` tag. | `1.0.0` |
 |    `site_footer`    |                     |                    | `Filter`| This filter is used to add custom HTML to the site footer, which appears at the bottom of every page. | `1.0.0` |
 |      `site_end`     |                     |                    | `Filter`| This filter is used to add custom HTML immediately before the closing `</body>` tag. | `1.0.0` |
+|    `site_sidebar`   |                     |                    | `Filter`| This filter is used to add custom HTML content to the sidebar of the site's theme. | `1.0.0` |
 |`site_under_subtitle`|                     |                    | `Filter`| This filter is used to add custom HTML below the site subtitle, in a specific section of the site determined by the theme or page template. | `1.0.0` |
 |      `home_top`     |                     |                    | `Filter`| This filter is used to add custom HTML to the top of the blog homepage, which usually displays a selection of recent posts. | `1.0.0` |
 |    `recent_posts`   |                     | (`array`) `$posts` <br> (`int`) `$pagination` <br> (`int`) `$per_page` | `Filter`| This filter is used to modify or rearrange the order in which posts are displayed on the blog before they are listed. | `1.0.0` |
