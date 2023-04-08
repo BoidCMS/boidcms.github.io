@@ -12,7 +12,7 @@
 - Pagination support
 - Customization options to make the theme your own
 - Supports every BoidCMS theme event and filter
-- Version `v1.*` support
+- Works with any version of BoidCMS
 
 
 ## Download
