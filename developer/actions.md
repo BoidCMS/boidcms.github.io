@@ -68,11 +68,12 @@ Here is a list of all the actions.
 ## Preserved
 |         Action       |    Execute in    |               Parameters           |    Type   |               Info               |   Since  |
 | :------------------: | :--------------: | :--------------------------------: | :-------: | :------------------------------: | :------: |
+|       `default`      |                  |                                    |  `Filter` | The default filter action is applied when using the shorthand method `App::_` without specifying an action parameter. This filter is the one that is used by default in such cases. |  `1.0.0` |
 |   `editable_pages`   |                  |                                    |  `Filter` | This filter is used to add admin panels that contain editable fields for WYSIWYG editors. |  `1.0.0` |
 
 
 
-## Admin view
+## Admin Template
 
 |       Action      |      Execute in     |  Parameters  |   Type  |  Info   |  Since  |
 | :---------------: | :-----------------: | :----------: | :-----: | :-----: | :-----: |
