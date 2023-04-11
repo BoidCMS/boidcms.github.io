@@ -1,4 +1,4 @@
-# Update post or page
+# Update Post or Page
 
 ![Update choose](https://boidcms.github.io/_media/updatechoose.png)
 ------
@@ -19,7 +19,5 @@ Once you've made your changes, click the `Update` button to save your updates.
 Your post or page will be updated immediately, and the changes will be reflected on your website.
 
 
-
-
-By default, BoidCMS doesn't include any content editor, but you can use [plugins](plugins/) such as [Trumbowyg](https://github.com/BoidCMS/trumbowyg).
+?> By default, BoidCMS doesn't include any content editor, but you can use [plugins](plugins/) such as [Trumbowyg](https://github.com/BoidCMS/trumbowyg).
 
