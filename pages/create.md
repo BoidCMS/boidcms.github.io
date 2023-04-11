@@ -1,4 +1,4 @@
-# Create new post or page
+# Create New Post or Page
 
 ![Create page](https://boidcms.github.io/_media/create.png)
 
