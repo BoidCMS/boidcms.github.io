@@ -13,6 +13,8 @@ themes/
 
 While not strictly necessary, some useful files to include in your theme are `post.php` (a custom template for pages with `post` types) and `blank.php` (a blank template for plugins that create dynamic pages).
 
+?> To use custom template files as custom page templates in the admin panel, you must first register them using the [`tpl`](/developer/actions) action. This action allows the admin panel to recognize and make use of your custom templates. Remember to register each custom template file you add before expecting it to be available for use.
+
 ## Theme code example
 
 ### blog.php **(required)**
