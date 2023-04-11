@@ -1,7 +1,7 @@
 # Update Post or Page
 
-![Update choose](https://boidcms.github.io/_media/updatechoose.png)
-------
+![Update choose](https://boidcms.github.io/_media/updatechoose.png)   
+
 ![Update page](https://boidcms.github.io/_media/update.png)
 
 Log in to the `Admin panel` using your username and password.
