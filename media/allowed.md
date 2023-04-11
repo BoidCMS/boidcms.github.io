@@ -1,4 +1,4 @@
-# Allowed mime types
+# Allowed MIME Types
 To ensure that your website runs smoothly and securely, certain restrictions may be placed on the types of files that can be uploaded. Here is a list of the allowed MIME types for file uploads by default:
 
 
