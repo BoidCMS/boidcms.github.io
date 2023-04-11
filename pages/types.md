@@ -1,4 +1,4 @@
-# Content types
+# Content Types
 BoidCMS comes with two pre-defined content types out-of-the-box.
 
 ## Post
