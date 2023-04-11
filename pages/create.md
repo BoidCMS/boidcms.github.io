@@ -36,4 +36,4 @@ Click on the `Create` button to create your page.
 Once your content has been published, you can view it on your website.
 
 
-By default, BoidCMS doesn't include any content editor, but you can use [plugins](plugins/) such as [Trumbowyg](https://github.com/BoidCMS/trumbowyg)<!-- or [Summernote](https://github.com/BoidCMS/summernote)-->.
+?> By default, BoidCMS doesn't include any content editor, but you can use [plugins](plugins/) such as [Trumbowyg](https://github.com/BoidCMS/trumbowyg)<!-- or [Summernote](https://github.com/BoidCMS/summernote)-->.
