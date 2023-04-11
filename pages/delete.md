@@ -1,4 +1,4 @@
-# Delete post or page
+# Delete Post or Page
 
 ![Delete page](https://boidcms.github.io/_media/delete.png)
 
