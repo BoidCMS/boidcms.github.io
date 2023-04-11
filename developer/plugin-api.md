@@ -4,7 +4,7 @@
 ## Event
 When a particular event is triggered, certain actions are executed in response. These pre-defined actions are what we refer to as `events`.
 
-### Set
+### Hook
 ```php
 <?php
 
@@ -37,7 +37,7 @@ register_my_event_callback( $App, 'my_event_callback_function' );
 ?>
 ```
 
-### Get
+### Trigger
 
 ```php
 <?php
@@ -58,7 +58,7 @@ $App->get_action( 'my_event' );
 ## Filter
 Filters enable dynamic modification of a value through the use of specific actions.
 
-### Set
+### Hook
 
 ```php
 <?php
@@ -98,7 +98,7 @@ function my_filter_callback_function( string $value ): string {
  *
  * @param mixed $value The value to filter.
  * @param string $action The name of the action to apply.
- * @param mixed ...$args Additional arguments to pass to the action.
+ * @param mixed ...$args Optional arguments to pass to the callback.
  * @return mixed The filtered value.
  */
 $filtered = $App->get_filter( 'My default value', 'my_filter' );
