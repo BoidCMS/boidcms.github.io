@@ -25,6 +25,7 @@
   - [Database Structure](database)
   - [Plugin Basics](developer/plugin-basics)
   - [Plugins API](developer/plugin-api)
+  - [API Reference](developer/reference)
   - [Custom Admin Page](developer/panel)
   - [Theme Basics](developer/theme-basics) 
   - [Theme Tags](themes/tags) <!--  - [Code Reference](developer/reference)-->
