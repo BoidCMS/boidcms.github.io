@@ -59,7 +59,7 @@ This is a **protected** property that stores the complete database data.
 ## Methods
 
 - **`App::__construct()`**:
-This is the constructor method.
+This method is the constructor.
 
 ```php
 App::__construct( string $root ): void
@@ -71,6 +71,7 @@ App::__construct( string $root ): void
 ------
 
 - **`App::_()`**:
+This method serves as an alias for the `App::get_filter` method.
 
 ```php
 App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
@@ -83,6 +84,7 @@ App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 ------
 
 - **`App::_l()`**:
+This method is used to create an array, which can be either empty or pre-populated with values specified in the second parameter. The resulting array can then be filtered using the filter provided in the first parameter, allowing for customization of the array's contents.
 
 ```php
 App::_l( string $callback, array $custom = array() ): array
@@ -95,6 +97,7 @@ App::_l( string $callback, array $custom = array() ): array
 ------
 
 - **`App::log()`**:
+This method is used to record a debug message to a log file, which can be accessed from the [`data`](/folder?id=data) directory.
 
 ```php
 App::log( string $message, string $type = 'debug' ): bool
@@ -107,6 +110,7 @@ App::log( string $message, string $type = 'debug' ): bool
 ------
 
 - **`App::set()`**:
+This method is used to store a pair of key and value to the [`site`](/database?id=database-default-structure) table in the database. The stored data can be accessed and retrieved later on as needed.
 
 ```php
 App::set( mixed $value, string $index ): bool
@@ -119,6 +123,7 @@ App::set( mixed $value, string $index ): bool
 ------
 
 - **`App::unset()`**:
+This method is used to remove/delete a value previously set using the `App::set` method by providing its index key as an argument.
 
 ```php
 App::unset( string $index ): bool
@@ -130,6 +135,7 @@ App::unset( string $index ): bool
 ------
 
 - **`App::get()`**:
+This method is used to retrieve a value from the site table in the database using the index key that was previously set using the `App::set` method.
 
 ```php
 App::get( string $index ): mixed
@@ -141,17 +147,19 @@ App::get( string $index ): mixed
 ------
 
 - **`App::url()`**:
+This method returns the full site URL with the value of the $location parameter appended to it.
 
 ```php
 App::url( string $location = '' ): string
 ```
 
 **Parameters**:
- - `$location` (`string`) **optional**: This is the path to be appended to the end of the site url. The default value is ``.
+ - `$location` (`string`) **optional**: This is the path to be appended to the end of the site url. The default value is ` `.
 
 ------
 
 - **`App::admin_url()`**:
+This method returns the URL for the admin panel, which can be customized by the admin for improved security. The URL includes the value of the `$location` parameter appended to it. If the `$abs` parameter is set to `true`, the return value will be an absolute URL, with the site URL prepended. Otherwise, it will be a relative URL.
 
 ```php
 App::admin_url( string $location = '', bool $abs = false ): string
@@ -164,17 +172,19 @@ App::admin_url( string $location = '', bool $abs = false ): string
 ------
 
 - **`App::root()`**:
+This method is used to get a filename or directory name with the current working directory of the site prepended to it, making it a system filename.
 
 ```php
 App::root( string $location ): string
 ```
 
 **Parameters**:
- - `$location` (`string`) **required**: This is the path to be appended to the end of the root directory.
+ - `$location` (`string`) **required**: This is the path to be appended to the end of the current working directory.
 
 ------
 
 - **`App::theme()`**:
+This method is used to retrieve a file or directory name from the current theme directory. If the second parameter `$system` is set to `true`, the return value will be passed to the `App::root` method, which will return a system filename. If it is set to `false`, the return value will be passed to the `App::url` method, which will return an HTTP link URL.
 
 ```php
 App::theme( string $location, bool $system = true ): string
@@ -187,6 +197,7 @@ App::theme( string $location, bool $system = true ): string
 ------
 
 - **`App::save()`**:
+This method is used to commit changes made to the database.
 
 ```php
 App::save( ?array $data = null ): bool
@@ -198,6 +209,7 @@ App::save( ?array $data = null ): bool
 ------
 
 - **`App::data()`**:
+This method is used to retrieve the entire database or a specific table from it, if the `$index` parameter is not `null` and corresponds to a valid table in the database.
 
 ```php
 App::data( ?string $index = null ): array
@@ -209,6 +221,7 @@ App::data( ?string $index = null ): array
 --------
 
 - **`App::token()`**:
+This method is used to either generate a new CSRF token and store it in the session or retrieve an existing one from the session. The generated or retrieved token is then returned for use in CSRF protection.
 
 ```php
 App::token(): string
@@ -219,6 +232,7 @@ App::token(): string
 -------
 
 - **`App::set_action()`**:
+This method is used to register an [action](/developer/actions?id=actions), which can either be an event or filter.
 
 ```php
 App::set_action( string | array $action, callable $callback, int $priority = 10 ): void
@@ -232,6 +246,7 @@ App::set_action( string | array $action, callable $callback, int $priority = 10 
 ------
 
 - **`App::unset_action()`**:
+This method is used to unregister an action that was previously registered using the `App::set_action` method.
 
 ```php
 App::unset_action( string $action ): void
@@ -243,6 +258,7 @@ App::unset_action( string $action ): void
 ------
 
 - **`App::get_action()`**:
+This method is used to invoke or trigger an action previously registered as an [event](/developer/plugin-api?id=event).
 
 ```php
 App::get_action( string $action, mixed ...$args ): string
@@ -255,6 +271,7 @@ App::get_action( string $action, mixed ...$args ): string
 --------
 
 - **`App::get_filter()`**:
+This method is used to apply a [filter](/developer/plugin-api?id=filter) to a given value and return the filtered result.
 
 ```php
 App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
@@ -268,6 +285,7 @@ App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
 --------
 
 - **`App::load_actions()`**:
+This method is used to load all plugins and the functions.php file from the current theme, if it exists.
 
 ```php
 App::load_actions(): void
@@ -278,6 +296,7 @@ App::load_actions(): void
 ---------
 
 - **`App::alert()`**:
+This method is used to send an alert notification to the administrator.
 
 ```php
 App::alert( string $message, string $type = 'info' ): void
@@ -290,6 +309,7 @@ App::alert( string $message, string $type = 'info' ): void
 -------
 
 - **`App::alerts()` (`void`)**:
+This method is used to display all the alert notifications that were sent to the admin.
 
 ```php
 App::alerts(): void
@@ -300,6 +320,7 @@ App::alerts(): void
 -------
 
 - **`App::page()`**:
+This method is used to retrieve the value of a specific field from a page.
 
 ```php
 App::page( string $index, ?string $page = null ): mixed
@@ -312,6 +333,7 @@ App::page( string $index, ?string $page = null ): mixed
 --------
 
 - **`App::create_page()`**:
+This method is used to create a new page with specified properties and contents.
 
 ```php
 App::create_page( string $slug, array $details ): bool
@@ -324,6 +346,7 @@ App::create_page( string $slug, array $details ): bool
 -------
 
 - **`App::update_page()`**:
+This method is used to update specific fields of an existing page.
 
 ```php
 App::update_page( string $slug, string $permalink, array $updates ): bool
@@ -337,6 +360,7 @@ App::update_page( string $slug, string $permalink, array $updates ): bool
 -------
 
 - **`App::delete_page()`**:
+This method is used to delete an existing page.
 
 ```php
 App::delete_page( string $slug ): bool
@@ -348,17 +372,19 @@ App::delete_page( string $slug ): bool
 -------
 
 - **`App::is_page()`**:
+This method checks whether a page exists or not. **Note that this method is available starting from version `v2.0.0`.**
 
 ```php
 App::is_page( string $page ): bool
 ```
 
 **Parameters**:
- - `$page` (`string`) **required**: This is the slug of the page to be checked.
+ - `$page` (`string`) **required**: This is the slug of the page to check.
 
 --------
 
 - **`App::upload_media()`**:
+This method is used to accept file submissions. **Note that only a single file can be uploaded at a time.**
 
 ```php
 App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
@@ -371,17 +397,19 @@ App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
 -------
 
 - **`App::delete_media()`**:
+This method is used to delete a previously uploaded file.
 
 ```php
 App::delete_media( string $media ): bool
 ```
 
 **Parameters**:
- - `$media` (`string`) **required**: This is the basename of the media file to be deleted.
+ - `$media` (`string`) **required**: This is the basename of the file to be deleted.
 
 --------
 
 - **`App::install()`**:
+This method is used to install a plugin.
 
 ```php
 App::install( string $plugin ): bool
@@ -393,6 +421,7 @@ App::install( string $plugin ): bool
 --------
 
 - **`App::uninstall()`**:
+This method is used to uninstall a plugin.
 
 ```php
 App::uninstall( string $plugin ): bool
@@ -404,6 +433,7 @@ App::uninstall( string $plugin ): bool
 --------
 
 - **`App::installed()`**:
+This method is used to check whether a plugin is installed or not.
 
 ```php
 App::installed( string $plugin ): bool
@@ -415,6 +445,7 @@ App::installed( string $plugin ): bool
 ---------
 
 - **`App::slugify()`**:
+This method is used to convert a text to a URL-friendly slug.
 
 ```php
 App::slugify( string $title ): string
@@ -426,17 +457,19 @@ App::slugify( string $title ): string
 -------
 
 - **`App::go()`**:
+This method is used to perform an internal site redirect.
 
 ```php
 App::go( string $location = '' ): void
 ```
 
 **Parameters**:
- - `$location` (`string`) **optional**: This is the internal path to redirect to. The default value is ``.
+ - `$location` (`string`) **optional**: This is the internal path to redirect to. The default value is ` `.
 
 --------
 
 - **`App::esc_slug()`**:
+This method is used to filter and remove unwanted characters from a text, to convert it into a slug. Unlike the `App::slugify` method, which also slugifies the text, this method only performs filtering and removal of unwanted characters.
 
 ```php
 App::esc_slug( string $slug, string $alt = '' ): string
@@ -444,11 +477,12 @@ App::esc_slug( string $slug, string $alt = '' ): string
 
 **Parameters**:
  - `$slug` (`string`) **required**: This is slug to be escaped.
- - `$alt` (`string`) **optional**: This is an alternate slug to return when `$slug` parameter is considered empty. The default value is ``.
+ - `$alt` (`string`) **optional**: This is an alternate slug to return when `$slug` parameter is considered empty. The default value is ` `.
 
 --------
 
 - **`App::esc()`**:
+This method is used to encode HTML entities from a text to make it safe to display on a web page and prevent Cross-Site Scripting (XSS) attacks.
 
 ```php
 App::esc( string | array | null $text, bool $trim = true ): string
@@ -461,6 +495,7 @@ App::esc( string | array | null $text, bool $trim = true ): string
 --------
 
 - **`App::auth()`**:
+This method is used to validate the authenticity of a CSRF token and authenticate an admin action.
 
 ```php
 App::auth( ?string $location = null, bool $post = true ): void
@@ -473,6 +508,7 @@ App::auth( ?string $location = null, bool $post = true ): void
 --------
 
 - **`App::admin()`**:
+This method is used to render the admin panel.
 
 ```php
 App::admin(): void
@@ -483,6 +519,7 @@ App::admin(): void
 --------
 
 - **`App::render()`**:
+This method is used to generate and send the output to the browser for rendering.
 
 ```php
 App::render(): void
