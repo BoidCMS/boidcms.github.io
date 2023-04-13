@@ -1,5 +1,5 @@
 # Database Default Structure
-Below is an example of a formatted JSON representation of a newly created database
+Below is an example of a formatted JSON representation of a newly created database:
 
 ```json
 {
@@ -56,3 +56,7 @@ Below is an example of a formatted JSON representation of a newly created databa
     "installed": {}
 }
 ```
+
+The database is composed of three tables: `site` for storing site configurations (settings), `pages` for storing all types of pages, and `installed` for keeping track of the installed plugins.
+
+
