@@ -104,7 +104,7 @@ App::log( string $message, string $type = 'debug' ): bool
 ```
 
 **Parameters**:
- - `$message` (`string`) **required**: This is logging message.
+ - `$message` (`string`) **required**: This is the logging message.
  - `$type` (`string`) **optional**: This is the log type. The default value is `debug`.
 
 ------
@@ -135,7 +135,7 @@ App::unset( string $index ): bool
 ------
 
 - **`App::get()`**:
-This method is used to retrieve a value from the site table in the database using the index key that was previously set using the `App::set` method.
+This method is used to retrieve a value from the `site` table in the database using the index key that was previously set using the `App::set` method.
 
 ```php
 App::get( string $index ): mixed
@@ -147,7 +147,7 @@ App::get( string $index ): mixed
 ------
 
 - **`App::url()`**:
-This method returns the full site URL with the value of the $location parameter appended to it.
+This method returns the full site URL with the value of the `$location` parameter appended to it.
 
 ```php
 App::url( string $location = '' ): string
@@ -159,14 +159,15 @@ App::url( string $location = '' ): string
 ------
 
 - **`App::admin_url()`**:
-This method returns the URL for the admin panel, which can be customized by the admin for improved security. The URL includes the value of the `$location` parameter appended to it. If the `$abs` parameter is set to `true`, the return value will be an absolute URL, with the site URL prepended. Otherwise, it will be a relative URL.
+This method returns the URL for the admin panel, which can be customized by the admin for improved security. The URL includes the value of the `$location` parameter appended to it.  
+If the `$abs` parameter is set to `true`, the return value will be an absolute URL, with the site URL prepended. Otherwise, it will be a relative URL.
 
 ```php
 App::admin_url( string $location = '', bool $abs = false ): string
 ```
 
 **Parameters**:
- - `$location` (`string`) **optional**: This is the path to be appended to the end of the admin url. The default value is ``.
+ - `$location` (`string`) **optional**: This is the path to be appended to the end of the admin url. The default value is ` `.
  - `$abs` (`bool`) **optional**: This is to return absolute admin url if passed as `true` or as relative url otherwise. The default value is `false`.
 
 ------
@@ -241,7 +242,7 @@ App::set_action( string | array $action, callable $callback, int $priority = 10 
 **Parameters**:
  - `$action` (`string|array`) **required**: This is the action(s) to be registered.
  - `$callback` (`callable`) **required**: This is the callback function of the action(s).
- - `$priority` (`int`) **optional**: This is the priority order of the action, the number lower the number the more prioritised the action(s) gets. The default value is `10`.
+ - `$priority` (`int`) **optional**: This is the priority order of the action, the lower the number the more prioritised the action(s) gets. The default value is `10`.
 
 ------
 
@@ -285,7 +286,7 @@ App::get_filter( mixed $value, string $action, mixed ...$args ): mixed
 --------
 
 - **`App::load_actions()`**:
-This method is used to load all plugins and the functions.php file from the current theme, if it exists.
+This method is used to load all plugins and the `functions.php` file from the current theme, if it exists.
 
 ```php
 App::load_actions(): void
@@ -308,7 +309,7 @@ App::alert( string $message, string $type = 'info' ): void
 
 -------
 
-- **`App::alerts()` (`void`)**:
+- **`App::alerts()`**:
 This method is used to display all the alert notifications that were sent to the admin.
 
 ```php
@@ -372,7 +373,8 @@ App::delete_page( string $slug ): bool
 -------
 
 - **`App::is_page()`**:
-This method checks whether a page exists or not. **Note that this method is available starting from version `v2.0.0`.**
+This method checks whether a page exists or not.  
+!> Note that this method is available starting from version `v2.0.0`.
 
 ```php
 App::is_page( string $page ): bool
@@ -384,7 +386,8 @@ App::is_page( string $page ): bool
 --------
 
 - **`App::upload_media()`**:
-This method is used to accept file submissions. **Note that only a single file can be uploaded at a time.**
+This method is used to accept file submissions.  
+?> Note that only a single file can be uploaded at a time.
 
 ```php
 App::upload_media( ?string &$msg = null, ?string &$basename = null ): bool
@@ -503,7 +506,7 @@ App::auth( ?string $location = null, bool $post = true ): void
 
 **Parameters**:
  - `$location` (`string|null`) **optional**: This is the internal path to redirect when authentication fails.
- - `$post` (`bool`) **optional**: This indicates whether the request should be treated as `post` if passed as `true` or `get` otherwise. The default value is `true`.
+ - `$post` (`bool`) **optional**: This indicates whether the request should be treated as `POST` if passed as `true` or `GET` otherwise. The default value is `true`.
 
 --------
 
