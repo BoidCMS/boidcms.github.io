@@ -7,10 +7,10 @@ BoidCMS offers the ability to create custom pages for the admin panel via the [`
 Here are the default admin panel slugs:
 - ` ` (empty) or `dashboard` - this is the default dashboard page
 - `settings` - this panel is used for site settings and configurations
-- `create` - use this panel to create new pages or posts
-- `update` - use this panel to update existing pages or posts
-- `delete` - use this panel to delete existing pages or posts
-- `media` - use this panel to manage media files such as images and videos
+- `create` - this panel is used to create new pages or posts
+- `update` - this panel is used to update existing pages or posts
+- `delete` - this panel is used to delete existing pages or posts
+- `media` - this panel is used to manage media files such as images and videos
 - `plugins` - this panel is used to manage installed plugins
 - `themes` - this panel is used to manage installed themes
 - `logout` - this panel logs the user out of the admin panel and back to the site
