@@ -5,7 +5,7 @@ BoidCMS offers the ability to create custom pages for the admin panel via the [`
 ?> It is important to note that default admin panels already exist in the system. Therefore, when creating a custom panel, it is crucial to ensure that you do not use the same slug as the default panel, as this may result in overriding the default panel.
 
 Here are the default admin panel slugs:
-- ` ` (empty) - this is the default dashboard page
+- ` ` (empty) or `dashboard` - this is the default dashboard page
 - `settings` - this panel is used for site settings and configurations
 - `create` - use this panel to create new pages or posts
 - `update` - use this panel to update existing pages or posts
