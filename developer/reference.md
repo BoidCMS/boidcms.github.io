@@ -374,6 +374,7 @@ App::delete_page( string $slug ): bool
 
 - **`App::is_page()`**:
 This method checks whether a page exists or not.  
+
 !> Note that this method is available starting from version `v2.0.0`.
 
 ```php
@@ -387,6 +388,7 @@ App::is_page( string $page ): bool
 
 - **`App::upload_media()`**:
 This method is used to accept file submissions.  
+
 ?> Note that only a single file can be uploaded at a time.
 
 ```php
