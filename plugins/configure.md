@@ -1,4 +1,4 @@
-## How to Configure a plugin
+# How to Configure a plugin
 
 To activate and configure a plugin, follow these steps:
 
