@@ -1,4 +1,4 @@
-# Plugins List
+# List of Plugins
 
 One of the powerful features of BoidCMS is its ability to support plugins. Plugins are add-ons that you can install and activate to extend the functionality of your website beyond the core features of the CMS.
 
