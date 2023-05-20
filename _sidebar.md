@@ -15,10 +15,15 @@
   - [Delete](media/delete)
 
 - Plugins
-  - [Install](plugins/)
+  - [Install](plugins/install)
+  - [Configure](plugins/configure)
+  - [Uninstall](plugins/uninstall)
+  - [List of Plugins](plugins)
 
 - Themes
-  - [Install](themes/)
+  - [Install](themes/install)
+  - [Configure](themes/configure)
+  - [List of Themes](themes)
 
 - Developers
   - [Folder Structure](folder)
