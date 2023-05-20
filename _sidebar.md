@@ -18,12 +18,12 @@
   - [Install](plugins/install)
   - [Configure](plugins/configure)
   - [Uninstall](plugins/uninstall)
-  - [List of Plugins](plugins)
+  - [List of Plugins](plugins/)
 
 - Themes
   - [Install](themes/install)
   - [Configure](themes/configure)
-  - [List of Themes](themes)
+  - [List of Themes](themes/)
 
 - Developers
   - [Folder Structure](folder)
@@ -34,7 +34,7 @@
   - [Custom Admin Page](developer/panel)
   - [Theme Basics](developer/theme-basics) 
   - [Theme Tags](themes/tags) <!--  - [Code Reference](developer/reference)-->
-  - [Actions List](developer/actions)
+  - [List of Actions](developer/actions)
 
 - [Changelog](changelog)
 - [Showcase](showcase)
