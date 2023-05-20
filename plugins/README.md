@@ -13,5 +13,7 @@ Plugins can be used to add new features, improve existing ones, or customize you
 | [`Maintenance`](/plugins/maintenance) | Fix your site quickly with live preview | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/maintenance |
 | [`Shortcode`](/plugins/shortcode) | Shortcodes | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/shortcode |
 | [`Sitemap`](/plugins/sitemap) | XML or TXT Sitemap Generator | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/sitemap |
+| [`Trumbowyg`](/plugins/trumbowyg) | Trumbowyg Editor | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/trumbowyg |
+
 
 
