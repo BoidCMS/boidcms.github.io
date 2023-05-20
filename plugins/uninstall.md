@@ -1,4 +1,4 @@
-# How to Uninstall a plugin
+# How to Uninstall a Plugin
 
 Follow the steps below to uninstall a plugin in BoidCMS:
 
