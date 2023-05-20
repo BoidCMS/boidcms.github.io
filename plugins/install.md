@@ -1,4 +1,4 @@
-# Install a Plugin
+# How to Install a Plugin
 
 Follow the steps below to install a plugin in BoidCMS:
 
