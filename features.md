@@ -41,4 +41,6 @@ BoidCMS is designed with SEO in mind, with features like custom permalinks and m
 BoidCMS supports custom content types, allowing you to create and manage different types of content on your website.
 
  - **GDPR Compliant**:
-BoidCMS is compliant with the General Data Protection Regulation (GDPR), making it a great choice for websites that collect personal data.
+BoidCMS prioritizes user privacy and ensures that it does not track or collect personal data by default, aligning with the principles of the General Data Protection Regulation (GDPR). It is an ideal option for websites that value user privacy and data protection.
+
+
