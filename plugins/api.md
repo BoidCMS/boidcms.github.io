@@ -1,10 +1,10 @@
 # API
-The BoidCMS API plugin streamlines integration between BoidCMS and other systems. By making HTTP requests, you can easily retrieve or update data from the database without needing to access the admin panel. Whether you're building a custom front-end, integrating with a third-party service, or automating your workflow, the BoidCMS API plugin simplifies the process.  
+This plugin enables API functionality on your sites, allowing you to manage your site using simple HTTP requests. With the power of APIs, you can easily control and manipulate various aspects of your site, making updates and modifications straightforward. Whether you want to retrieve data, update settings, create new pages, or perform other site management tasks, this plugin simplifies the process by leveraging the convenience of plain HTTP requests.
 
 
 ## Install
 Download the zip file of the plugin on this [repo](https://github.com/BoidCMS/api).     
-Follow this [steps](plugins/) to install.
+Follow this [steps](plugins/install) to install.
 
 
 ## Developer
@@ -21,7 +21,7 @@ To customize the URL, replace the placeholder values with your website's specifi
 
 Example: 
 ```plain
-http://api.example.com/api/v1/settings/
+http://example.com/api/v1/settings
 ```
 
 |       Endpoint     |  Method  |
@@ -54,11 +54,12 @@ Default return values.
 
 ### Used Actions
 
+<!--
 |         Action       |     Execute in    |     Parameters     |   Since   |
 | :------------------: | :---------------: | :----------------: | :-------: |
 |    `delete_media`    |    `api_medias`   | `(string) $media`  |  `0.1.0`  |
-|     `delete_page`    |     `api_pages`   |  `(string) $page`  |  `0.1.0`  |
-|       `setting`      |   `App::admin`    |                    |  `0.1.0`  |
-|        `render`      |   `App::render`   |                    |  `0.1.0`  |
+|     `delete_page`    |     `api_pages`   | `(string) $page`   |  `0.1.0`  |
+|      `settings`      |   `App::admin`    |                    |  `0.1.0`  |
+|       `render`       |   `App::render`   |                    |  `0.1.0`  |
 
-
+-->
