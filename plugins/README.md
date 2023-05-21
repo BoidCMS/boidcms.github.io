@@ -7,6 +7,7 @@ Plugins can be used to add new features, improve existing ones, or customize you
 |             Name              |                                     Description                                                   |         Author        | Version | License |                Source                 |
 |:-----------------------------:|:-------------------------------------------------------------------------------------------------:|:---------------------:|:-------:|:-------:|:-------------------------------------:|
 |     [`API`](/plugins/api)     | Implement API functionality into your site, allowing for seamless integration with other systems. | `Shuaib Yusuf Shuaib` | `0.1.0` |  `MIT`  |     https://github.com/BoidCMS/api    |
+|    [`Cron`](/plugins/cron)    | Cron Job Scheduler | `Shuaib Yusuf Shuaib` | `0.1.0` | `MIT` | https://github.com/BoidCMS/cron |
 |  [`Disqus`](/plugins/disqus)  | Disqus Commenting System | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/disqus |
 | [`Favicon`](/plugins/favicon) | Custom Favicon | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/favicon |
 |    [`Feed`](/plugins/feed)    | RSS Feed | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/feed |
