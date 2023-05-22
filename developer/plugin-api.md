@@ -1,4 +1,5 @@
 # Plugins API
+
 [Visit here](/developer/actions) to view the available actions in BoidCMS, which provides a comprehensive list of available actions or hooks that plugins can listen to and act upon to extend the functionality of the website.
 
 ## Event
@@ -53,6 +54,45 @@ $App->get_action( 'my_event' );
 
 ?>
 ```
+
+### Prevent
+Event prevention is not natively supported in BoidCMS. However, you can prevent a specific event by following the code snippet provided below:
+
+```php
+<?php
+
+/**
+ * Callback function for the "my_event" event.
+ *
+ * @return void
+ */
+function my_event_callback_function(): void {
+  global $App;
+  // Check if prevention criteria are met
+  if ( ! $App->get( 'do_let_it_execute' ) ) {
+    // Check if the event is triggered by the admin from the panel
+    if ( $App->admin_url() === $App->page ) {
+      // Redirect to the dashboard
+      $App->go( $App->admin_url() );
+    }
+    // Otherwise, the event is triggered by a plugin or automation
+    // In this case, exit with a response instead of redirecting
+    $resp = array();
+    $resp[ 'message' ] = 'Event prevented';
+    $json = json_encode( $resp );
+    exit( $json );
+  }
+  
+  // Handle the event as usual
+  echo 'Performing my action for the event.';
+}
+
+
+?>
+```
+This code snippet demonstrates how to prevent the execution of an event by checking specific criteria. If the criteria are not met, the code either redirects to the admin dashboard if triggered by an admin or exits with a response if triggered by a plugin or automation. Otherwise, the event is handled as usual.  
+
+Please note that you need to customize the code to fit your specific event and prevention conditions.
 
 
 ## Filter
