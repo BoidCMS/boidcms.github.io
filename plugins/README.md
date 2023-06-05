@@ -4,7 +4,7 @@ One of the powerful features of BoidCMS is its ability to support plugins. Plugi
 
 Plugins can be used to add new features, improve existing ones, or customize your website's appearance. BoidCMS may not be as vast as some other CMS platforms, there are still several high-quality plugins, from simple ones that add RSS Feed to complex plugins that add RESTful API functionality.
 
-Use the [discussion](https://github.com/BoidCMS/BoidCMS/discussions) section to share the plugins you've built.
+Use the [discussion](https://github.com/BoidCMS/BoidCMS/discussions) section to share the plugins you've built or suggest new ones.
 
 |             Name              |                                     Description                                                   |         Author        | Version | License |                Source                 |
 |:-----------------------------:|:-------------------------------------------------------------------------------------------------:|:---------------------:|:-------:|:-------:|:-------------------------------------:|
@@ -13,6 +13,7 @@ Use the [discussion](https://github.com/BoidCMS/BoidCMS/discussions) section to 
 |  [`Disqus`](/plugins/disqus)  | Disqus Commenting System | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/disqus |
 | [`Favicon`](/plugins/favicon) | Custom Favicon | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/favicon |
 |    [`Feed`](/plugins/feed)    | RSS Feed | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/feed |
+|    [`L10n`](/plugins/l10n)    | Admin Panel Localization | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/l10n |
 | [`Maintenance`](/plugins/maintenance) | Fix your site quickly with live preview | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/maintenance |
 | [`Shortcode`](/plugins/shortcode) | Shortcodes Parser | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/shortcode |
 | [`Sitemap`](/plugins/sitemap) | XML or TXT Sitemap Generator | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/sitemap |
