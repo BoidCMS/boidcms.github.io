@@ -40,7 +40,8 @@ $App->set_action( 'l10n_global', 'example_translate' );
 function example_install( string $plugin ): void {
   global $App;
   if ( 'example' === $plugin ) {
-    $msg = $App->_( '"Example" plugin installed.', 'l10n', 'example' );
+    $msg = '"Example" plugin installed.';
+    $msg = $App->get_filter( $msg, 'l10n', 'example' );
     $App->log( $msg );
   }
 }
@@ -53,7 +54,8 @@ function example_install( string $plugin ): void {
 function example_uninstall( string $plugin ): void {
   global $App;
   if ( 'example' === $plugin ) {
-    $msg = $App->_( '"Example" plugin uninstalled.', 'l10n', 'example' );
+    $msg = '"Example" plugin uninstalled.';
+    $msg = $App->get_filter( $msg, 'l10n', 'example' );
     $App->log( $msg );
   }
 }
