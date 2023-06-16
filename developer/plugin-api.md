@@ -111,7 +111,7 @@ $App->unset_action( 'my_event' );
 ?>
 ```
 
-?> Please note that by doing this, you will be removing all previously set callbacks.
+!> Please note that by doing this, you will be removing all previously set callbacks.
 
 
 ## Filter
@@ -135,7 +135,7 @@ $App->set_action( 'my_filter', 'my_filter_callback_function' );
 /**
  * Callback function for the filter.
  *
- * @param string $value The value to be filtered.
+ * @param string $value The value to be filtered. Could be of any type (not just "string").
  * @return string The filtered value.
  */
 function my_filter_callback_function( string $value ): string {
@@ -184,7 +184,7 @@ $App->unset_action( 'my_filter' );
 ?>
 ```
 
-?> Please note that by doing this, you will be removing all previously set callbacks.
+!> Please note that by doing this, you will be removing all previously set callbacks.
 
 
 
