@@ -1,5 +1,5 @@
 # Plugin Basics
-Plugins in BoidCMS are essential to extend the functionality of the website and are organized in the [`plugins`](/folders?id=plugins) folder with a predefined structure.
+Plugins in BoidCMS are essential to extend the functionality of the website and are organized in the [`plugins`](/folder?id=plugins) folder with a predefined structure.
 
 Each plugin in BoidCMS follows a standardized structure, which includes a plugin main file. The plugin main file contains metadata about the plugin, such as the plugin name, version, and author. 
 
@@ -61,14 +61,16 @@ function example_uninstall( string $plugin ): void {
 }
 
 /**
- * Translate text
+ * Translate text (RegExp based)
  * @param array $l10n
  * @param string $lang
  * @param string $slug
  * @return array
  */
 function example_translate( array $l10n, string $lang, string $slug ): array {
+  // Return if the domain (slug) isn't "example"
   if ( 'example' !== $slug ) return [];
+  
   $translation = array();
   
   // French
