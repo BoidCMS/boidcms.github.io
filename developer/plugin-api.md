@@ -12,14 +12,12 @@ When a particular event is triggered, certain actions are executed in response. 
 /**
  * Registers a callback function to be executed when the "my_event" event is triggered.
  *
- * @param object $App An instance of the App class.
+ * @param string|array $action The unique name(s) of the event.
  * @param callable $callback The callback function to execute.
- * @param int $priority The priority of the callback function.
+ * @param int $priority Optional. The priority of the event function. Default is 10.
  * @return void
  */
-function register_my_event_callback( App $App, callable $callback, int $priority = 10 ): void {
-  $App->set_action( 'my_event', $callback, $priority );
-}
+$App->set_action( 'my_event', 'my_event_callback_function' );
 
 /**
  * Callback function for the "my_event" event.
@@ -31,9 +29,6 @@ function my_event_callback_function(): void {
   // Not necessary to return value
   echo 'My text.';
 }
-
-// Example usage:
-register_my_event_callback( $App, 'my_event_callback_function' );
 
 ?>
 ```
@@ -68,17 +63,25 @@ Event prevention is not natively supported in BoidCMS. However, you can prevent 
  */
 function my_event_callback_function(): void {
   global $App;
+  
   // Check if prevention criteria are met
   if ( ! $App->get( 'do_let_it_execute' ) ) {
+    
     // Check if the event is triggered by the admin from the panel
     if ( $App->admin_url() === $App->page ) {
+      
       // Redirect to the dashboard
       $App->go( $App->admin_url() );
+      
     }
+    
     // Otherwise, the event is triggered by a plugin or automation
     // In this case, exit with a response instead of redirecting
     $resp = array();
+    $resp[ 'code' ] = 200;
+    $resp[ 'status' ] = false;
     $resp[ 'message' ] = 'Event prevented';
+    $resp[ 'data' ] = array( 'event' => 'my_event' );
     $json = json_encode( $resp );
     exit( $json );
   }
@@ -87,12 +90,28 @@ function my_event_callback_function(): void {
   echo 'Performing my action for the event.';
 }
 
+?>
+```
+<!-- This code snippet demonstrates how to prevent the execution of an event by checking specific criteria. If the criteria are not met, the code either redirects to the admin dashboard if triggered by an admin or exits with a response if triggered by a plugin or automation. Otherwise, the event is handled as usual. -->  
+?> Please note that you need to customize the code to fit your specific event and prevention conditions.
+
+### Remove
+
+```php
+<?php
+
+/**
+ * Remove an action along with all of its associated hooked callbacks.
+ *
+ * @param string $action The name of the event to remove
+ * @return void
+ */
+$App->unset_action( 'my_event' );
 
 ?>
 ```
-This code snippet demonstrates how to prevent the execution of an event by checking specific criteria. If the criteria are not met, the code either redirects to the admin dashboard if triggered by an admin or exits with a response if triggered by a plugin or automation. Otherwise, the event is handled as usual.  
 
-Please note that you need to customize the code to fit your specific event and prevention conditions.
+?> Please note that by doing this, you will be removing all previously set callbacks.
 
 
 ## Filter
@@ -104,7 +123,7 @@ Filters enable dynamic modification of a value through the use of specific actio
 <?php
 
 /**
- * Set a filter for a unique ID.
+ * Set a filter for a unique name.
  *
  * @param string|array $action The name of the action to which the filter is hooked.
  * @param callable $callback The callback function to execute when the filter is applied.
@@ -149,6 +168,23 @@ $filtered = $App->_( 'My default value', 'my_filter' );
 ?>
 ```
 
+### Remove
+
+```php
+<?php
+
+/**
+ * Remove an action along with all of its associated hooked callbacks.
+ *
+ * @param string $action The name of the filter to remove
+ * @return void
+ */
+$App->unset_action( 'my_filter' );
+
+?>
+```
+
+?> Please note that by doing this, you will be removing all previously set callbacks.
 
 
 
