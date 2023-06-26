@@ -99,6 +99,6 @@ To create a layout for a normal **static page**, use this template as a starting
 
 ?> To enhance your theme's functionality, consider adding additional features such as [theme tags](/themes/tags) and [actions](/developer/actions?id=themes). These are particularly useful and highly recommended.
 
-
+Take a look at [Nimble](https://github.com/BoidCMS/nimble), to see how easier it is to build a theme.
 
 
