@@ -85,5 +85,4 @@ function custom_admin_panel_page_nav(): string {
 ?>
 ```
 
-
-
+?> Please note that unless the link holds significant importance or is absolutely essential, it is not necessary to include it in the admin navigation menu, particularly for custom pages related to plugins or themes. Instead, ensure that the custom slug corresponds to the slugified version of the plugin or theme title (for example, "My Awesome Plugin" becomes "my-awesome-plugin"). Administrators can access these pages by clicking the **Configure** button on the plugins or themes page.
