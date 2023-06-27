@@ -35,7 +35,7 @@ This property holds the root directory of the BoidCMS installation.
 - **`App::page` (`string`)**:
 This property stores the slug of the currently visited page.  
 
-- **`App::medias` (`string`)**:
+- **`App::medias` (`array`)**:
 This property stores the filenames of all uploaded media files.  
 
 - **`App::themes` (`array`)**:
@@ -62,7 +62,7 @@ This is a **protected** property that stores the complete database data.
 This method is the constructor.
 
 ```php
-App::__construct( string $root ): void
+App::__construct( string $root ): App
 ```
 
 **Parameters**:
