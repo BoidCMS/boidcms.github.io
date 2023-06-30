@@ -30,7 +30,6 @@ To properly add functionality to a plugin in BoidCMS, it's important to organize
 global $App;
 $App->set_action( 'install', 'example_install' );
 $App->set_action( 'uninstall', 'example_uninstall' );
-$App->set_action( 'l10n_global', 'example_translate' );
 
 /**
  * Log a debug message while installing
@@ -41,7 +40,6 @@ function example_install( string $plugin ): void {
   global $App;
   if ( 'example' === $plugin ) {
     $msg = '"Example" plugin installed.';
-    $msg = $App->get_filter( $msg, 'l10n', 'example' );
     $App->log( $msg );
   }
 }
@@ -55,11 +53,13 @@ function example_uninstall( string $plugin ): void {
   global $App;
   if ( 'example' === $plugin ) {
     $msg = '"Example" plugin uninstalled.';
-    $msg = $App->get_filter( $msg, 'l10n', 'example' );
     $App->log( $msg );
   }
 }
+?>
+```
 
+<!--
 /**
  * Translate text (RegExp based)
  * @param array $l10n
@@ -85,9 +85,8 @@ function example_translate( array $l10n, string $lang, string $slug ): array {
   
   return ( $translation[ $lang ] ?? [] );
 }
-?>
-```
+-->
 
-In addition to the `install`, `uninstall` and `l10n_global` events, BoidCMS provides many other events or actions that can be listened to and acted upon by plugins. These actions provide opportunities for plugins to modify the behavior of the website or to respond to specific user interactions.
+In addition to the `install`, and `uninstall` <!--and `l10n_global`-->events, BoidCMS provides many other events or actions that can be listened to and acted upon by plugins. These actions provide opportunities for plugins to modify the behavior of the website or to respond to specific user interactions.
 
 A comprehensive list of available [actions can be found in here](/developer/actions), which includes details on when each action is triggered and the parameters that are available for each action.
