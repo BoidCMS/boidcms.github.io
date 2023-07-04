@@ -8,11 +8,13 @@
   - [Create](pages/create)
   - [Update](pages/update)
   - [Delete](pages/delete)
+  - [Find Pages](pages/)
 
 - Media
   - [Allowed MIME](media/allowed)
   - [Upload](media/upload)
   - [Delete](media/delete)
+  - [Find Files](media/)
 
 - Plugins
   - [Install](plugins/install)
@@ -33,7 +35,7 @@
   - [API Reference](developer/reference)
   - [Custom Admin Page](developer/panel)
   - [Theme Basics](developer/theme-basics) 
-  - [Theme Tags](themes/tags) <!--  - [Code Reference](developer/reference)-->
+  - [Theme Tags](themes/tags)
   - [List of Actions](developer/actions)
 
 - [Changelog](changelog)
