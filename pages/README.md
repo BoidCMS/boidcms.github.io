@@ -1,4 +1,4 @@
-# List of Pages
+# Find List of Pages
 
 Log in to the `Admin panel` using your username and password.
 
