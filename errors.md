@@ -1,7 +1,8 @@
-# Errors
+# Common Errors
 
 ## Can't access admin panel
-`.htaccess` file must be present in the root.
+
+Check if the file `.htaccess` is present in the root directory.
 
 ## Server error
 
