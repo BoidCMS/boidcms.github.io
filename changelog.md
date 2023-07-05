@@ -1,4 +1,8 @@
 # Changelog
+<!--
+## v2.0.1
+- Fix: Escape form values
+-->
 
 ## v2.0.0
 - Blog option
@@ -9,7 +13,7 @@
 **Full Changelog**: https://github.com/BoidCMS/BoidCMS/compare/v1.0.1...v2.0.0
 
 ## v1.0.1
-- Fix (multiple redirects on token error)
+- Fix: Too many redirects on token error
 
 **Full Changelog**: https://github.com/BoidCMS/BoidCMS/compare/v1.0.0...v1.0.1
 
