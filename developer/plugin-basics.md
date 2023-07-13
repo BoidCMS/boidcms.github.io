@@ -27,6 +27,9 @@ To properly add functionality to a plugin in BoidCMS, it's important to organize
  * @version 1.0.0
  */
 
+// Make sure the plugin is installed correctly
+if ( 'example' !== basename( __DIR__ ) ) return;
+
 global $App;
 $App->set_action( 'install', 'example_install' );
 $App->set_action( 'uninstall', 'example_uninstall' );
