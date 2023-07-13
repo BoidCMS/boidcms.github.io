@@ -14,7 +14,7 @@ It's important to note that the default username and password are both set to **
 BoidCMS can be quickly run through the command line using PHP's built-in web server.
 
 ```bash
-git clone https://github.com/BoidCMS/BoidCMS boidcms
+git clone https://github.com/BoidCMS/BoidCMS.git boidcms
 cd boidcms
 ```
 
