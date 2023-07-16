@@ -15,7 +15,8 @@ Here is a list of all the actions.
 |      `create_page`   |`App::create_page`|     (`string`) `$slug`, <br> (`array`) `$details`     |  `Event` | This event is triggered whenever a new page is being created. |  `1.0.0` |
 |      `update_page`   |`App::update_page`|(`string`) `$slug`, <br> (`string`) `$permalink`, <br> (`array`) `$updates`|`Event`| This event is triggered whenever a page is being updated. |  `1.0.0` |
 |      `delete_page`   |`App::delete_page`|           (`string`) `$slug`         |  `Event` | This event is triggered whenever a page is being deleted. |  `1.0.0` |
-|      `media_mime`    |`App::upload_media`|                                   | `Filter` | This filter is used to add custom MIME types that the website can recognize and accept. |  `1.0.0` |
+|      `media_mime`    |`App::upload_media`|                                   | `Filter` | This filter is used to add custom MIME types that the website can recognize and accept during upload. |  `1.0.0` |
+|   `media_extension`  |`App::upload_media`|                                   | `Filter` | This filter is used to add custom files extension that the website can recognize and accept during upload. |  `2.0.1` |
 |     `upload_media`   |`App::upload_media`|         (`string`) `$basename`      |  `Event` | This event is triggered whenever a file is uploaded. |  `1.0.0` |
 |     `delete_media`   |`App::delete_media`|         (`string`) `$media`         |  `Event` | This event is triggered whenever a file is being deleted. |  `1.0.0` |
 |       `install`      |  `App::install`  |        (`string`) `$plugin`          |  `Event` | This event is triggered whenever a plugin is being installed. |  `1.0.0` |
