@@ -11,7 +11,7 @@
   - [Find Pages](pages/)
 
 - Media
-  - [Allowed MIME](media/allowed)
+  - [Allowed Files](media/allowed)
   - [Upload](media/upload)
   - [Delete](media/delete)
   - [Find Files](media/)
