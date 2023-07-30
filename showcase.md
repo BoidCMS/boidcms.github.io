@@ -3,6 +3,7 @@
 - [BoidCMS Demo](https://boidcms.alwaysdata.net)
 - [Another Demo](https://shoaiyb.alwaysdata.net)
 - [LarsErikP blogg](https://larserikp.com)
+- [MySocialFeedbackLoop](https://blg.x220.co.uk)
 <!-- [CMSLab](https://cmslab.se) -->
 
 <!--
