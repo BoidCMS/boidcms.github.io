@@ -8,7 +8,7 @@ Below is an example of a formatted JSON representation of a newly created databa
         "title": "BoidCMS",
         "keywords": "BoidCMS, Keywords, for, seo",
         "subtitle": "Simple, fast, super extensible.",
-        "descr": "Simple, fast, super extensible CMS to build simple websites at ease.",
+        "descr": "Flat file CMS for building simple websites and blogs.",
         "url": "http:\/\/example.com\/",
         "email": "mail@example.com",
         "username": "admin",
