@@ -20,6 +20,8 @@ While not strictly necessary, some useful files to include in your theme are `po
 ### blog.php **(required)**
 To create a **list of published posts**, use the following template as a starting point.
 
+!> Please note that this file only works starting from `v2.0.0`, use `home.php` for `v1.*` or create both for compatibility.
+
 ```php
 <?php global $App ?>
 <!DOCTYPE html>
