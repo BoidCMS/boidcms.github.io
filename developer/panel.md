@@ -85,7 +85,7 @@ function custom_admin_panel_page_nav(): string {
 ?>
 ```
 
-?> Please note that unless the link holds significant importance or is absolutely essential, it is not necessary to include it in the admin navigation menu, particularly for custom pages related to plugins or themes. Instead, ensure that the custom slug corresponds to the plugin or theme directory name (for example, "MyAwesomePlugin" remains "MyAwesomePlugin" and "MyAwesomeTheme" also remains "MyAwesomeTheme"). Administrators can access these pages by clicking the **Configure** button on the plugins or themes page.
+?> Please note that unless the link holds significant importance or is absolutely essential, it is not necessary to include it in the admin navigation menu, particularly for custom pages related to plugins or themes. Instead, ensure that the custom slug corresponds to the plugin or theme directory name (for example, "myAwesome-Plugin" remains "myAwesome-Plugin" and "MyAwesomeTheme" also remains "MyAwesomeTheme"). Administrators can access these pages by clicking the **Configure** button on the plugins or themes page.
 
 
 
