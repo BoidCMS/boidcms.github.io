@@ -24,7 +24,7 @@ Below is an example of a formatted JSON representation of a newly created databa
             "title": "Not Found",
             "descr": "404 Page Not Found",
             "keywords": "404",
-            "content": "<p style="text-align:center">It looks like nothing was found at this location.<\/p>",
+            "content": "<p style=\"text-align:center\">It looks like nothing was found at this location.<\/p>",
             "thumb": "",
             "date": "",
             "tpl": "",
