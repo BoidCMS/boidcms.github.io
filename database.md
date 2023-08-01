@@ -14,7 +14,7 @@ Below is an example of a formatted JSON representation of a newly created databa
         "username": "admin",
         "password": "$2y$10$...",
         "footer": "Copyright &copy; 1970",
-        "theme": "visual",
+        "theme": "nimble",
         "admin": "admin",
         "blog": false
     },
@@ -24,11 +24,11 @@ Below is an example of a formatted JSON representation of a newly created databa
             "title": "Not Found",
             "descr": "404 Page Not Found",
             "keywords": "404",
-            "content": "<p>It looks like nothing was found at this location.<\/p>",
+            "content": "<p style="text-align:center">It looks like nothing was found at this location.<\/p>",
             "thumb": "",
             "date": "",
             "tpl": "",
-            "pub": true
+            "pub": false
         },
         "home": {
             "type": "page",
