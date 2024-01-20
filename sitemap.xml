@@ -4,342 +4,117 @@
     <loc>https://boidcms.github.io/</loc>
   </url>
   <url>
+    <loc>https://boidcms.github.io/#/changelog</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/database</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/demo</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/developer/actions</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/developer/panel</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/developer/plugin-api</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/developer/plugin-basics</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/developer/reference</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/developer/theme-basics</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/features</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/folder</loc>
+  </url>
+  <url>
     <loc>https://boidcms.github.io/#/install</loc>
   </url>
   <url>
     <loc>https://boidcms.github.io/#/license</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/demo</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/upgrade</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/features</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/pages/types</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/pages/create</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/pages/update</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/pages/delete</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/pages/</loc>
+    <loc>https://boidcms.github.io/#/media/</loc>
   </url>
   <url>
     <loc>https://boidcms.github.io/#/media/allowed</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/media/upload</loc>
-  </url>
-  <url>
     <loc>https://boidcms.github.io/#/media/delete</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/media/</loc>
+    <loc>https://boidcms.github.io/#/media/upload</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/install</loc>
+    <loc>https://boidcms.github.io/#/pages/</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/configure</loc>
+    <loc>https://boidcms.github.io/#/pages/create</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/uninstall</loc>
+    <loc>https://boidcms.github.io/#/pages/delete</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/</loc>
+    <loc>https://boidcms.github.io/#/pages/types</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/themes/install</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/themes/configure</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/themes/</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/folder</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/database</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/plugin-basics</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/plugin-api</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/reference</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/panel</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/theme-basics</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/themes/tags</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/actions</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/changelog</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/showcase</loc>
+    <loc>https://boidcms.github.io/#/pages/update</loc>
   </url>
   <url>
     <loc>https://boidcms.github.io/#/plugins</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/developer/method/get_action</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/_</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/save</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/constant/app</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/variable/app</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/variable/page</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/variable/action</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/variable/layout</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/root</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/page</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/medias</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/themes</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/plugins</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/version</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/logged_in</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/actions</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/property/database</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/__construct</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/_l</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/log</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/set</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/unset</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/get</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/url</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/admin_url</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/root</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/theme</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/data</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/token</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/set_action</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/unset_action</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/get_filter</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/load_actions</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/alert</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/alerts</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/page</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/create_page</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/update_page</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/delete_page</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/upload_media</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/delete_media</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/install</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/uninstall</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/installed</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/slugify</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/go</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/esc_slug</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/esc</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/auth</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/admin</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/developer/method/render</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/api</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/cron</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/disqus</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/favicon</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/feed</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/l10n</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/maintenance</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/shortcode</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/sitemap</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/trumbowyg</loc>
+    <loc>https://boidcms.github.io/#/plugins/</loc>
   </url>
   <url>
     <loc>https://boidcms.github.io/#/plugins/amp</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/backup</loc>
+    <loc>https://boidcms.github.io/#/plugins/api</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/contact-form</loc>
+    <loc>https://boidcms.github.io/#/plugins/configure</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/demo</loc>
+    <loc>https://boidcms.github.io/#/plugins/install</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/i18n</loc>
+    <loc>https://boidcms.github.io/#/plugins/uninstall</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/media-mime</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/newsletter</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/ping</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/preview</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/pwa</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/recycle</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/search</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/security</loc>
-  </url>
-  <url>
-    <loc>https://boidcms.github.io/#/plugins/seo</loc>
+    <loc>https://boidcms.github.io/#/showcase</loc>
   </url>
   <url>
     <loc>https://boidcms.github.io/#/tags</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/upgrade</loc>
+    <loc>https://boidcms.github.io/#/themes/</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/plugins/users</loc>
+    <loc>https://boidcms.github.io/#/themes/configure</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/themes/install</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/themes/nimble</loc>
   </url>
   <url>
     <loc>https://boidcms.github.io/#/themes/noir</loc>
   </url>
   <url>
-    <loc>https://boidcms.github.io/#/themes/visual</loc>
+    <loc>https://boidcms.github.io/#/themes/tags</loc>
+  </url>
+  <url>
+    <loc>https://boidcms.github.io/#/upgrade</loc>
   </url>
 </urlset>
