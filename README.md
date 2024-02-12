@@ -39,7 +39,7 @@ This project is a fork of [WonderCMS](https://www.wondercms.com).
 - Download the latest version on [this repo](https://github.com/BoidCMS/BoidCMS).
 - Extract the zip file.
 - Upload the extracted content to your server or hosting.
-- Follow the [admin page](/install?id=default-credentials) to configure your new website.
+- Follow the [admin page](/install?id=default-login-credentials) to configure your new website.
 
 
 ## Features
