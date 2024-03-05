@@ -25,7 +25,6 @@ image/avif
 image/gif
 image/jpeg
 image/png
-image/svg+xml
 image/vnd.microsoft.icon
 image/webp
 image/x-icon
@@ -68,7 +67,6 @@ png
 ppt
 pptx
 rar
-svg
 txt
 webm
 webp
