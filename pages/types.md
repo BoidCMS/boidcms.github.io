@@ -1,5 +1,5 @@
 # Content Types
-BoidCMS includes two default content types that are readily available. However, it also offers [reserved actions](/developer/actions) that allow you to create your own custom page types.
+BoidCMS includes two default content types that are readily available. However, it also offers [actions](/developer/actions) that allow you to create your own custom page types.
 
 
 ## Post
