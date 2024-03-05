@@ -9,7 +9,7 @@ Here is a list of all the actions.
 
 |         Action       |    Execute in    |                     Parameters                   |   Type   |   Info   |   Since  |
 | :------------------: | :--------------: | :----------------------------------------------: | :------: | :------: | :------: |
-|         `log`        |    `App::log`    |  (`string`) `$message` <br> (`string`) `$type`   |  `Event` | This event is triggered every time a message is logged using the `App::log` method. |  `1.0.0` |
+|         `log`        |    `App::log`    |  (`string`) `$message`, <br> (`string`) `$type`   |  `Event` | This event is triggered every time a message is logged using the `App::log` method. |  `1.0.0` |
 |         `save`       |    `App::save`   |                                                  |  `Event` | This event is triggered every time the database is saved. |  `1.0.0` |
 |         `page`       |    `App::page`   |(`mixed`) `$content`, <br> (`string`) `$index`, <br> (`string`) `$page`, <br> (`array`) `$data` |`Filter`| This filter is used to dynamically modify the value of a specific key within a given page. | `1.0.0` |
 |      `create_page`   |`App::create_page`|     (`string`) `$slug`, <br> (`array`) `$details`     |  `Event` | This event is triggered whenever a new page is being created. |  `1.0.0` |
@@ -24,6 +24,7 @@ Here is a list of all the actions.
 |      `slug_taken`    |  `App::slugify`  |                                    |  `Filter`| This filter is used to specify custom paths that are already taken and therefore not valid for creating new pages. |  `1.0.0` |
 |       `slugify`      |  `App::slugify`  | (`string`) `$slug`, <br> (`string`) `$title` |  `Filter`| This filter is used to modify the output of the slugifyer. |  `1.0.0` |
 |          `go`        |     `App::go`    |       (`string`) `$location`         |  `Event` | This event is triggered whenever the `App::go` method is used to send a redirection. |  `1.0.0` |
+|       `esc_slug`     |  `App::esc_slug` | (`string`) `$slug`, <br> (`string`) `$text`, <br> (`string`) `$alt` |  `Filter` | This filter is used to modify the output of the slugifyer. |  `2.1.0` |
 |     `token_error`    |    `App::auth`   |         (`string`) `$token`          |  `Event` | This event is triggered whenever an invalid token is received in the admin panel. |  `1.0.0` |
 |         `login`      |   `App::admin`   |                                    |  `Event` | This event is triggered when a user is not logged in and attempts to access the admin panel. |  `1.0.0` |
 |         `form`       |   `App::admin`   |                                    |  `Filter`| This filter is used to add custom HTML to every form that is displayed in the admin panel, including the login page. It provides an opportunity to enhance the appearance and functionality of forms and add custom elements, such as buttons or fields, to the forms. |  `1.0.0` |
@@ -63,7 +64,7 @@ Here is a list of all the actions.
 |        `home`        |   `App::render`  |                                    |  `Event` | This event is triggered on every page load that is the homepage. |  `1.0.0` |
 |   `{PAGE_TYPE}_type` |   `App::render`  |                                    |  `Event` | This event is triggered on every page load that is not the homepage. |  `1.0.0` |
 |         `404`        |   `App::render`  |          (`string`) `$page`          |  `Event` | This event is triggered when the requested page does not exist. |  `1.0.0` |
-|      `rendered`      |   `App::render`  |                                    |  `Event` | This event is triggered on every page load as the last event. |  `1.0.0` |
+|      `rendered`      |   `App::render`  |                                    |  `Event` | This event is triggered on every page load as the last event (after the page has been rendered). |  `1.0.0` |
 
 
 ## Reserved
@@ -71,7 +72,7 @@ Here is a list of all the actions.
 | :------------------: | :--------------: | :--------------------------------: | :-------: | :------------------------------: | :------: |
 |       `default`      |                  |                                    |  `Filter` | The default filter action is applied when using the shorthand method `App::_` without specifying an action parameter. This filter is the one that is used by default in such cases. |  `1.0.0` |
 |   `editable_pages`   |                  |                                    |  `Filter` | This filter is used to add admin panels that contain editable fields for WYSIWYG editors. |  `1.0.0` |
-|        `l10n`        |                  |                                    |  `Filter` | This filter was meant for text translation functionality<!-- when the "l10n" plugin is installed-->. |  `1.0.0` |
+|        `l10n`        |                  |                                    |  `Filter` | This filter is preserved for text translation functionality. |  `1.0.0` |
 
 
 ## Admin Template
