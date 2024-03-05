@@ -79,8 +79,8 @@ $App->set_action( 'admin_nav', 'custom_admin_panel_page_nav' );
 function custom_admin_panel_page_nav(): string {
   global $App, $page;
   $slug = $App->admin_url( '?page=custom-panel-page-slug' );
-  $active = ( 'custom-panel-page-slug' === $page ? ' ss-dotted' : '' );
-  return "<a href=\"$slug\" class=\"ss-btn ss-inverted ss-bd-none ss-white$active\">Custom Page</a>";
+  $active = ( 'custom-panel-page-slug' === $page ? ' ss-bg-cyan' : '' );
+  return "<a href=\"$slug\" class=\"ss-btn ss-inverted ss-white ss-bd-none$active\">Custom Page</a>";
 }
 ?>
 ```
