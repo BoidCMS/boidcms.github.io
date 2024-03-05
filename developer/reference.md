@@ -33,16 +33,16 @@ defined( 'App' ) or die( 'Direct access to this file is restricted.' );
 This property holds the root directory of the BoidCMS installation.  
 
 - **`App::page` (`string`)**:
-This property stores the slug of the currently visited page.  
+This property holds the slug of the currently visited page.  
 
 - **`App::medias` (`array`)**:
-This property stores the filenames of all uploaded media files.  
+This property holds the filenames of all uploaded media files.  
 
 - **`App::themes` (`array`)**:
-This property stores the names of the installed themes.  
+This property holds the names of themes located in the themes directory.  
 
 - **`App::plugins` (`array`)**:
-This property stores the names of plugins located in the plugins directory.  
+This property holds the names of plugins located in the plugins directory.  
 
 - **`App::version` (`string`)**:
 This property contains the version number of the BoidCMS installation.  
@@ -51,10 +51,10 @@ This property contains the version number of the BoidCMS installation.
 This property returns the current admin login status, indicating whether the admin is logged in or not.  
 
 - **`App::actions` (`array`)**:
-This is a **protected** property that stores the registered actions, which include both events and filters, along with their corresponding callbacks and priority values.  
+This is a **protected** property that holds the registered actions, which include both events and filters, along with their corresponding callbacks and priority values.  
 
 - **`App::database` (`array`)**:
-This is a **protected** property that stores the complete database data.  
+This is a **protected** property that holds the complete database data.  
 
 ## Methods
 
@@ -74,12 +74,12 @@ App::__construct( string $root ): App
 This method serves as an alias for the `App::get_filter` method.
 
 ```php
-App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
+App::_( mixed $value, string $action = 'default', mixed ...$args ): mixed
 ```
 
 **Parameters**:
  - `$value` (`mixed`) **required**: This is the value that will be processed by the filter.
- - `$callback` (`string`) **optional**: This is the filter action. By default, it is set to `default`.
+ - `$action` (`string`) **optional**: This is the filter action. By default, it is set to `default`.
  - `$args` (`mixed`) **optional**: These are the arguments passed to the function. The default value is empty.
 ------
 
@@ -87,12 +87,16 @@ App::_( mixed $value, string $callback = 'default', mixed ...$args ): mixed
 This method is used to create an array, which can be either empty or pre-populated with values specified in the second parameter. The resulting array can then be filtered using the filter provided in the first parameter, allowing for customization of the array's contents.
 
 ```php
-App::_l( string $callback, array $custom = array() ): array
+App::_l( string $action, array $custom = array(), string $del = ',' ): array
 ```
 
+?> Note that the `$del` parameter is only available in versions starting from `v2.1.0`. If you are using an earlier version, the delimiter will default to `,` (comma).
+
 **Parameters**:
- - `$callback` (`string`) **required**: This is the list filter action.
+ - `$action` (`string`) **required**: This is the list filter action.
  - `$custom` (`array`) **optional**: This is the default lists passed. The default value is `array()`.
+ - `$del` (`string`) **optional**: This is the custom delimiter to use for splitting string contents. The default value is `,`.
+
 
 ------
 
@@ -324,12 +328,12 @@ App::alerts(): void
 This method is used to retrieve the value of a specific field from a page.
 
 ```php
-App::page( string $index, ?string $page = null ): mixed
+App::page( string $index, ?string $slug = null ): mixed
 ```
 
 **Parameters**:
  - `$index` (`string`) **required**: This is the index key of the page field to return.
- - `$page` (`string|null`) **optional**: This returns the data from the specified page, or current page if `null`. The default value is `null`.
+ - `$slug` (`string|null`) **optional**: This returns the data from the specified page, or current page if `null`. The default value is `null`.
 
 --------
 
@@ -378,11 +382,11 @@ This method checks whether a page exists or not.
 !> Note that this method is available starting from version `v2.0.0`.
 
 ```php
-App::is_page( string $page ): bool
+App::is_page( string $slug ): bool
 ```
 
 **Parameters**:
- - `$page` (`string`) **required**: This is the slug of the page to check.
+ - `$slug` (`string`) **required**: This is the slug of the page to check.
 
 --------
 
@@ -453,11 +457,11 @@ App::installed( string $plugin ): bool
 This method is used to convert a text to a URL-friendly slug.
 
 ```php
-App::slugify( string $title ): string
+App::slugify( string $text ): string
 ```
 
 **Parameters**:
- - `$title` (`string`) **required**: This is the text parameter to be slugified.
+ - `$text` (`string`) **required**: This is the text parameter to be slugified.
 
 -------
 
