@@ -4,7 +4,7 @@
 
 # BoidCMS <small>v2.1.0 <sup>18KB</sup></small>
 
-> Developed using PHP and JSON, Ready to power your simple websites.
+> Built with PHP and JSON, it powers simple websites.
 
 - Flat file CMS for building simple websites and blogs
 
