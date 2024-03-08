@@ -10,4 +10,4 @@
 
 [GitHub](https://github.com/BoidCMS/BoidCMS/)
 [Download](https://boidcms.github.io/BoidCMS.zip)
-[Demo](demo)
+[Demo](https://boidcms.alwaysdata.net/)
