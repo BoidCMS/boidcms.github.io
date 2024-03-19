@@ -14,12 +14,12 @@ collections:
   - name: Documentations
     label: Docs
     label_singular: Documentation
-    folder: '/'
+    folder: '**/*.md'
     create: true
     nested:
       depth: 5
       summary: '{{filename}}'
-    identifier_field: name
+    identifier_field: '{{filename}}'
     fields:
       - label: Filename
         name: name
