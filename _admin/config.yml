@@ -2,6 +2,7 @@ backend:
   name: github
   repo: BoidCMS/boidcms.github.io
   branch: master
+  use_graphql: true
   auth_endpoint: /api/auth
   base_url: https://frugal-ca8.pages.dev
 
@@ -14,16 +15,13 @@ collections:
   - name: Documentations
     label: Docs
     label_singular: Documentation
-    folder: '**/*.md'
+    folder: '/'
     create: true
     nested:
       depth: 5
       summary: '{{filename}}'
     identifier_field: '{{filename}}'
     fields:
-      - label: Filename
-        name: name
-        widget: string
       - label: Content
         name: body
         widget: markdown
