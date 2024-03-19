@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: BoidCMS/boidcms.github.io
+  branch: master
+  auth_endpoint: /api/auth
+  base_url: https://frugal-ca8.pages.dev
+
+site_url: https://boidcms.github.io
+logo_url: https://boidcms.github.io/logo.svg
+
+media_folder: _media
+
+collections:
+  - name: Documentations
+    label: Docs
+    label_singular: Documentation
+    folder: ''
+    create: true
+    nested:
+      depth: 5
+      summary: '{{filename}}'
+    identifier_field: name
+    fields:
+      - label: Filename
+        name: name
+        widget: string
+      - label: Content
+        name: body
+        widget: markdown
