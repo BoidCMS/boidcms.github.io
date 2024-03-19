@@ -3,8 +3,6 @@ backend:
   repo: BoidCMS/boidcms.github.io
   branch: master
   use_graphql: true
-  auth_endpoint: /api/auth
-  base_url: https://frugal-ca8.pages.dev
 
 site_url: https://boidcms.github.io
 logo_url: https://boidcms.github.io/_media/logo.svg
