@@ -11,7 +11,7 @@ themes/
     └── theme.php
 ```
 
-While not strictly necessary, some useful files to include in your theme are `post.php` (a custom template for pages with `post` types) and `blank.php` (a blank template for plugins that create dynamic pages).
+While not strictly necessary, some useful files to include in your theme are `post.php` (a custom template for pages with `post` types), `blank.php` (a blank template for plugins that create dynamic pages) and `functions.php` (a file that acts like a plugin).
 
 ?> To use custom template files as custom page templates in the admin panel, you must first register them using the [`tpl`](/developer/actions) action. This action allows the admin panel to recognize and make use of your custom templates. Remember to register each custom template file you add before expecting it to be available for use.
 
@@ -97,6 +97,49 @@ To create a layout for a normal **static page**, use this template as a starting
     <footer><?= $App->get( 'footer' ) ?></footer>
   </body>
 </html>
+```
+
+### functions.php **(not required)**
+
+```php
+<?php defined( 'App' ) or die( 'BoidCMS' );
+/**
+ *
+ * Theme example
+ *
+ * @package Theme_Example
+ * @author Author Name
+ * @version 1.0.0
+ */
+
+global $App;
+$App->set_action( 'render', 'example_activate' );
+$App->set_action( 'change_theme', 'example_deactivate' );
+
+/**
+ * Initialize Example
+ * @return void
+ */
+function example_activate(): void {
+  global $App;
+  if ( 'example' === $App->get( 'theme' ) ) {
+    $msg = '"Example" theme activated.';
+    $App->log( $msg );
+  }
+}
+
+/**
+ * Deactivate Example
+ * @param string $theme
+ * @return void
+ */
+function example_deactivate( string $theme ): void {
+  global $App;
+  if ( 'example' !== $theme ) {
+    $msg = '"Example" theme deactivated.';
+    $App->log( $msg );
+  }
+}
 ```
 
 ?> To enhance your theme's functionality, consider adding additional features such as [theme tags](/themes/tags) and [actions](/developer/actions?id=themes). These are particularly useful and highly recommended.
