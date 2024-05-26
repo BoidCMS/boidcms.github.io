@@ -8,7 +8,7 @@ Use the [discussion](https://github.com/BoidCMS/BoidCMS/discussions) section to 
 
 |             Name              |                                     Description                                                   |         Author        | Version | License |                Source                 |
 |:-----------------------------:|:-------------------------------------------------------------------------------------------------:|:---------------------:|:-------:|:-------:|:-------------------------------------:|
-|     [`API`](/plugins/api)     | Implement API functionality into your site, allowing for seamless integration with other systems. | `Shuaib Yusuf Shuaib` | `0.1.0` |  `MIT`  |     https://github.com/BoidCMS/api    |
+|     [`API`](/plugins/api)     | Implement API functionality into your site, allowing for seamless integration with other systems. | `Shuaib Yusuf Shuaib` | `0.2.0` |  `MIT`  |     https://github.com/BoidCMS/API    |
 |    [`Cron`](/plugins/cron)    | Cron Job Scheduler | `Shuaib Yusuf Shuaib` | `0.1.0` | `MIT` | https://github.com/BoidCMS/cron |
 |  [`Disqus`](/plugins/disqus)  | Disqus Commenting System | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/disqus |
 | [`Favicon`](/plugins/favicon) | Custom Favicon | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/favicon |

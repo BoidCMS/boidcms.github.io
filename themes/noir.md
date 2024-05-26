@@ -15,6 +15,3 @@
 - Customization options to make the theme your own
 - Supports every BoidCMS theme event and filter
 - Compatible with all versions of BoidCMS
-
-
-## Download
