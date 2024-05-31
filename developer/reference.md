@@ -62,7 +62,7 @@ This is a **protected** property that holds the complete database data.
 This method is the constructor.
 
 ```php
-App::__construct( string $root ): App
+App::__construct( string $root ):
 ```
 
 **Parameters**:

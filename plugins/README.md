@@ -19,9 +19,4 @@ Use the [discussion](https://github.com/BoidCMS/BoidCMS/discussions) section to 
 | [`Sitemap`](/plugins/sitemap) | XML or TXT Sitemap Generator | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/sitemap |
 | [`Trumbowyg`](/plugins/trumbowyg) | Trumbowyg Editor | `Shuaib Yusuf Shuaib` | `1.0.0` | `MIT` | https://github.com/BoidCMS/trumbowyg |
 
-More coming soon... Can't wait? Learn to [build one](developer/plugin-basics) yourself.
-
-
-
-
-
+More coming soon... Can't wait? Learn to [write one](developer/plugin-basics) yourself.
