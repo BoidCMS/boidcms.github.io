@@ -27,7 +27,7 @@ It's installed without configuring or installing any relational database like My
 You only need a web server with PHP support.
 
 ## Origin
-BoidCMS was made by [Shuaib Yusuf Shuaib](https://github.com/shoaiyb) and is a fork of [WonderCMS](https://wondercms.com) by [Robert Isoski](https://robert.si).
+BoidCMS was made by [Shuaib Yusuf Shuaib (Shoaiyb Sysa)](https://github.com/shoaiyb) and is a fork of [WonderCMS](https://wondercms.com) by [Robert Isoski](https://robert.si).
 
 
 ## Requirements
