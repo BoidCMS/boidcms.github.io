@@ -33,7 +33,8 @@
 
     const canonical = document.createElement("link");
     canonical.setAttribute("rel", "canonical");
-    canonical.setAttribute("href", "https://boidcms.github.io/" + location.hash);
+    let path = (location.hash == "#/" ? "" : location.hash);
+    canonical.setAttribute("href", "https://boidcms.github.io/" + path);
     document.head.appendChild(canonical);
   </script>
 </head>
