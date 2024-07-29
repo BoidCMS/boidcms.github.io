@@ -36,6 +36,11 @@
     let path = (location.hash == "#/" ? "" : location.hash);
     canonical.setAttribute("href", "https://boidcms.github.io/" + path);
     document.head.appendChild(canonical);
+    window.addEventListener("hashchange", () => {
+      let path = (location.hash == "#/" ? "" : location.hash);
+      const canonical = document.querySelector("[rel=canonical]");
+      canonical.setAttribute("href", "https://boidcms.github.io/" + path);
+    });
   </script>
 </head>
 <body>
