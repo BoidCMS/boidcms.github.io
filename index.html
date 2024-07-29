@@ -25,6 +25,11 @@
     if(typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('/sw.js')
     }
+
+    const canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    canonical.setAttribute("href", "https://boidcms.github.io/" + location.hash);
+    document.head.appendChild(canonical);
   </script>
 </head>
 <body>
