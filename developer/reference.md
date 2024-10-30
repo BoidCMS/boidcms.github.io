@@ -341,12 +341,12 @@ App::page( string $index, ?string $slug = null ): mixed
 This method is used to create a new page with specified properties and contents.
 
 ```php
-App::create_page( string $slug, array $details ): bool
+App::create_page( string $slug, array $fields ): bool
 ```
 
 **Parameters**:
  - `$slug` (`string`) **required**: This is the slugified slug of the page to be created.
- - `$details` (`array`) **required**: This is the data containing all the fields required, to be saved as the page data.
+ - `$fields` (`array`) **required**: This is the data containing all the fields required, to be saved as the page data.
 
 -------
 
@@ -354,13 +354,13 @@ App::create_page( string $slug, array $details ): bool
 This method is used to update specific fields of an existing page.
 
 ```php
-App::update_page( string $slug, string $permalink, array $updates ): bool
+App::update_page( string $slug, string $new_slug, array $fields ): bool
 ```
 
 **Parameters**:
  - `$slug` (`string`) **required**: This is the old slug of the page to be updated.
- - `$permalink` (`string`) **required**: This is the new slug for the page, the old one could be used if not changing it.
- - `$updates` (`array`) **required**: This is the updated page data.
+ - `$new_slug` (`string`) **required**: This is the new slug for the page, the old one could be used if not changing it.
+ - `$fields` (`array`) **required**: This is the updated page data.
 
 -------
 
