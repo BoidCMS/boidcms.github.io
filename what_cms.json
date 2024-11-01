@@ -1,5 +1,5 @@
 {
-    "twitter": "BoidCMS",
+    "description": "BoidCMS is a free and open-source flat-file content management system (CMS) designed for building simple websites and blogs quickly. It uses PHP for development and JSON as its database, making it a lightweight option.",
     "url": "https://boidcms.github.io/",
-    "description": "BoidCMS is a free and open-source flat-file content management system (CMS) designed for building simple websites and blogs quickly. It uses PHP for development and JSON as its database, making it a lightweight option."
+    "twitter": "BoidCMS"
 }
