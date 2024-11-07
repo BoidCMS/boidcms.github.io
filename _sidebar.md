@@ -2,6 +2,7 @@
   - [Install](install)
   - [Upgrade](upgrade)
   - [Features](features)
+  - [](recommendations)
 
 - Posts and Pages
   - [Types](pages/types)
