@@ -1,6 +1,5 @@
 # Noir
-
-"**Noir**" is a sleek and modern BoidCMS theme designed for bloggers. With a minimalist black and white color scheme, it offers a clean and elegant reading experience that puts the focus on your content. Fully responsive and highly customizable, "Noir" gives you complete control over your site's look and feel, with intuitive navigation, author links, and pagination.
+**Noir** is a sleek and modern BoidCMS theme designed for bloggers. With a minimalist black and white color scheme, it offers a clean and elegant reading experience that puts the focus on your content. Fully responsive and highly customizable, Noir gives you complete control over your site's look and feel, with intuitive navigation, author links, and pagination.
 
 
 ## Features

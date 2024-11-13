@@ -25,7 +25,7 @@
 
 - Themes
   - [Install](themes/install)
-  - [Configure](themes/configure)
+  - [Customize](themes/customize)
   - [List of Themes](themes/)
 
 - Developers
