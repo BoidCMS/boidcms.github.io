@@ -2,7 +2,7 @@
   <img alt="BoidCMS logo" width="60" height="60" src="/_media/logo.svg">
 </p>
 
-# BoidCMS <small>v2.1.1 <sup>18KB</sup></small>
+# BoidCMS <small>v2.1.2 <sup>18KB</sup></small>
 
 > Built with PHP and JSON, it powers simple websites.
 
