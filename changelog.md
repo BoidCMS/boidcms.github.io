@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.1.1
+## v2.1.2
 - Escape user input
 
 **Full Changelog**: [v2.1.1...v2.1.2](https://github.com/BoidCMS/BoidCMS/compare/v2.1.1...v2.1.2)
