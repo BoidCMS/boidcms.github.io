@@ -1,6 +1,12 @@
 # Changelog
 
 ## v2.1.1
+- Escape user input
+
+**Full Changelog**: [v2.1.1...v2.1.2](https://github.com/BoidCMS/BoidCMS/compare/v2.1.1...v2.1.2)
+
+
+## v2.1.1
 - Fix to [#44](https://github.com/BoidCMS/BoidCMS/issues/44)
 
 **Full Changelog**: [v2.1.0...v2.1.1](https://github.com/BoidCMS/BoidCMS/compare/v2.1.0...v2.1.1)
