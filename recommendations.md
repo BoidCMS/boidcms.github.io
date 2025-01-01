@@ -13,25 +13,26 @@ Here, you will find a curated list of recommended plugins to enhance your siteâ€
 **Benefits**: Simplifies the writing process and enhances readability.  
 **Repo**: https://github.com/BoidCMS/Markdown-Editor
 
+<!--
 ### SEO Optimization Tool
 **Description**: A plugin designed to help optimize your content for search engines.  
 **Benefits**: Improves visibility and search rankings by providing keyword suggestions and metadata management.  
 **Repo**: https://github.com/BoidCMS/SOT
-<!--
+
 ### Image Compression Plugin
 **Description**: Automatically compresses images uploaded to your site.  
 **Benefits**: Reduces load times and improves performance without sacrificing image quality.  
 **Repo**: https://github.com/BoidCMS/Modules
--->
+
 ### Backup
 **Description**: A plugin that creates backups of your content and configurations.  
 **Benefits**: Ensures you can easily restore your site in case of data loss.  
 **Repo**: https://github.com/BoidCMS/Backup
-<!--
+
 ### Contact Form
 **Description**: A simple plugin to create customizable contact forms.
 **Benefits**: Facilitates user engagement and allows visitors to reach you easily.  
-**Repo**: https://github.com/BoidCMS/Modules
+**Repo**: https://github.com/BoidCMS/Forms
 -->
 
 ## Security Advice

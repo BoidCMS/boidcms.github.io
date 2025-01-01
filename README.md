@@ -43,20 +43,20 @@ BoidCMS was made by [Shuaib Yusuf Shuaib](https://github.com/shoaiyb) and is a f
 
 
 ## Features
-  - One Step [Install](/install)
   - Free and Open Source
+  - Super Lightweight
+  - One Step [Install](https://boidcms.github.io)
   - Simple and Easy to Navigate Admin Panel
+  - Customizable Admin URL
+  - CSRF Authentication
   - Themes and Plugins Support
   - Super Extensible
-  - CSRF Authentication
-  - Custom Admin URL
   - Custom Page Permalink
   - Custom Page Template
-  - Blog Option
-  - File Manager
+  - Different Content Types
+  - Blog Mode
   - SEO Friendly
-  - Content Type
-  - GDPR Compliant
+  - File Manager
 
 
 ## Support
