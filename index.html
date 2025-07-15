@@ -15,11 +15,15 @@
   <link rel="preload stylesheet" as="style" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css">
   <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js">
   <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js">
-  <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js">
   <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js">
   <link rel="manifest" href="/manifest.json">
-  <title>Simple, fast, super extensible - BoidCMS</title>
+  <title>Simple, fast, super extensible — BoidCMS</title>
   <style type="text/css">
+    aside.sidebar img {
+      width: 60px;
+      height: 60px;
+    }
+
     nav.app-nav li ul {
       min-width: 100px;
     }
@@ -28,21 +32,24 @@
       font-family: monospace!important;
     }
   </style>
-  <script type="text/javascript">
+  <script>
     if(typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('/sw.js')
     }
 
     const canonical = document.createElement("link");
     canonical.setAttribute("rel", "canonical");
-    let path = (location.hash == "#/" ? "" : location.hash);
-    canonical.setAttribute("href", "https://boidcms.github.io/" + path);
+    canonical.setAttribute("href", "https://boidcms.github.io" + location.pathname);
     document.head.appendChild(canonical);
-    window.addEventListener("hashchange", () => {
-      let path = (location.hash == "#/" ? "" : location.hash);
-      const canonical = document.querySelector("[rel=canonical]");
-      canonical.setAttribute("href", "https://boidcms.github.io/" + path);
+
+    let previousUrl = window.location.href;
+    const observer = new MutationObserver(() => {
+      if (window.location.href !== previousUrl) {
+        canonical.setAttribute("href", "https://boidcms.github.io" + window.location.pathname);
+        previousUrl = window.location.href;
+      }
     });
+    observer.observe(document, { subtree: true, childList: true });
   </script>
 </head>
 <body>
@@ -51,7 +58,7 @@
     window.$docsify = {
       el: "#app",
       name: 'BoidCMS',
-      logo: '_media/logo.png',
+      logo: '_media/logo.svg',
       repo: 'BoidCMS/BoidCMS',
       maxLevel: 4,
       subMaxLevel: 2,
@@ -62,6 +69,7 @@
       auto2top: true,
       themeColor: '#00bcd4',
       notFoundPage: true,
+      routerMode: 'history',
       formatUpdated: '{YYYY}/{MM}/{DD}',
       plugins: [
         function(hook, vm) {
@@ -76,7 +84,6 @@
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js" data-ga="UA-187607202-5"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
 </body>
 </html>
