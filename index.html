@@ -37,19 +37,10 @@
       navigator.serviceWorker.register('/sw.js')
     }
 
-    const canonical = document.createElement("link");
+    /*const canonical = document.createElement("link");
     canonical.setAttribute("rel", "canonical");
     canonical.setAttribute("href", "https://boidcms.github.io" + location.pathname);
-    document.head.appendChild(canonical);
-
-    let previousUrl = window.location.href;
-    const observer = new MutationObserver(() => {
-      if (window.location.href !== previousUrl) {
-        canonical.setAttribute("href", "https://boidcms.github.io" + window.location.pathname);
-        previousUrl = window.location.href;
-      }
-    });
-    observer.observe(document, { subtree: true, childList: true });
+    document.head.appendChild(canonical);*/
   </script>
 </head>
 <body>
